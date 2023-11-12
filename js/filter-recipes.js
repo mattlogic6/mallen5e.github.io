@@ -8,13 +8,14 @@ class PageFilterRecipes extends PageFilter {
 	};
 	static _MISC_TAG_TO_FULL = {
 		"alcohol": "Contains Alcohol",
+		"feast": "Feast Dish",
 	};
 
 	constructor () {
 		super();
 
 		this._typeFilter = new Filter({
-			header: "Type",
+			header: "Category",
 			displayFn: StrUtil.toTitleCase,
 			itemSortFn: SortUtil.ascSortLower,
 		});

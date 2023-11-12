@@ -4582,7 +4582,7 @@ Renderer.tag = class {
 
 	static TagRecipe = class extends this._TagPipedDisplayTextThird {
 		tagName = "recipe";
-		defaultSource = Parser.SRC_HEROES_FEAST;
+		defaultSource = Parser.SRC_HF;
 		page = UrlUtil.PG_RECIPES;
 	};
 
@@ -10349,6 +10349,7 @@ Renderer.recipe = class {
 		"cup",
 		"handful",
 		"ounce",
+		"packet",
 		"piece",
 		"pound",
 		"slice",
@@ -10463,6 +10464,13 @@ Renderer.recipe = class {
 		};
 	}
 	// endregion
+
+	static async pGetModifiedRecipe (ent, customHashId) {
+		if (!customHashId) return ent;
+		const {_scaleFactor} = Renderer.recipe.getUnpackedCustomHashId(customHashId);
+		if (_scaleFactor == null) return ent;
+		return Renderer.recipe.getScaledRecipe(ent, _scaleFactor);
+	}
 };
 
 Renderer.card = class {
@@ -11956,27 +11964,12 @@ Renderer.hover = {
 	async pApplyCustomHashId (page, ent, customHashId) {
 		switch (page) {
 			case UrlUtil.PG_BESTIARY: {
-				if (!customHashId) {
-					Renderer.monster.initParsed(ent);
-					return ent;
-				}
-
-				const {_scaledCr, _scaledSpellSummonLevel, _scaledClassSummonLevel} = Renderer.monster.getUnpackedCustomHashId(customHashId);
-				if (_scaledCr != null) ent = await ScaleCreature.scale(ent, _scaledCr);
-				else if (_scaledSpellSummonLevel != null) ent = await ScaleSpellSummonedCreature.scale(ent, _scaledSpellSummonLevel);
-				else if (_scaledClassSummonLevel != null) ent = await ScaleClassSummonedCreature.scale(ent, _scaledClassSummonLevel);
-
-				Renderer.monster.updateParsed(ent);
-
-				return ent;
+				const out = await Renderer.monster.pGetModifiedCreature(ent, customHashId);
+				Renderer.monster.updateParsed(out);
+				return out;
 			}
 
-			case UrlUtil.PG_RECIPES: {
-				if (!customHashId) return ent;
-				const {_scaleFactor} = Renderer.recipe.getUnpackedCustomHashId(customHashId);
-				if (_scaleFactor == null) return ent;
-				return Renderer.recipe.getScaledRecipe(ent, _scaleFactor);
-			}
+			case UrlUtil.PG_RECIPES: return Renderer.recipe.pGetModifiedRecipe(ent, customHashId);
 
 			default: return ent;
 		}

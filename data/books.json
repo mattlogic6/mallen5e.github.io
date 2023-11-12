@@ -5,7 +5,7 @@
 			"id": "PHB",
 			"source": "PHB",
 			"group": "core",
-			"coverUrl": "img/covers/PHB.png",
+			"coverUrl": "img/covers/PHB.webp",
 			"published": "2014-08-19",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -196,7 +196,7 @@
 			"id": "MM",
 			"source": "MM",
 			"group": "core",
-			"coverUrl": "img/covers/MM.png",
+			"coverUrl": "img/covers/MM.webp",
 			"published": "2014-09-30",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -237,7 +237,7 @@
 			"id": "DMG",
 			"source": "DMG",
 			"group": "core",
-			"coverUrl": "img/covers/DMG.png",
+			"coverUrl": "img/covers/DMG.webp",
 			"published": "2014-12-09",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -453,7 +453,7 @@
 			"id": "Screen",
 			"source": "Screen",
 			"group": "screen",
-			"coverUrl": "img/covers/Screen.png",
+			"coverUrl": "img/covers/Screen.webp",
 			"published": "2015-01-20",
 			"contents": [
 				{
@@ -466,7 +466,7 @@
 			"id": "SCAG",
 			"source": "SCAG",
 			"group": "setting",
-			"coverUrl": "img/covers/SCAG.png",
+			"coverUrl": "img/covers/SCAG.webp",
 			"published": "2015-11-03",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -574,7 +574,7 @@
 			"id": "PS-Z",
 			"source": "PSZ",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSZ.png",
+			"coverUrl": "img/covers/PSZ.webp",
 			"published": "2016-04-27",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -597,7 +597,7 @@
 			"id": "PS-I",
 			"source": "PSI",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSI.png",
+			"coverUrl": "img/covers/PSI.webp",
 			"published": "2016-07-12",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -651,7 +651,7 @@
 			"id": "AL",
 			"source": "AL",
 			"group": "other",
-			"coverUrl": "img/covers/AL.png",
+			"coverUrl": "img/covers/AL.webp",
 			"published": "2016-08-26",
 			"contents": [
 				{
@@ -676,7 +676,7 @@
 			"id": "VGM",
 			"source": "VGM",
 			"group": "supplement",
-			"coverUrl": "img/covers/VGM.png",
+			"coverUrl": "img/covers/VGM.webp",
 			"published": "2016-11-15",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -736,7 +736,7 @@
 			"id": "PS-K",
 			"source": "PSK",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSK.png",
+			"coverUrl": "img/covers/PSK.webp",
 			"published": "2017-02-16",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -765,7 +765,7 @@
 			"id": "PS-A",
 			"source": "PSA",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSA.png",
+			"coverUrl": "img/covers/PSA.webp",
 			"published": "2017-07-06",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -800,7 +800,7 @@
 			"id": "OGA",
 			"source": "OGA",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/OGA.png",
+			"coverUrl": "img/covers/OGA.webp",
 			"published": "2017-10-11",
 			"author": "Extra Life",
 			"contents": [
@@ -814,7 +814,7 @@
 			"id": "XGE",
 			"source": "XGE",
 			"group": "supplement",
-			"coverUrl": "img/covers/XGE.png",
+			"coverUrl": "img/covers/XGE.webp",
 			"published": "2017-11-21",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -891,7 +891,7 @@
 			"id": "PS-X",
 			"source": "PSX",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSX.png",
+			"coverUrl": "img/covers/PSX.webp",
 			"published": "2018-01-09",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -934,7 +934,7 @@
 			"id": "MTF",
 			"source": "MTF",
 			"group": "supplement",
-			"coverUrl": "img/covers/MTF.png",
+			"coverUrl": "img/covers/MTF.webp",
 			"published": "2018-05-29",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -1035,7 +1035,7 @@
 			"id": "PS-D",
 			"source": "PSD",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/PSD.png",
+			"coverUrl": "img/covers/PSD.webp",
 			"published": "2018-07-31",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -1073,7 +1073,7 @@
 			"id": "GGR",
 			"source": "GGR",
 			"group": "setting",
-			"coverUrl": "img/covers/GGR.png",
+			"coverUrl": "img/covers/GGR.webp",
 			"published": "2018-11-20",
 			"contents": [
 				{
@@ -1202,7 +1202,7 @@
 			"id": "SAC",
 			"source": "SAC",
 			"group": "other",
-			"coverUrl": "img/covers/SAC.png",
+			"coverUrl": "img/covers/SAC.webp",
 			"published": "2019-01-31",
 			"contents": [
 				{
@@ -1233,7 +1233,7 @@
 			"id": "AI",
 			"source": "AI",
 			"group": "supplement",
-			"coverUrl": "img/covers/AI.png",
+			"coverUrl": "img/covers/AI.webp",
 			"published": "2019-06-18",
 			"contents": [
 				{
@@ -1369,7 +1369,7 @@
 			"id": "RMR",
 			"source": "RMR",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/RMR.png",
+			"coverUrl": "img/covers/RMR.webp",
 			"published": "2019-11-19",
 			"contents": [
 				{
@@ -1472,7 +1472,7 @@
 			"id": "ERLW",
 			"source": "ERLW",
 			"group": "setting",
-			"coverUrl": "img/covers/ERLW.png",
+			"coverUrl": "img/covers/ERLW.webp",
 			"published": "2019-11-19",
 			"contents": [
 				{
@@ -1730,7 +1730,7 @@
 			"id": "EGW",
 			"source": "EGW",
 			"group": "setting",
-			"coverUrl": "img/covers/EGW.png",
+			"coverUrl": "img/covers/EGW.webp",
 			"published": "2020-03-17",
 			"contents": [
 				{
@@ -2029,7 +2029,7 @@
 			"id": "MOT",
 			"source": "MOT",
 			"group": "setting",
-			"coverUrl": "img/covers/MOT.png",
+			"coverUrl": "img/covers/MOT.webp",
 			"published": "2020-06-02",
 			"contents": [
 				{
@@ -2179,11 +2179,170 @@
 			]
 		},
 		{
+			"name": "Heroes' Feast",
+			"id": "HF",
+			"source": "HF",
+			"group": "recipe",
+			"coverUrl": "img/covers/HF.webp",
+			"published": "2020-10-27",
+			"author": "Kyle Newman",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"About This Book: Creating Food and Water",
+						"Worlds of Flavor",
+						"Tips for Magical Cooking"
+					]
+				},
+				{
+					"name": "Human Cuisine",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": "1"
+					},
+					"headers": [
+						"Traveler's Stew",
+						"Iron Rations",
+						"Sword Coast Seafood Bouillabaisse",
+						"Pan-Fried Knucklehead Trout",
+						"Amphail Braised Beef",
+						"Hommlet Golden Brown Roasted Turkey with Sausage Stuffing and Drippings",
+						"Gurdats",
+						"Hand Pies",
+						"Dark Molasses Nutbread",
+						"Trolltide Candied Apples",
+						"Vedbread",
+						"Otik's Skillet-Fried Spiced Potatoes",
+						"Yawning Portal Buttermilk Biscuits",
+						"Kara-Tur Noodles",
+						"Sembian Honey\u2013Glazed Rothé Ribs",
+						"Reghed Venison Pot Roast",
+						"Castle Amber Onion Soup",
+						"Tavern \"Steak\"",
+						"Gingerbread Man",
+						"The Yawning Portal Menu"
+					]
+				},
+				{
+					"name": "Elven Cuisine",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": "2"
+					},
+					"headers": [
+						"Quith-pa",
+						"Feywild Eggs",
+						"High Harvest Puree",
+						"Elven Bread",
+						"Wood Elf Forest Salad",
+						"Elven Marruth",
+						"Drow Mushroom Steaks",
+						"Cherrybread",
+						"Greenspear Bundles in Bacon",
+						"Moonshae Seafood Rice",
+						"Dragon Salmon",
+						"Qualinesti Vegetable Stew",
+						"Meal's End",
+						"The Inn of the Last Home Menu"
+					]
+				},
+				{
+					"name": "Dwarven Cuisine",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": "3"
+					},
+					"headers": [
+						"Bangers and Smash",
+						"Delzoun \"Tide-Me-Overs\"",
+						"Underdark Lotus with Fire Lichen Spread",
+						"Miner's Pie",
+						"Potato Leek Soup",
+						"Smoked Sausages and Kraut with Dwarven Mustard",
+						"Corned Beef and Cabbage",
+						"Gully Dwarf Homestyle Porridge",
+						"Dwarven Flatbread",
+						"Orange Mountain Duck",
+						"Plate-of-Gold",
+						"Black Pudding",
+						"Celestial Vista Restaurant Menu"
+					]
+				},
+				{
+					"name": "Halfling Cuisine",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": "4"
+					},
+					"headers": [
+						"Community Cheeses",
+						"Stuffed Egg-Battered Toast",
+						"Chicken-Something Dumplings",
+						"Hogs in Bedrolls",
+						"Melted Cheeses with Chunky Tomato Broth",
+						"Halfling Oatmeal Sweet Nibbles",
+						"Lluirwood Salad",
+						"Everything Soup",
+						"Honeyed Ham with Pineapple Gravy",
+						"Heartlands Rose Apple and Blackberry Pie",
+						"Honey-Drizzled Cream Puffs",
+						"Green Dragon Inn Menu"
+					]
+				},
+				{
+					"name": "Uncommon Cuisine",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": "5"
+					},
+					"headers": [
+						"Arkhan the Cruel's Flame-Roasted Halfling Chili",
+						"\"Orc\" Bacon",
+						"Fire-Spiced Abyssal Chicken Kebabs",
+						"Hardbuckler Stew",
+						"Twice-Baked Cockatrice Wings",
+						"Braised Lamb",
+						"Deep Gnome Trillimac Pods",
+						"Surrogate Steaks",
+						"Barovian Butterscotch Pudding",
+						"Fried Fingers",
+						"Bytopian Shepherd's Bread"
+					]
+				},
+				{
+					"name": "Elixirs & Ales",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": "6"
+					},
+					"headers": [
+						"Par-Salian's Tea",
+						"Mushroom Tea",
+						"Evermead",
+						"Dwarven Mulled Wine",
+						"Cocoa Broth",
+						"Hot Spiced Cider",
+						"Goodberry Blend",
+						"Delayed Blast Fireball",
+						"The Mindflayer",
+						"Rollrum",
+						"Potion of Restoration",
+						"Zzar",
+						"Chultan Zombie"
+					]
+				},
+				{
+					"name": "Afterword: Playing with Your Food"
+				}
+			]
+		},
+		{
 			"name": "Dungeon Master's Screen: Wilderness Kit",
 			"id": "ScreenWildernessKit",
 			"source": "ScreenWildernessKit",
 			"group": "screen",
-			"coverUrl": "img/covers/ScreenWildernessKit.png",
+			"coverUrl": "img/covers/ScreenWildernessKit.webp",
 			"published": "2020-11-17",
 			"contents": [
 				{
@@ -2199,7 +2358,7 @@
 			"id": "TCE",
 			"source": "TCE",
 			"group": "supplement",
-			"coverUrl": "img/covers/TCE.png",
+			"coverUrl": "img/covers/TCE.webp",
 			"published": "2020-11-17",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -2352,7 +2511,7 @@
 			"id": "VRGR",
 			"source": "VRGR",
 			"group": "setting",
-			"coverUrl": "img/covers/VRGR.png",
+			"coverUrl": "img/covers/VRGR.webp",
 			"published": "2021-05-18",
 			"contents": [
 				{
@@ -2990,7 +3149,7 @@
 			"id": "DoD",
 			"source": "DoD",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/DoD.png",
+			"coverUrl": "img/covers/DoD.webp",
 			"published": "2021-09-21",
 			"contents": [
 				{
@@ -3141,7 +3300,7 @@
 			"id": "MaBJoV",
 			"source": "MaBJoV",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/MaBJoV.png",
+			"coverUrl": "img/covers/MaBJoV.webp",
 			"published": "2021-10-05",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3216,7 +3375,7 @@
 			"id": "FTD",
 			"source": "FTD",
 			"group": "supplement",
-			"coverUrl": "img/covers/FTD.png",
+			"coverUrl": "img/covers/FTD.webp",
 			"published": "2021-10-26",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3330,7 +3489,7 @@
 			"id": "SCC",
 			"source": "SCC",
 			"group": "setting",
-			"coverUrl": "img/covers/SCC.png",
+			"coverUrl": "img/covers/SCC.webp",
 			"published": "2021-12-07",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3791,7 +3950,7 @@
 			"id": "MPMM",
 			"source": "MPMM",
 			"group": "supplement",
-			"coverUrl": "img/covers/MPMM.png",
+			"coverUrl": "img/covers/MPMM.webp",
 			"published": "2022-01-25",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3820,7 +3979,7 @@
 			"id": "AAG",
 			"source": "AAG",
 			"group": "supplement",
-			"coverUrl": "img/covers/SAiS.png",
+			"coverUrl": "img/covers/SAiS.webp",
 			"published": "2022-08-16",
 			"contents": [
 				{
@@ -3892,7 +4051,7 @@
 			"id": "BAM",
 			"source": "BAM",
 			"group": "supplement",
-			"coverUrl": "img/covers/SAiS.png",
+			"coverUrl": "img/covers/SAiS.webp",
 			"published": "2022-08-16",
 			"contents": [
 				{
@@ -3911,7 +4070,7 @@
 			"id": "ScreenSpelljammer",
 			"source": "ScreenSpelljammer",
 			"group": "screen",
-			"coverUrl": "img/covers/ScreenSpelljammer.png",
+			"coverUrl": "img/covers/ScreenSpelljammer.webp",
 			"published": "2022-08-16",
 			"contents": [
 				{
@@ -3924,7 +4083,7 @@
 			"id": "HAT-TG",
 			"source": "HAT-TG",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/TG.png",
+			"coverUrl": "img/covers/TG.webp",
 			"published": "2023-03-06",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -3938,7 +4097,7 @@
 			"id": "BGG",
 			"source": "BGG",
 			"group": "supplement",
-			"coverUrl": "img/covers/BGG.png",
+			"coverUrl": "img/covers/BGG.webp",
 			"published": "2023-08-15",
 			"author": "Wizards RPG Team",
 			"contents": [
@@ -4060,7 +4219,7 @@
 			"id": "MCV4EC",
 			"source": "MCV4EC",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/MCV4EC.png",
+			"coverUrl": "img/covers/MCV4EC.webp",
 			"published": "2023-09-21",
 			"contents": [
 				{
@@ -4079,7 +4238,7 @@
 			"id": "MPP",
 			"source": "MPP",
 			"group": "supplement",
-			"coverUrl": "img/covers/PAitM.png",
+			"coverUrl": "img/covers/PAitM.webp",
 			"published": "2023-10-07",
 			"contents": [
 				{
@@ -4131,7 +4290,7 @@
 			"id": "SatO",
 			"source": "SatO",
 			"group": "supplement",
-			"coverUrl": "img/covers/PAitM.png",
+			"coverUrl": "img/covers/PAitM.webp",
 			"published": "2023-10-07",
 			"contents": [
 				{
@@ -4196,7 +4355,7 @@
 			"id": "AATM",
 			"source": "AATM",
 			"group": "supplement-alt",
-			"coverUrl": "img/covers/AATM.png",
+			"coverUrl": "img/covers/AATM.webp",
 			"published": "2023-10-17",
 			"contents": [
 				{
@@ -4207,6 +4366,139 @@
 						"The Mortuary",
 						"Appendix: Mortuary Creatures"
 					]
+				}
+			]
+		},
+		{
+			"name": "Heroes' Feast Flavors of the Multiverse",
+			"id": "HFFotM",
+			"source": "HFFotM",
+			"group": "recipe",
+			"coverUrl": "img/covers/HFFotM.webp",
+			"published": "2023-11-07",
+			"author": "Kyle Newman",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"About This Book: Cooking Fantasies",
+						"Worlds of Flavor",
+						"The Bureau of Dark Tables"
+					]
+				},
+				{
+					"name": "The Yawning Portal",
+					"headers": [
+						"Goldenstars",
+						"Talyth",
+						"Chopforest",
+						"Hot River Crab Bites",
+						"Sornstag",
+						"Rothé Steak",
+						"Onion Loaf",
+						"Sour Cream-Walnut Cake",
+						"Laumberry Pie",
+						"Mingari-Spiced Owlbear Milk",
+						"Neverwinter Nectar",
+						"Butternut Beer"
+					]
+				},
+				{
+					"name": "The Rock of Bral",
+					"headers": [
+						"Fried Soy with Vegetables",
+						"Tavern Noodles",
+						"Tamarind Balls",
+						"Trencher Bread",
+						"Tears of Selûne",
+						"Duergar Smoked Herring",
+						"Spiced Pork and Orange Peppers",
+						"Steak of the Deep",
+						"Green Ice Rime",
+						"Loaf Pudding",
+						"Undermountain Alurlyath"
+					]
+				},
+				{
+					"name": "Solamnia",
+					"headers": [
+						"Boar Hock Soup",
+						"Cloaks",
+						"Salbread",
+						"Kender Stumblenoodles",
+						"Tarsis-Style Shrimp",
+						"Plate of Silver",
+						"Stuffed Trout",
+						"Kender Loaf",
+						"Kendermore Cobbler",
+						"Irlymeyer's Dragonfire Punch",
+						"Tika's Honey Mead"
+					]
+				},
+				{
+					"name": "Lost in Realmspace",
+					"headers": [
+						"Beluir Poached Salmon",
+						"Black Lotus Root",
+						"Green Dragon Blackbread Muffins",
+						"Thrakel-Seared Beef in Red Sauce",
+						"Ornabra",
+						"Blood of Vol",
+						"Breaded Bird Cutlets",
+						"Halfling Game Birds",
+						"Vada's Vanilla Buns",
+						"Ray of Frost",
+						"Ruby Cordial"
+					]
+				},
+				{
+					"name": "Ravenloft",
+					"headers": [
+						"Halfling Iron Rations",
+						"Tavern Crickets",
+						"Barovian Garlic Bread",
+						"Green Onion Pancakes",
+						"Two Hares Inn Rabbit Stew",
+						"Whole Roast Boar",
+						"Quij's Plate",
+						"Fig Cakes",
+						"Honey Milk",
+						"Purple Grapemash No. 3"
+					]
+				},
+				{
+					"name": "Sigil",
+					"headers": [
+						"Sensate Palate Cleanser",
+						"Fried Bread and Spices",
+						"Beer Bread",
+						"Bacon-Wrapped Smoked Mussels",
+						"Chickpea and Spicy Sausage Soup",
+						"Fire-Wrapped Golden Fish",
+						"Emerald Chicken",
+						"Harmonious Barracks Meatloaf",
+						"Chirper's Sugar Biscuits",
+						"Silverfruit Pie",
+						"Kaeth"
+					]
+				},
+				{
+					"name": "The Feywild",
+					"headers": [
+						"Elven Flatbread",
+						"Seelie Court Cheese and Potato Soup",
+						"Elfharrow Baked Goat Cheese",
+						"Harengon Coffee Carrots",
+						"Brackleberry Jam",
+						"Fey Fritters",
+						"Sprucebark Quaff",
+						"Eldeen Banquet",
+						"Saerloonian Glowfire",
+						"Elverquisst"
+					]
+				},
+				{
+					"name": "Afterword: Playing with Your Food"
 				}
 			]
 		}

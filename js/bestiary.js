@@ -1,7 +1,12 @@
-"use strict";
+import {EncounterBuilderCacheBestiaryPage} from "./bestiary/bestiary-encounterbuilder-cache.js";
+import {EncounterBuilderComponentBestiary} from "./bestiary/bestiary-encounterbuilder-component.js";
+import {EncounterBuilderUiBestiary} from "./bestiary/bestiary-encounterbuilder-ui.js";
+import {EncounterBuilderSublistPlugin} from "./bestiary/bestiary-encounterbuilder-sublistplugin.js";
 
-window.PROF_MODE_BONUS = "bonus";
-window.PROF_MODE_DICE = "dice";
+class _BestiaryConsts {
+	static PROF_MODE_BONUS = "bonus";
+	static PROF_MODE_DICE = "dice";
+}
 
 class _BestiaryUtil {
 	static getUrlSubhashes (mon, {isAddLeadingSep = true} = {}) {
@@ -52,11 +57,7 @@ class BestiarySublistManager extends SublistManager {
 
 	_onSublistChange () {
 		this._$dispCrTotal = this._$dispCrTotal || $(`#totalcr`);
-
-		const xp = this._encounterBuilder.calculateListEncounterXp();
-		const monCount = this.sublistItems.map(it => it.data.count).reduce((a, b) => a + b, 0);
-		this._$dispCrTotal.html(`${monCount} creature${monCount === 1 ? "" : "s"}; ${xp.baseXp.toLocaleString()} XP (<span class="help" title="Adjusted Encounter XP">Enc</span>: ${(xp.adjustedXp).toLocaleString()} XP)`);
-		if (this._encounterBuilder.isActive()) this._encounterBuilder.updateDifficulty();
+		this._encounterBuilder.onSublistChange({$dispCrTotal: this._$dispCrTotal});
 	}
 
 	_getSublistFullHash ({entity}) {
@@ -97,7 +98,7 @@ class BestiarySublistManager extends SublistManager {
 
 		const cellsText = [name, type, cr];
 
-		const $hovStatblock = $(`<span class="col-1-4 help help--hover ecgen__visible">Stat Block</span>`)
+		const $hovStatblock = $(`<span class="col-1-4 help help--hover best-ecgen__visible">Stat Block</span>`)
 			.mouseover(evt => this._encounterBuilder.doStatblockMouseOver({
 				evt,
 				ele: $hovStatblock[0],
@@ -108,13 +109,13 @@ class BestiarySublistManager extends SublistManager {
 			.mousemove(evt => Renderer.hover.handleLinkMouseMove(evt, $hovStatblock[0]))
 			.mouseleave(evt => Renderer.hover.handleLinkMouseLeave(evt, $hovStatblock[0]));
 
-		const hovTokenMeta = EncounterBuilder.getTokenHoverMeta(mon);
-		const $hovToken = !hovTokenMeta ? $(`<span class="col-1-2 ecgen__visible"></span>`) : $(`<span class="col-1-2 ecgen__visible help help--hover">Token</span>`)
+		const hovTokenMeta = EncounterBuilderUiBestiary.getTokenHoverMeta(mon);
+		const $hovToken = !hovTokenMeta ? $(`<span class="col-1-2 best-ecgen__visible"></span>`) : $(`<span class="col-1-2 best-ecgen__visible help help--hover">Token</span>`)
 			.mouseover(evt => hovTokenMeta.mouseOver(evt, $hovToken[0]))
 			.mousemove(evt => hovTokenMeta.mouseMove(evt, $hovToken[0]))
 			.mouseleave(evt => hovTokenMeta.mouseLeave(evt, $hovToken[0]));
 
-		const $hovImage = $(`<span class="col-1-2 ecgen__visible help help--hover">Image</span>`);
+		const $hovImage = $(`<span class="col-1-2 best-ecgen__visible help help--hover">Image</span>`);
 		Renderer.monster.hover.bindFluffImageMouseover({mon, $ele: $hovImage});
 
 		const $ptCr = (() => {
@@ -144,8 +145,6 @@ class BestiarySublistManager extends SublistManager {
 			{
 				count,
 				customHashId,
-				approxHp: this._getApproxHp(mon),
-				approxAc: this._getApproxAc(mon),
 				isLocked,
 				$elesCount: [$eleCount1, $eleCount2],
 				fnsUpdate: [],
@@ -162,14 +161,14 @@ class BestiarySublistManager extends SublistManager {
 		listItem.data.fnsUpdate.push(sublistButtonsMeta.fnUpdate);
 
 		listItem.ele = $$`<div class="lst__row lst__row--sublist ve-flex-col lst__row--bestiary-sublist">
-			<a href="#${hash}" draggable="false" class="ecgen__hidden lst--border lst__row-inner">
+			<a href="#${hash}" draggable="false" class="best-ecgen__hidden lst--border lst__row-inner">
 				${this.constructor._getRowCellsHtml({values: cellsText, templates: this.constructor._ROW_TEMPLATE.slice(0, 3)})}
 				${$eleCount1}
 			</a>
 
-			<div class="lst__wrp-cells ecgen__visible--flex lst--border lst__row-inner">
+			<div class="lst__wrp-cells best-ecgen__visible--flex lst--border lst__row-inner">
 				${sublistButtonsMeta.$wrp}
-				<span class="ecgen__name--sub col-3-5">${name}</span>
+				<span class="best-ecgen__name--sub col-3-5">${name}</span>
 				${$hovStatblock}
 				${$hovToken}
 				${$hovImage}
@@ -181,20 +180,6 @@ class BestiarySublistManager extends SublistManager {
 			.click(evt => this._handleBestiaryLinkClickSub(evt, listItem));
 
 		return listItem;
-	}
-
-	_getApproxHp (mon) {
-		if (mon.hp && mon.hp.average && !isNaN(mon.hp.average)) return Number(mon.hp.average);
-		return null;
-	}
-
-	_getApproxAc (mon) {
-		// Use the first AC listed, as this is usually the "primary"
-		if (mon.ac && mon.ac[0] != null) {
-			if (mon.ac[0].ac) return mon.ac[0].ac;
-			if (typeof mon.ac[0] === "number") return mon.ac[0];
-		}
-		return null;
 	}
 
 	_handleBestiaryLinkClickSub (evt, listItem) {
@@ -388,7 +373,7 @@ class BestiaryPage extends ListPageMultiSource {
 		this._$wrpBtnProf = null;
 		this._$btnProf = null;
 
-		this._profDicMode = PROF_MODE_BONUS;
+		this._profDicMode = _BestiaryConsts.PROF_MODE_BONUS;
 
 		this._encounterBuilder = null;
 
@@ -445,7 +430,7 @@ class BestiaryPage extends ListPageMultiSource {
 					click: evt => this._handleBestiaryLinkClick(evt),
 					children: [
 						this._encounterBuilder.getButtons(mI),
-						e_({tag: "span", clazz: `ecgen__name bold col-4-2 pl-0`, text: mon.name}),
+						e_({tag: "span", clazz: `best-ecgen__name bold col-4-2 pl-0`, text: mon.name}),
 						e_({tag: "span", clazz: `col-4-1`, text: type}),
 						e_({tag: "span", clazz: `col-1-7 ve-text-center`, text: cr}),
 						e_({
@@ -537,16 +522,20 @@ class BestiaryPage extends ListPageMultiSource {
 		this._pPageInit_profBonusDiceToggle();
 	}
 
+	_pOnLoad_pPostLoad () {
+		this._encounterBuilder.render();
+	}
+
 	_pPageInit_profBonusDiceToggle () {
 		const $btnProfBonusDice = $("button#profbonusdice");
 
 		$btnProfBonusDice.click(() => {
-			if (this._profDicMode === PROF_MODE_DICE) {
-				this._profDicMode = PROF_MODE_BONUS;
+			if (this._profDicMode === _BestiaryConsts.PROF_MODE_DICE) {
+				this._profDicMode = _BestiaryConsts.PROF_MODE_BONUS;
 				$btnProfBonusDice.html("Use Proficiency Dice");
 				this._$pgContent.attr("data-proficiency-dice-mode", this._profDicMode);
 			} else {
-				this._profDicMode = PROF_MODE_DICE;
+				this._profDicMode = _BestiaryConsts.PROF_MODE_DICE;
 				$btnProfBonusDice.html("Use Proficiency Bonus");
 				this._$pgContent.attr("data-proficiency-dice-mode", this._profDicMode);
 			}
@@ -571,7 +560,7 @@ class BestiaryPage extends ListPageMultiSource {
 
 		this._$pgContent
 			.on(`mousedown`, `[data-roll-prof-type]`, evt => {
-				if (this._profDicMode !== PROF_MODE_BONUS) evt.preventDefault();
+				if (this._profDicMode !== _BestiaryConsts.PROF_MODE_BONUS) evt.preventDefault();
 			})
 			.on(`click`, `[data-roll-prof-type]`, evt => {
 				const parent = evt.currentTarget.closest(`[data-roll-prof-type]`);
@@ -581,7 +570,7 @@ class BestiaryPage extends ListPageMultiSource {
 
 				switch (type) {
 					case "d20": {
-						if (this._profDicMode === PROF_MODE_BONUS) return;
+						if (this._profDicMode === _BestiaryConsts.PROF_MODE_BONUS) return;
 
 						evt.stopPropagation();
 						evt.preventDefault();
@@ -595,7 +584,7 @@ class BestiaryPage extends ListPageMultiSource {
 					}
 
 					case "dc": {
-						if (this._profDicMode === PROF_MODE_BONUS) {
+						if (this._profDicMode === _BestiaryConsts.PROF_MODE_BONUS) {
 							evt.stopPropagation();
 							evt.preventDefault();
 							return;
@@ -970,8 +959,22 @@ class BestiaryPage extends ListPageMultiSource {
 }
 
 const bestiaryPage = new BestiaryPage();
-const encounterBuilder = new EncounterBuilder();
 const sublistManager = new BestiarySublistManager();
+
+const encounterBuilderCache = new EncounterBuilderCacheBestiaryPage({bestiaryPage});
+const encounterBuilderComp = new EncounterBuilderComponentBestiary();
+const encounterBuilder = new EncounterBuilderUiBestiary({
+	cache: encounterBuilderCache,
+	comp: encounterBuilderComp,
+	bestiaryPage,
+	sublistManager,
+});
+const sublistPlugin = new EncounterBuilderSublistPlugin({
+	sublistManager,
+	encounterBuilder,
+	encounterBuilderComp,
+});
+sublistManager.addPlugin(sublistPlugin);
 
 bestiaryPage.encounterBuilder = encounterBuilder;
 bestiaryPage.sublistManager = sublistManager;

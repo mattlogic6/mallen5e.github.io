@@ -2572,5 +2572,11 @@
 		"ver": "1.191.2",
 		"date": "2023-11-09",
 		"txt": "- (Brew) Added `\"alias\"` support for Recipes\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.192.0",
+		"date": "2023-11-12",
+		"title": "A Delicacy",
+		"txt": "- Added Heroes' Feast Flavors of the Multiverse content to Recipes page (big thanks @ Lyra)\n- Added Heroes' Feast and Heroes' Feast Flavors of the Multiverse books to Books page (thanks @ Lyra)\n- Added initial round of Chains of Asmodeus tokens\n- Added Dynamic Map Viewer support to Chains of Asmodeus\n- (Fixed typos/added tags)"
 	}
 ]

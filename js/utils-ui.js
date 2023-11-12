@@ -45,6 +45,10 @@ class Prx {
 	}
 }
 
+/**
+ * @mixin
+ * @param {Class} Cls
+ */
 function MixinProxyBase (Cls) {
 	class MixedProxyBase extends Cls {
 		constructor (...args) {
@@ -3516,6 +3520,10 @@ class SourceUiUtil {
 	}
 }
 
+/**
+ * @mixin
+ * @param {typeof ProxyBase} Cls
+ */
 function MixinBaseComponent (Cls) {
 	class MixedBaseComponent extends Cls {
 		constructor (...args) {
@@ -3644,8 +3652,7 @@ function MixinBaseComponent (Cls) {
 				toDelete.delete(it.id);
 				if (meta) {
 					if (opts.isDiffMode) {
-						// Hashing the stringified JSON relies on the property order remaining consistent, but this is fine
-						const nxtHash = CryptUtil.md5(JSON.stringify(it));
+						const nxtHash = this._getCollectionEntityHash(it);
 						if (nxtHash !== meta.__hash) meta.__hash = nxtHash;
 						else continue;
 					}
@@ -3661,7 +3668,7 @@ function MixinBaseComponent (Cls) {
 					meta.data = it; // update any existing pointers
 					if (!meta.$wrpRow && !meta.fnRemoveEles) throw new Error(`A "$wrpRow" or a "fnRemoveEles" property is required for deletes!`);
 
-					if (opts.isDiffMode) meta.__hash = CryptUtil.md5(JSON.stringify(it));
+					if (opts.isDiffMode) meta.__hash = this._getCollectionEntityHash(it);
 
 					rendered[it.id] = meta;
 				}
@@ -3725,8 +3732,7 @@ function MixinBaseComponent (Cls) {
 				toDelete.delete(it.id);
 				if (meta) {
 					if (opts.isDiffMode) {
-						// Hashing the stringified JSON relies on the property order remaining consistent, but this is fine
-						const nxtHash = CryptUtil.md5(JSON.stringify(it));
+						const nxtHash = this._getCollectionEntityHash(it);
 						if (nxtHash !== meta.__hash) meta.__hash = nxtHash;
 						else continue;
 					}
@@ -3744,7 +3750,7 @@ function MixinBaseComponent (Cls) {
 					if (!opts.isMultiRender && !meta.$wrpRow && !meta.fnRemoveEles) throw new Error(`A "$wrpRow" or a "fnRemoveEles" property is required for deletes!`);
 					if (opts.isMultiRender && meta.some(it => !it.$wrpRow && !it.fnRemoveEles)) throw new Error(`A "$wrpRow" or a "fnRemoveEles" property is required for deletes!`);
 
-					if (opts.isDiffMode) meta.__hash = CryptUtil.md5(JSON.stringify(it));
+					if (opts.isDiffMode) meta.__hash = this._getCollectionEntityHash(it);
 
 					rendered[it.id] = meta;
 				}
@@ -3795,6 +3801,11 @@ function MixinBaseComponent (Cls) {
 			const rendered = (this.__rendered[renderedLookupProp] = this.__rendered[renderedLookupProp] || {});
 			Object.values(rendered).forEach(it => it.$wrpRow.remove());
 			delete this.__rendered[renderedLookupProp];
+		}
+
+		_getCollectionEntityHash (ent) {
+			// Hashing the stringified JSON relies on the property order remaining consistent, but this is fine
+			return CryptUtil.md5(JSON.stringify(ent));
 		}
 
 		render () { throw new Error("Unimplemented!"); }
@@ -3988,8 +3999,8 @@ class _RenderableCollectionGenericRowsSyncAsyncUtils {
 
 	/* -------------------------------------------- */
 
-	$getBtnDelete ({entity}) {
-		return $(`<button class="btn btn-xxs btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>`)
+	$getBtnDelete ({entity, title = "Delete"}) {
+		return $(`<button class="btn btn-xxs btn-danger" title="${title.qq()}"><span class="glyphicon glyphicon-trash"></span></button>`)
 			.click(() => this.doDelete({entity}));
 	}
 

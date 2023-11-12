@@ -129,6 +129,7 @@ class _PageGeneratorListBase extends _PageGeneratorBase {
 	_scriptIdentList;
 	_scriptsUtilsAdditional;
 	_scriptsPrePageAdditional;
+	_isModule = false;
 	_isMultisource = false;
 	_btnsList;
 	_btnsSublist;
@@ -167,6 +168,7 @@ class _PageGeneratorListBase extends _PageGeneratorBase {
 			scriptIdentList: this._scriptIdentList,
 			scriptsUtilsAdditional: this._scriptsUtilsAdditional,
 			scriptsPrePageAdditional: this._scriptsPrePageAdditional,
+			isModule: this._isModule,
 			isMultisource: this._isMultisource,
 			btnsList: this._btnsList,
 			btnsSublist: this._btnsSublist,
@@ -224,19 +226,16 @@ class _PageGeneratorListBestiary extends _PageGeneratorListBase {
 
 	_stylesheets = [
 		"bestiary",
+		"encounterbuilder-bundle",
 	];
 
 	_scriptIdentList = "bestiary";
 
 	_scriptsUtilsAdditional = [
-		"utils-list-bestiary.js",
 		"utils-tableview.js",
 	];
 
-	_scriptsPrePageAdditional = [
-		"bestiary-encounterbuilder.js",
-	];
-
+	_isModule = true;
 	_isMultisource = true;
 
 	_btnsList = [
@@ -249,8 +248,8 @@ class _PageGeneratorListBestiary extends _PageGeneratorListBase {
 	_btnsSublist = [
 		_HtmlGeneratorListButtons.getBtn({width: "5", sortIdent: "name", text: "Name"}),
 
-		_HtmlGeneratorListButtons.getBtn({width: "3-8", classListAdditional: ["ecgen__hidden"], sortIdent: "type", text: "Type"}),
-		_HtmlGeneratorListButtons.getBtn({width: "3-8", classListAdditional: ["ecgen__visible"], isDisabled: true, text: "&nbsp;"}),
+		_HtmlGeneratorListButtons.getBtn({width: "3-8", classListAdditional: ["best-ecgen__hidden"], sortIdent: "type", text: "Type"}),
+		_HtmlGeneratorListButtons.getBtn({width: "3-8", classListAdditional: ["best-ecgen__visible"], isDisabled: true, text: "&nbsp;"}),
 
 		_HtmlGeneratorListButtons.getBtn({width: "1-2", sortIdent: "cr", text: "CR"}),
 		_HtmlGeneratorListButtons.getBtn({width: "2", sortIdent: "count", text: "Number"}),

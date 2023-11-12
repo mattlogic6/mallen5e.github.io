@@ -24,6 +24,8 @@
 <script type="text/javascript" src="js/filter-{{scriptIdentList}}.js"></script>
 {{#each scriptsPrePageAdditional}}<script type="text/javascript" src="js/{{this}}"></script>
 {{/each}}
-<script type="text/javascript" src="js/{{scriptIdentList}}.js"></script>
+{{#if isModule}}<script type="module" src="js/{{scriptIdentList}}.js"></script>
+{{else}}<script type="text/javascript" src="js/{{scriptIdentList}}.js"></script>
+{{/if}}
 <script type="text/javascript" src="js/list2.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>

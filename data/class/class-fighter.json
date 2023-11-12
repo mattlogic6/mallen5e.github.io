@@ -1250,6 +1250,19 @@
 			"className": "Fighter",
 			"classSource": "PHB",
 			"page": 42,
+			"additionalSpells": [
+				{
+					"innate": {
+						"18": {
+							"daily": {
+								"1": [
+									"telekinesis"
+								]
+							}
+						}
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Psi Warrior|Fighter||Psi Warrior|TCE|3",
 				"Telekinetic Adept|Fighter||Psi Warrior|TCE|7",
