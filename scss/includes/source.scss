@@ -77,6 +77,7 @@
 	$rgb-source-PAitM: #a23087;
 	$rgb-source-CoA: #a13a0f;
 	$rgb-source-HFFotM: #7b702c;
+	$rgb-source-BMT: #694165;
 
 	// region Categories
 
@@ -589,6 +590,12 @@
 		color: $rgb-source-HFFotM !important;
 		border-color: $rgb-source-HFFotM !important;
 		text-decoration-color: $rgb-source-HFFotM !important;
+	}
+
+	&BMT {
+		color: $rgb-source-BMT !important;
+		border-color: $rgb-source-BMT !important;
+		text-decoration-color: $rgb-source-BMT !important;
 	}
 	// endregion
 }

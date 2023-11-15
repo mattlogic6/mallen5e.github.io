@@ -2578,5 +2578,11 @@
 		"date": "2023-11-12",
 		"title": "A Delicacy",
 		"txt": "- Added Heroes' Feast Flavors of the Multiverse content to Recipes page (big thanks @ Lyra)\n- Added Heroes' Feast and Heroes' Feast Flavors of the Multiverse books to Books page (thanks @ Lyra)\n- Added initial round of Chains of Asmodeus tokens\n- Added Dynamic Map Viewer support to Chains of Asmodeus\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.193.0",
+		"date": "2023-11-15",
+		"title": "The Cards of the Heart",
+		"txt": "- Added The Book of Many Things content\n- Added \"XP to Next Level\" display the Bestiary Encounter Builder\n- Tweaked Bestiary Encounter Builder random generation to prefer a soft max of 5 different creature types\n- (Brew) Improved Item Text Converter handling of various `\"magicvariant\"` requirements\n- (Brew) Added fluff support to traps/hazards\n- (Fixed typos/added tags)"
 	}
 ]

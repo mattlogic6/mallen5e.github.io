@@ -2190,10 +2190,10 @@ Parser.trapHazTypeToFull = function (type) {
 };
 
 Parser.TRAP_HAZARD_TYPE_TO_FULL = {
-	MECH: "Mechanical trap",
-	MAG: "Magical trap",
-	SMPL: "Simple trap",
-	CMPX: "Complex trap",
+	MECH: "Mechanical Trap",
+	MAG: "Magical Trap",
+	SMPL: "Simple Trap",
+	CMPX: "Complex Trap",
 	HAZ: "Hazard",
 	WTH: "Weather",
 	ENV: "Environmental Hazard",
@@ -2207,10 +2207,10 @@ Parser.tierToFullLevel = function (tier) {
 };
 
 Parser.TIER_TO_FULL_LEVEL = {};
-Parser.TIER_TO_FULL_LEVEL[1] = "level 1\u20134";
-Parser.TIER_TO_FULL_LEVEL[2] = "level 5\u201310";
-Parser.TIER_TO_FULL_LEVEL[3] = "level 11\u201316";
-Parser.TIER_TO_FULL_LEVEL[4] = "level 17\u201320";
+Parser.TIER_TO_FULL_LEVEL[1] = "1st\u20134th Level";
+Parser.TIER_TO_FULL_LEVEL[2] = "5th\u201310th Level";
+Parser.TIER_TO_FULL_LEVEL[3] = "11th\u201316th Level";
+Parser.TIER_TO_FULL_LEVEL[4] = "17th\u201320th Level";
 
 Parser.trapInitToFull = function (init) {
 	return Parser._parse_aToB(Parser.TRAP_INIT_TO_FULL, init);
@@ -2627,6 +2627,7 @@ Parser.SRC_PAitM = "PAitM";
 Parser.SRC_SatO = "SatO";
 Parser.SRC_ToFW = "ToFW";
 Parser.SRC_MPP = "MPP";
+Parser.SRC_BMT = "BMT";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
 Parser.SRC_SCREEN_DUNGEON_KIT = "ScreenDungeonKit";
@@ -2867,6 +2868,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PAitM] = "Planescape: Adventures in the Mu
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SatO] = "Sigil and the Outlands";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ToFW] = "Turn of Fortune's Wheel";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MPP] = "Morte's Planar Parade";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BMT] = "The Book of Many Things";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_DUNGEON_KIT] = "Dungeon Master's Screen: Dungeon Kit";
@@ -3082,6 +3084,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PAitM] = "PAitM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SatO] = "SatO";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ToFW] = "ToFW";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MPP] = "MPP";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BMT] = "BMT";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Screen";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScWild";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_DUNGEON_KIT] = "ScDun";
@@ -3296,6 +3299,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PAitM] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SatO] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ToFW] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MPP] = "2023-10-17";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BMT] = "2023-11-14";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_DUNGEON_KIT] = "2020-09-21";
@@ -3570,6 +3574,7 @@ Parser.SOURCES_VANILLA = new Set([
 	Parser.SRC_GotSF,
 	Parser.SRC_BGG,
 	Parser.SRC_CoA,
+	Parser.SRC_BMT,
 ]);
 
 // Any opinionated set of sources that are """hilarious, dude"""
@@ -3661,6 +3666,7 @@ Parser.SOURCES_AVAILABLE_DOCS_BOOK = {};
 	Parser.SRC_MPP,
 	Parser.SRC_HF,
 	Parser.SRC_HFFotM,
+	Parser.SRC_BMT,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_BOOK[src.toLowerCase()] = src;

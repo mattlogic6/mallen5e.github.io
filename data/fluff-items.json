@@ -6,11 +6,35 @@
 	},
 	"itemFluff": [
 		{
+			"name": "+1 Fate Dealer's Deck",
+			"source": "BMT",
+			"_copy": {
+				"name": "Fate Dealer's Deck",
+				"source": "BMT"
+			}
+		},
+		{
+			"name": "+2 Fate Dealer's Deck",
+			"source": "BMT",
+			"_copy": {
+				"name": "Fate Dealer's Deck",
+				"source": "BMT"
+			}
+		},
+		{
 			"name": "+2 Ring of Protection",
 			"source": "TDCSR",
 			"_copy": {
 				"name": "Ring of Protection",
 				"source": "DMG"
+			}
+		},
+		{
+			"name": "+3 Fate Dealer's Deck",
+			"source": "BMT",
+			"_copy": {
+				"name": "Fate Dealer's Deck",
+				"source": "BMT"
 			}
 		},
 		{
@@ -201,6 +225,19 @@
 			]
 		},
 		{
+			"name": "Armor of Fungal Spores",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Armor of Fungal Spores.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Armor of Invulnerability",
 			"source": "DMG",
 			"images": [
@@ -222,6 +259,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/DMG/Armor of Resistance.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Armor of the Fallen",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Armor of the Fallen.webp"
 					}
 				}
 			]
@@ -657,6 +707,19 @@
 						"path": "items/GGR/Boros Keyrune.webp"
 					},
 					"credit": "Daniel Ljunggren"
+				}
+			]
+		},
+		{
+			"name": "Bow of Melodies",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Bow of Melodies.webp"
+					}
 				}
 			]
 		},
@@ -1110,6 +1173,19 @@
 			]
 		},
 		{
+			"name": "Crown of Whirling Comets",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Crown of Whirling Comets.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Crystalline Chronicle",
 			"source": "TCE",
 			"images": [
@@ -1307,6 +1383,32 @@
 			]
 		},
 		{
+			"name": "Deck of Dimensions",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Deck of Dimensions.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Deck of Many More Things",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Deck of Many More Things.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Deck of Many Things",
 			"source": "DMG",
 			"images": [
@@ -1315,6 +1417,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/DMG/Deck of Many Things.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Deck of Wonder",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Deck of Wonder.webp"
 					}
 				}
 			]
@@ -1739,6 +1854,19 @@
 			]
 		},
 		{
+			"name": "Euryale's Aegis",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Euryales Aegis.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Eversmoking Bottle",
 			"source": "DMG",
 			"images": [
@@ -1815,6 +1943,19 @@
 						"path": "items/DSotDQ/Fargab.webp"
 					},
 					"credit": "Kent Davis"
+				}
+			]
+		},
+		{
+			"name": "Fate Dealer's Deck",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Fate Dealers Deck.webp"
+					}
 				}
 			]
 		},
@@ -2269,6 +2410,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/CoS/Gulthias Staff.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Hammer of Runic Focus",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Hammer of Runic Focus.webp"
 					}
 				}
 			]
@@ -2893,6 +3047,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/DMG/Javelin of Lightning.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Jester's Mask",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Jesters Mask.webp"
 					}
 				}
 			]
@@ -5074,6 +5241,32 @@
 			]
 		},
 		{
+			"name": "Shield of the Tortoise",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Shield of the Tortoise.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Shrieking Greaves",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Shrieking Greaves.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Silver (sp)",
 			"source": "PHB",
 			"images": [
@@ -5267,6 +5460,19 @@
 					},
 					"title": "Three Examples of a Spelljamming Helm",
 					"credit": "Robson Michel"
+				}
+			]
+		},
+		{
+			"name": "Spindle of Fate",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Spindle of Fate.webp"
+					}
 				}
 			]
 		},
@@ -5696,6 +5902,19 @@
 			]
 		},
 		{
+			"name": "Sword of the Planes",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Sword of the Planes.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Sword of Zariel",
 			"source": "BGDIA",
 			"images": [
@@ -5772,6 +5991,19 @@
 						"path": "items/TCE/Teeth of Dahlver-Nar.webp"
 					},
 					"credit": "Crystal Sully"
+				}
+			]
+		},
+		{
+			"name": "Telescopic Transporter",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Telescopic Transporter.webp"
+					}
 				}
 			]
 		},
@@ -6246,6 +6478,19 @@
 					"href": {
 						"type": "internal",
 						"path": "items/DMG/Wand of Wonder.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Warrior's Passkey",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/BMT/Warriors Passkey.webp"
 					}
 				}
 			]

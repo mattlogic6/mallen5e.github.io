@@ -458,6 +458,23 @@ class _PageGeneratorListItems extends _PageGeneratorListBase {
 	_isPrinterView = true;
 }
 
+class _PageGeneratorListTrapsHazards extends _PageGeneratorListBase {
+	_page = UrlUtil.PG_TRAPS_HAZARDS;
+	_titlePage = "Traps & Hazards";
+	_scriptIdentList = "trapshazards";
+
+	_btnsList = [
+		_HtmlGeneratorListButtons.getBtn({width: "3", sortIdent: "trapType", text: "Type"}),
+		_HtmlGeneratorListButtons.getBtn({width: "7", sortIdent: "name", text: "Name"}),
+		_HtmlGeneratorListButtons.getBtnSource(),
+	];
+
+	_btnsSublist = [
+		_HtmlGeneratorListButtons.getBtn({width: "4", sortIdent: "trapType", text: "Type"}),
+		_HtmlGeneratorListButtons.getBtn({width: "8", sortIdent: "name", text: "Name"}),
+	];
+}
+
 const generators = [
 	new _PageGeneratorListActions(),
 	new _PageGeneratorListBackgrounds(),
@@ -469,6 +486,7 @@ const generators = [
 	new _PageGeneratorListDeities(),
 	new _PageGeneratorListFeats(),
 	new _PageGeneratorListItems(),
+	new _PageGeneratorListTrapsHazards(),
 ];
 
 generators

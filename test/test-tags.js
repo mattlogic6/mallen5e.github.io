@@ -1177,7 +1177,7 @@ class HasFluffCheck extends GenericDataCheck {
 			.segregate(it => it.propFluff);
 
 		for (const {prop, propFluff, dataFluff, dataFluffUnmerged, data, page} of metasWithFluff) {
-			const fluffLookup = dataFluff[propFluff]
+			const fluffLookup = (dataFluff[propFluff] || [])
 				.mergeMap(flf => ({
 					[UrlUtil.URL_TO_HASH_BUILDER[page](flf)]: {
 						hasFluff: !!flf.entries,
@@ -1186,7 +1186,7 @@ class HasFluffCheck extends GenericDataCheck {
 				}));
 
 			// Tag parent fluff, so we can ignore e.g. "unused" fluff which is only used by `_copy`s
-			dataFluffUnmerged[propFluff].forEach(flfUm => {
+			(dataFluffUnmerged[propFluff] || []).forEach(flfUm => {
 				if (!flfUm._copy) return;
 				const hashParent = UrlUtil.URL_TO_HASH_BUILDER[page](flfUm._copy);
 				// Track fluff vs. images, as e.g. the child overwriting the images means we don't use the parent images

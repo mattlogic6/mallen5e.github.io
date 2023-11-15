@@ -119,7 +119,9 @@ const _FILE_PROP_ORDER = [
 	"boon",
 
 	"trap",
+	"trapFluff",
 	"hazard",
+	"hazardFluff",
 
 	"encounter",
 	"name",
@@ -228,7 +230,9 @@ function getFnListSort (prop) {
 		case "foundryRaceFeature":
 		case "table":
 		case "trap":
+		case "trapFluff":
 		case "hazard":
+		case "hazardFluff":
 		case "charoption":
 		case "charoptionFluff":
 		case "recipe":

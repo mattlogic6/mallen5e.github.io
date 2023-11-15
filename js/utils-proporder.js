@@ -1738,6 +1738,11 @@ PropOrder._TRAP = [
 	"countermeasures",
 
 	"entries",
+
+	"hasFluff",
+	"hasFluffImages",
+
+	"fluff",
 ];
 PropOrder._HAZARD = [
 	"name",
@@ -1753,6 +1758,11 @@ PropOrder._HAZARD = [
 	"trapHazType",
 
 	"entries",
+
+	"hasFluff",
+	"hasFluffImages",
+
+	"fluff",
 ];
 PropOrder._RECIPE = [
 	"name",
@@ -1924,6 +1934,8 @@ PropOrder._PROP_TO_LIST = {
 	"objectFluff": PropOrder._GENERIC_FLUFF,
 	"raceFluff": PropOrder._RACE_FLUFF,
 	"rewardFluff": PropOrder._GENERIC_FLUFF,
+	"trapFluff": PropOrder._GENERIC_FLUFF,
+	"hazardFluff": PropOrder._GENERIC_FLUFF,
 	"spell": PropOrder._SPELL,
 	"roll20Spell": PropOrder._ROLL20_SPELL,
 	"foundrySpell": PropOrder._FOUNDRY_SPELL,

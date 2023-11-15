@@ -880,9 +880,9 @@
 					]
 				},
 				{
-					"name": "Infernal Word:",
+					"name": "Infernal Word: Stun (Recharge 4-6)",
 					"entries": [
-						"Stun (Recharge 4-6). Asmodeus targets a creature he can see within 120 feet of him. The target must make a {@dc 24} Intelligence saving throw, taking 45 ({@damage 10d8}) force damage on a failed save, or half as much damage on a successful one. A creature that failed the save is {@condition stunned} for up to 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success, but taking the damage again on a failed save."
+						"Asmodeus targets a creature he can see within 120 feet of him. The target must make a {@dc 24} Intelligence saving throw, taking 45 ({@damage 10d8}) force damage on a failed save, or half as much damage on a successful one. A creature that failed the save is {@condition stunned} for up to 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success, but taking the damage again on a failed save."
 					]
 				},
 				{

@@ -1936,6 +1936,24 @@
 			]
 		},
 		{
+			"name": "Rewarded",
+			"source": "BMT",
+			"entries": [
+				"You were living a difficult life before your destiny suddenly changed through a miraculous turn of good fortune. Perhaps a benevolent deity gave you precisely what you most desired. You might have stumbled across a Deck of Many Things and drawn a card with a potent, positive effect. Or maybe you inherited a modest fortune from a distant relative you didn't know you had.",
+				"Regardless, you left the daily miseries of your old life behind in favor of a life of adventure and excitement. Your old debts have been paid, responsibilities you thought inescapable are behind you, or you suddenly possess rare and unusual skills unknown to ordinary folk."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "backgrounds/BMT/Rewarded.webp"
+					},
+					"credit": "Brian Valeza"
+				}
+			]
+		},
+		{
 			"name": "Rival Intern",
 			"source": "AI",
 			"entries": [
@@ -1950,6 +1968,24 @@
 							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "Ruined",
+			"source": "BMT",
+			"entries": [
+				"Everything was going so well! You had a life of luxury, love, and comfort when you suddenly lost it all. Perhaps you were framed for crimes you didn't commit and lost your reputation, fortune, and career. Maybe a rampaging dragon or another monster wiped out everything you had in a single calamitous afternoon. Or you might have sought out a Deck of Many Things, hoping to make your successful life even more glorious\u2014only to draw a destructive card that changed your destiny forever.",
+				"Your desperation has driven you to the career of adventurer. You don't seek out dark dungeons and their monstrous inhabitants for excitement and glory; you do it because every other path is closed to you. But you have risen high on fortune's wheel once before, and with luck and fortitude, you could do so again."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "backgrounds/BMT/Ruined.webp"
+					},
+					"credit": "Brian Valeza"
 				}
 			]
 		},

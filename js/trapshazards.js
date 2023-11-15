@@ -1,12 +1,6 @@
 "use strict";
 
 class TrapsHazardsSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subtrapshazards",
-		});
-	}
-
 	static get _ROW_TEMPLATE () {
 		return [
 			new SublistCellTemplate({
@@ -54,12 +48,13 @@ class TrapsHazardsSublistManager extends SublistManager {
 class TrapsHazardsPage extends ListPage {
 	constructor () {
 		const pageFilter = new PageFilterTrapsHazards();
+
 		super({
 			dataSource: "data/trapshazards.json",
 
-			pageFilter,
+			pFnGetFluff: Renderer.traphazard.pGetFluff.bind(Renderer.traphazard),
 
-			listClass: "trapshazards",
+			pageFilter,
 
 			dataProps: ["trap", "hazard"],
 

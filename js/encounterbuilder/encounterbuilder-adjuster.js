@@ -159,13 +159,10 @@ export class EncounterBuilderAdjuster {
 		const usable = creatureMetasBelowCrCutoff.filter(creatureMeta => creatureMeta.getXp() < budget);
 		if (!usable.length) return;
 
-		const totalPlayers = this._partyMeta.levelMetas.map(it => it.count).sum();
-		const averagePlayerLevel = this._partyMeta.levelMetas.map(it => it.level * it.count).sum() / totalPlayers;
-
 		// try to avoid flooding low-level parties
-		const {min: playerToCreatureRatioMin, max: playerToCreatureRatioMax} = this._pGetAdjustedEncounter_getPlayerToCreatureRatios({averagePlayerLevel});
-		const minDesired = Math.floor(playerToCreatureRatioMin * totalPlayers);
-		const maxDesired = Math.ceil(playerToCreatureRatioMax * totalPlayers);
+		const {min: playerToCreatureRatioMin, max: playerToCreatureRatioMax} = this._pGetAdjustedEncounter_getPlayerToCreatureRatios();
+		const minDesired = Math.floor(playerToCreatureRatioMin * this._partyMeta.cntPlayers);
+		const maxDesired = Math.ceil(playerToCreatureRatioMax * this._partyMeta.cntPlayers);
 
 		// keep rolling until we fail to add a creature, or until we're out of budget
 		while (EncounterBuilderCreatureMeta.getEncounterXpInfo(creatureMetas, this._partyMeta).adjustedXp <= targetMax) {
@@ -185,10 +182,10 @@ export class EncounterBuilderAdjuster {
 		}
 	}
 
-	_pGetAdjustedEncounter_getPlayerToCreatureRatios ({averagePlayerLevel}) {
-		if (averagePlayerLevel < 5) return {min: 0.8, max: 1.3};
-		if (averagePlayerLevel < 11) return {min: 1, max: 2};
-		if (averagePlayerLevel < 17) return {min: 1, max: 3};
+	_pGetAdjustedEncounter_getPlayerToCreatureRatios () {
+		if (this._partyMeta.avgPlayerLevel < 5) return {min: 0.8, max: 1.3};
+		if (this._partyMeta.avgPlayerLevel < 11) return {min: 1, max: 2};
+		if (this._partyMeta.avgPlayerLevel < 17) return {min: 1, max: 3};
 		return {min: 1, max: 4};
 	}
 }

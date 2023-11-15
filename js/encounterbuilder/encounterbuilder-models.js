@@ -158,9 +158,13 @@ export class EncounterBuilderCreatureMeta {
 }
 
 export class EncounterBuilderCandidateEncounter {
-	constructor ({lockedEncounterCreatures = null} = {}) {
+	/**
+	 * @param {Array<EncounterBuilderCreatureMeta>} lockedEncounterCreatures
+	 */
+	constructor ({lockedEncounterCreatures = []} = {}) {
 		this.skipCount = 0;
-		this._creatureMetas = [...(lockedEncounterCreatures || [])];
+		this._lockedEncounterCreatures = lockedEncounterCreatures;
+		this._creatureMetas = [...lockedEncounterCreatures];
 	}
 
 	hasCreatures () { return !!this._creatureMetas.length; }
@@ -169,7 +173,7 @@ export class EncounterBuilderCandidateEncounter {
 		return this._creatureMetas
 			.filter(creatureMeta => {
 				if (isSkipLocked && creatureMeta.isLocked) return false;
-				return xp == null || creatureMeta.xp === xp;
+				return xp == null || creatureMeta.getXp() === xp;
 			});
 	}
 
@@ -189,12 +193,51 @@ export class EncounterBuilderCandidateEncounter {
 		this._creatureMetas.push(creatureMeta);
 		return true;
 	}
+
+	// Try to add another copy of an existing creature
+	tryIncreaseExistingCreatureCount ({xp}) {
+		const existingMetas = this.getCreatureMetas({isSkipLocked: true, xp});
+		if (!existingMetas.length) return false;
+
+		const roll = RollerUtil.roll(100);
+		const chance = this._getChanceToAddNewCreature();
+		if (roll < chance) return false;
+
+		RollerUtil.rollOnArray(existingMetas).count++;
+		return true;
+	}
+
+	_getChanceToAddNewCreature () {
+		if (this._creatureMetas.length === 0) return 0;
+
+		// Soft-cap at 5 creatures
+		if (this._creatureMetas.length >= 5) return 2;
+
+		/*
+		 * 1 -> 80% chance to add new
+		 * 2 -> 40%
+		 * 3 -> 27%
+		 * 4 -> 20%
+		 */
+		return Math.round(80 / this._creatureMetas.length);
+	}
+
+	isCreatureLocked (mon) {
+		return this._lockedEncounterCreatures
+			.some(creatureMeta => creatureMeta.customHashId == null && creatureMeta.getHash() === UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY](mon));
+	}
 }
 
 export class EncounterPartyPlayerMeta {
 	constructor ({level, count}) {
 		this.level = level;
 		this.count = count;
+	}
+
+	getXpToNextLevel () {
+		const ixCur = Math.min(Math.max(0, this.level - 1), VeCt.LEVEL_MAX - 1);
+		const ixNxt = Math.min(ixCur + 1, VeCt.LEVEL_MAX - 1);
+		return (Parser.LEVEL_XP_REQUIRED[ixNxt] - Parser.LEVEL_XP_REQUIRED[ixCur]) * this.count;
 	}
 }
 
@@ -235,20 +278,24 @@ export class EncounterPartyMeta {
 		this.threshAbsurd = 0;
 
 		this.dailyBudget = 0;
+		this.xpToNextLevel = 0;
 
-		this.levelMetas.forEach(meta => {
-			this.cntPlayers += meta.count;
-			this.avgPlayerLevel += meta.level * meta.count;
-			this.maxPlayerLevel = Math.max(this.maxPlayerLevel, meta.level);
+		this.levelMetas
+			.forEach(meta => {
+				this.cntPlayers += meta.count;
+				this.avgPlayerLevel += meta.level * meta.count;
+				this.maxPlayerLevel = Math.max(this.maxPlayerLevel, meta.level);
 
-			this.threshEasy += Parser.LEVEL_TO_XP_EASY[meta.level] * meta.count;
-			this.threshMedium += Parser.LEVEL_TO_XP_MEDIUM[meta.level] * meta.count;
-			this.threshHard += Parser.LEVEL_TO_XP_HARD[meta.level] * meta.count;
-			this.threshDeadly += Parser.LEVEL_TO_XP_DEADLY[meta.level] * meta.count;
+				this.threshEasy += Parser.LEVEL_TO_XP_EASY[meta.level] * meta.count;
+				this.threshMedium += Parser.LEVEL_TO_XP_MEDIUM[meta.level] * meta.count;
+				this.threshHard += Parser.LEVEL_TO_XP_HARD[meta.level] * meta.count;
+				this.threshDeadly += Parser.LEVEL_TO_XP_DEADLY[meta.level] * meta.count;
 
-			this.dailyBudget += Parser.LEVEL_TO_XP_DAILY[meta.level] * meta.count;
-		});
-		if (this.avgPlayerLevel) this.avgPlayerLevel /= this.cntPlayers;
+				this.dailyBudget += Parser.LEVEL_TO_XP_DAILY[meta.level] * meta.count;
+
+				this.xpToNextLevel += meta.getXpToNextLevel();
+			});
+		if (this.cntPlayers) this.avgPlayerLevel /= this.cntPlayers;
 
 		this.threshAbsurd = this.threshDeadly + (this.threshDeadly - this.threshHard);
 	}

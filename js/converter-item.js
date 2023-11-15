@@ -131,7 +131,7 @@ class ItemParser extends BaseParser {
 
 	// SHARED PARSING FUNCTIONS ////////////////////////////////////////////////////////////////////////////////////////
 	static _setCleanTaglineInfo (stats, curLine, options) {
-		const parts = curLine.split(",").map(it => it.trim()).filter(Boolean);
+		const parts = curLine.trim().split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX).map(it => it.trim()).filter(Boolean);
 
 		const handlePartRarity = (rarity) => {
 			rarity = rarity.trim().toLowerCase();
@@ -287,7 +287,10 @@ class ItemParser extends BaseParser {
 
 		const mWeaponAnyX = /^weapon \(any ([^)]+)\)$/i.exec(part);
 		if (mWeaponAnyX) {
-			(stats.requires ||= []).push(...this._setCleanTaglineInfo_getGenericRequires({stats, str: mWeaponAnyX[1].trim().toCamelCase(), options}));
+			(stats.requires ||= []).push(...this._setCleanTaglineInfo_getGenericRequires({stats, str: mWeaponAnyX[1].trim(), options}));
+
+			if (mWeaponAnyX[1].trim().toLowerCase() === "ammunition") stats.ammo = true;
+
 			stats.__genericType = true;
 			return true;
 		}
@@ -349,16 +352,16 @@ class ItemParser extends BaseParser {
 			return true;
 		}
 
-		if (/^(?:light|medium|heavy)$/i.test(mBaseArmor.groups.type)) {
-			stats.requires = [
-				...(stats.requires || []),
-				this._setCleanTaglineInfo_getProcArmorPart({pt: mBaseArmor.groups.type}),
-			];
+		return ConverterUtils.splitConjunct(mBaseArmor.groups.type)
+			.every(ptType => {
+				if (!/^(?:light|medium|heavy)$/i.test(ptType)) return false;
 
-			return true;
-		}
-
-		return false;
+				stats.requires = [
+					...(stats.requires || []),
+					this._setCleanTaglineInfo_getProcArmorPart({pt: ptType}),
+				];
+				return true;
+			});
 	}
 
 	static _setCleanTaglineInfo_handleBaseItem (stats, baseItem, options) {
@@ -384,21 +387,25 @@ class ItemParser extends BaseParser {
 	}
 
 	static _setCleanTaglineInfo_getGenericRequires ({stats, str, options}) {
-		switch (str) {
+		switch (str.toLowerCase()) {
 			case "weapon": return [{"weapon": true}];
 			case "sword": return [{"sword": true}];
 			case "axe": return [{"axe": true}];
 			case "armor": return [{"armor": true}];
 			case "bow": return [{"bow": true}, {"crossbow": true}];
+			case "crossbow": return [{"crossbow": true}];
 			case "spear": return [{"spear": true}];
 			case "polearm": return [{"polearm": true}];
+			case "weapon that deals bludgeoning damage":
 			case "bludgeoning": return [{"dmgType": "B"}];
 			case "piercing": return [{"dmgType": "P"}];
 			case "slashing": return [{"dmgType": "S"}];
+			case "ammunition": return [{"type": "A"}, {"type": "AF"}];
 			case "melee": return [{"type": "M"}];
+			case "martial weapon": return [{"weaponCategory": "martial"}];
 			default: {
 				options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Tagline part "${str}" requires manual conversion`);
-				return [{[str]: true}];
+				return [{[str.toCamelCase()]: true}];
 			}
 		}
 	}
@@ -419,7 +426,7 @@ class ItemParser extends BaseParser {
 
 		stats.inherits = MiscUtil.copy(stats);
 		// Clean/move inherit props into inherits object
-		["name", "requires", "excludes"].forEach(prop => delete stats.inherits[prop]); // maintain some props on base object
+		["name", "requires", "excludes", "ammo"].forEach(prop => delete stats.inherits[prop]); // maintain some props on base object
 		Object.keys(stats.inherits).forEach(k => delete stats[k]);
 
 		if (isSuffix) stats.inherits.nameSuffix = ` ${prefixSuffixName.trim()}`;

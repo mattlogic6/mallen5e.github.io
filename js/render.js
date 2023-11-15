@@ -1388,6 +1388,7 @@ globalThis.Renderer = function () {
 	};
 
 	this._renderGallery = function (entry, textStack, meta, options) {
+		if (entry.name) textStack[0] += `<h5 class="rd__gallery-name">${entry.name}</h5>`;
 		textStack[0] += `<div class="rd__wrp-gallery">`;
 		const len = entry.images.length;
 		const anyNamed = entry.images.some(it => it.title);
@@ -6798,12 +6799,16 @@ Renderer.trap = class {
 	static getCompactRenderedString (ent, opts) {
 		return Renderer.traphazard.getCompactRenderedString(ent, opts);
 	}
+
+	static pGetFluff (ent) { return Renderer.traphazard.pGetFluff(ent); }
 };
 
 Renderer.hazard = class {
 	static getCompactRenderedString (ent, opts) {
 		return Renderer.traphazard.getCompactRenderedString(ent, opts);
 	}
+
+	static pGetFluff (ent) { return Renderer.traphazard.pGetFluff(ent); }
 };
 
 Renderer.traphazard = class {
@@ -6811,15 +6816,23 @@ Renderer.traphazard = class {
 		const type = ent.trapHazType || "HAZ";
 		if (type === "GEN") return null;
 
-		const parenPart = [
-			ent.tier ? Parser.tierToFullLevel(ent.tier) : null,
-			Renderer.traphazard.getTrapLevelPart(ent),
-			ent.threat ? `${ent.threat} threat` : null,
+		const ptThreat = ent.threat ? ent.threat.toTitleCase() : null;
+
+		const ptTypeThreat = [
+			Parser.trapHazTypeToFull(type),
+			ent.threat ? ent.threat.toTitleCase() : null,
 		]
 			.filter(Boolean)
 			.join(", ");
 
-		return parenPart ? `${Parser.trapHazTypeToFull(type)} (${parenPart})` : Parser.trapHazTypeToFull(type);
+		const parenPart = [
+			ent.tier ? Parser.tierToFullLevel(ent.tier) : null,
+			Renderer.traphazard.getTrapLevelPart(ent),
+		]
+			.filter(Boolean)
+			.join(", ");
+
+		return parenPart ? `${ptTypeThreat} (${parenPart})` : ptTypeThreat;
 	}
 
 	static getTrapLevelPart (ent) {
@@ -6842,6 +6855,14 @@ Renderer.traphazard = class {
 			${Renderer.trap.getRenderedTrapPart(renderer, ent)}
 			</td></tr>
 		`;
+	}
+
+	static pGetFluff (ent) {
+		return Renderer.utils.pGetFluff({
+			entity: ent,
+			fnGetFluffData: ent.__prop === "trap" ? DataUtil.trapFluff.loadJSON.bind(DataUtil.trapFluff) : DataUtil.hazardFluff.loadJSON.bind(DataUtil.hazardFluff),
+			fluffProp: ent.__prop === "trap" ? "trapFluff" : "hazardFluff",
+		});
 	}
 };
 
@@ -10077,7 +10098,7 @@ Renderer.adventureBook = class {
 	static _isAltMissingCoverUsed = false;
 	static getCoverUrl (contents) {
 		return contents.coverUrl
-			|| `${Renderer.get().baseMediaUrls["img"] || Renderer.get().baseUrl}img/covers/blank${Math.random() <= 0.05 && !Renderer.adventureBook._isAltMissingCoverUsed && (Renderer.adventureBook._isAltMissingCoverUsed = true) ? "-alt" : ""}.png`;
+			|| `${Renderer.get().baseMediaUrls["img"] || Renderer.get().baseUrl}img/covers/blank${Math.random() <= 0.05 && !Renderer.adventureBook._isAltMissingCoverUsed && (Renderer.adventureBook._isAltMissingCoverUsed = true) ? "-alt" : ""}.webp`;
 	}
 };
 

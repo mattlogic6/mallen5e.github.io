@@ -242,6 +242,7 @@ class AcConvert {
 			case "graz'zt's gift": // KftGV :: Sythian Skalderang
 			case "damaged plate": // BGG :: Firegaunt
 			case "intellect fortress": // N.b. *not* the spell of the same name, as this usually appears as a creature feature
+			case "veiled presence": // BMT :: Enchanting Infiltrator
 				return fromLow;
 				// endregion
 

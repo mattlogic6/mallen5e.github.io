@@ -224,8 +224,8 @@
 								"path": "adventure/GoS/025-03-04-banquet-hall-p73.webp"
 							},
 							"credit": "Scott Murphy",
-							"width": 2697,
-							"height": 1297
+							"width": 1000,
+							"height": 673
 						}
 					],
 					"id": "003"
@@ -267,8 +267,8 @@
 								"path": "book/HFFotM/page_xxi.webp"
 							},
 							"credit": "Simon Taylor",
-							"width": 1835,
-							"height": 1886
+							"width": 1846,
+							"height": 1895
 						}
 					],
 					"id": "00e"
@@ -446,8 +446,8 @@
 								"path": "book/SCAG/scag01-04.webp"
 							},
 							"credit": "Olga Drebas",
-							"width": 1411,
-							"height": 951
+							"width": 1000,
+							"height": 552
 						},
 						{
 							"type": "image",
@@ -669,8 +669,8 @@
 								"path": "bestiary/MPMM/Deep Rothe.webp"
 							},
 							"credit": "Sam Wood",
-							"width": 1346,
-							"height": 1094
+							"width": 1000,
+							"height": 838
 						}
 					],
 					"id": "017"
@@ -737,8 +737,8 @@
 								"path": "adventure/CRCotN/011-01-002.agathe-silverspoon.webp"
 							},
 							"credit": "Zoltan Boros",
-							"width": 2212,
-							"height": 1581
+							"width": 1700,
+							"height": 1102
 						}
 					],
 					"id": "01a"
@@ -827,8 +827,8 @@
 						"type": "internal",
 						"path": "adventure/WDMM/000-intro01.webp"
 					},
-					"width": 2197,
-					"height": 1591
+					"width": 1000,
+					"height": 686
 				}
 			],
 			"id": "010"
@@ -1113,8 +1113,8 @@
 						"path": "adventure/LoX/015-10-001.part-two-splash.webp"
 					},
 					"credit": "Bruce Brenneise",
-					"width": 1904,
-					"height": 1836
+					"width": 1700,
+					"height": 2262
 				},
 				{
 					"type": "entries",
@@ -1152,8 +1152,8 @@
 								"path": "adventure/JttRC/103-11-003.laleh-ghorbani.webp"
 							},
 							"credit": "Ekaterina Burmak",
-							"width": 1200,
-							"height": 2005
+							"width": 556,
+							"height": 850
 						}
 					],
 					"id": "022"
@@ -1256,8 +1256,8 @@
 								"path": "book/AAG/069-03-003.large-luigi-splash.webp"
 							},
 							"credit": "Ralph Horsley",
-							"width": 2095,
-							"height": 1670
+							"width": 1700,
+							"height": 1135
 						}
 					],
 					"id": "026"
@@ -1343,8 +1343,8 @@
 								"type": "internal",
 								"path": "book/HFFotM/063_NEWM_9781984861313_lay_art_r1.webp"
 							},
-							"width": 2021,
-							"height": 1360
+							"width": 2341,
+							"height": 1494
 						}
 					],
 					"id": "029"
@@ -1632,8 +1632,8 @@
 								"path": "bestiary/DSotDQ/Kender Skirmisher.webp"
 							},
 							"credit": "Nikki Dawes",
-							"width": 1857,
-							"height": 1884
+							"width": 933,
+							"height": 1000
 						}
 					],
 					"id": "030"
@@ -1762,8 +1762,8 @@
 								"path": "races/DSotDQ/Kender.webp"
 							},
 							"credit": "Linda Lithén",
-							"width": 2303,
-							"height": 1519
+							"width": 1700,
+							"height": 1135
 						}
 					],
 					"id": "035"
@@ -1975,8 +1975,8 @@
 						"path": "vehicles/AAG/Squid Ship.webp"
 					},
 					"credit": "Katerina Ladon",
-					"width": 1792,
-					"height": 1159
+					"width": 1700,
+					"height": 1136
 				},
 				{
 					"type": "entries",
@@ -2153,8 +2153,8 @@
 								"path": "book/XGE/c2001.webp"
 							},
 							"credit": "Chris Seaman",
-							"width": 1823,
-							"height": 1919
+							"width": 697,
+							"height": 1000
 						}
 					],
 					"id": "040"
@@ -2658,8 +2658,8 @@
 								"path": "book/VRGR/013-01-006.hexblood-cauldron.webp"
 							},
 							"credit": "Kai Carpenter",
-							"width": 2225,
-							"height": 1571
+							"width": 1700,
+							"height": 1165
 						}
 					],
 					"id": "04b"
@@ -2706,7 +2706,7 @@
 						"path": "book/HFFotM/112_NEWM_9781984861313_lay_art_r1.webp"
 					},
 					"credit": "Ray Kachatorian",
-					"width": 1756,
+					"width": 1759,
 					"height": 1988
 				},
 				{
@@ -2721,7 +2721,7 @@
 								"path": "recipes/HFFotM/113_NEWM_9781984861313_lay_art_r1.webp"
 							},
 							"credit": "Ray Kachatorian",
-							"width": 1755,
+							"width": 1759,
 							"height": 1988
 						},
 						"Quij's Plate, consisting of pan-fried sausage, twice-browned potatoes, and eggs, is a filling meal that infallibly populates the menus of countless caravan cooks. Easy to prepare on the road for large parties, it has also become a popular dish in the military for its simplicity and heartiness to help soldiers brave the endless grey days. Named after an orc henchman of Lord Robilar, who inventively cooked this sausage meal for his adventuring party, using his shield for a skillet, Quij's Plate would eventually earn its place on the menu of the famed Green Dragon Inn, nestled in the Free City of Greyhawk's bustling River Quarter. The unusual name has since become the catch-all term for the countless iterations of this sausage-and-potato-based campfire classic, including those that migrated to misty Barovia via lost and hungry adventurers.",
@@ -2780,8 +2780,8 @@
 								"type": "internal",
 								"path": "adventure/ToA/085-517.webp"
 							},
-							"width": 1275,
-							"height": 1725
+							"width": 750,
+							"height": 1000
 						},
 						{
 							"type": "image",
@@ -3105,8 +3105,8 @@
 								"type": "internal",
 								"path": "adventure/OotA/077-ooa09-07.webp"
 							},
-							"width": 2194,
-							"height": 1590
+							"width": 1000,
+							"height": 857
 						}
 					],
 					"id": "054"
@@ -3235,8 +3235,8 @@
 								"path": "book/ERLW/029-1-15.webp"
 							},
 							"credit": "Caroline Gariba",
-							"width": 1662,
-							"height": 1747
+							"width": 870,
+							"height": 1000
 						}
 					],
 					"id": "059"
@@ -3287,8 +3287,8 @@
 								"path": "book/EGW/055-03-09.webp"
 							},
 							"credit": "Linda Lithén",
-							"width": 2115,
-							"height": 1654
+							"width": 1496,
+							"height": 1000
 						}
 					],
 					"id": "05b"
@@ -3692,8 +3692,8 @@
 								"path": "races/WBtW/Harengon.webp"
 							},
 							"credit": "Shawn Wood",
-							"width": 1163,
-							"height": 1613
+							"width": 850,
+							"height": 1115
 						}
 					],
 					"id": "063"
@@ -3747,8 +3747,8 @@
 						"path": "book/HFFotM/143_NEWM_9781984861313_lay_art_r1.webp"
 					},
 					"credit": "Ray Kachatorian",
-					"width": 2104,
-					"height": 1658
+					"width": 2107,
+					"height": 1660
 				},
 				{
 					"type": "entries",
@@ -3780,8 +3780,8 @@
 								"path": "items/DMG/Potion of Water Breathing.webp"
 							},
 							"credit": "CoupleOfKooks",
-							"width": 1274,
-							"height": 1617
+							"width": 539,
+							"height": 850
 						}
 					],
 					"id": "066"
@@ -3805,8 +3805,8 @@
 								"type": "internal",
 								"path": "book/DoD/004.webp"
 							},
-							"width": 2048,
-							"height": 1708
+							"width": 1241,
+							"height": 766
 						}
 					],
 					"id": "067"
@@ -4010,8 +4010,8 @@
 						"path": "book/TCE/094-04-005.webp"
 					},
 					"credit": "April Prime",
-					"width": 1238,
-					"height": 1875
+					"width": 1200,
+					"height": 862
 				}
 			],
 			"id": "06b"

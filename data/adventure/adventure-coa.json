@@ -310,35 +310,40 @@
 									"name": "Chapter 1: Kelemvor's Cathedral",
 									"entries": [
 										"The characters meet their group patron and embark on their quest to the Nine Hells."
-									]
+									],
+									"id": "012"
 								},
 								{
 									"type": "flowBlock",
 									"name": "Chapter 2: The Nine Hells",
 									"entries": [
 										"This chapter provides the information needed to implement {@creature Asmodeus|CoA}'s plans throughout the campaign. It describes the random encounters found in the Nine Hells, the temptations {@creature Asmodeus|CoA} has put in place to ensnare the characters, and how to track their corruption as a result of these temptations."
-									]
+									],
+									"id": "013"
 								},
 								{
 									"type": "flowBlock",
 									"name": "Chapter 3\u201310: The First Eight Layers",
 									"entries": [
 										"The characters navigate the different layers of the Nine Hells and look for a way to release their chosen souls from eternal torment."
-									]
+									],
+									"id": "014"
 								},
 								{
 									"type": "flowBlock",
 									"name": "Chapter 11: Hunted by the Dukes",
 									"entries": [
 										"The characters have been kicking up a storm in the Nine Hells. Two infernal warships, piloted by archdevils, are on the hunt. The characters can encounter these warships on the first through eighth layers of the Nine Hells."
-									]
+									],
+									"id": "015"
 								},
 								{
 									"type": "flowBlock",
 									"name": "Chapter 12: Nessus",
 									"entries": [
 										"The characters need to find a way out of their contracts. They may be able to gain entry to the Oasis of the Lethe to do so. If not, they must challenge {@creature Asmodeus|CoA} himself."
-									]
+									],
+									"id": "016"
 								}
 							]
 						}
@@ -935,7 +940,8 @@
 						"Players need to create a new high-level character unless they have a preexisting one they want to use. Any player who creates a new high-level character must go through the character creation process and choose a soul that their hero is dedicated to saving. A player with a preexisting character must still choose a soul that their character is dedicated to saving.",
 						"When choosing a soul to save, a player has the option of saving the soul of a loved one (detailed in the \"Lost Souls\" section) or saving their own soul (detailed in the \"Souls of the Damned\" section). While the lost souls option was designed to work with existing characters and the souls of the damned option was designed to work with newly created high-level characters, the DM can allow players to choose from either. A group can be made up of lost souls and souls of the damned. However, to promote group unity, a DM can insist upon one or the other.",
 						"After players have created their characters, they must choose a group patron. These group patrons are designed for three types of play that coincide with good, neutral, and evil alignments."
-					]
+					],
+					"id": "017"
 				},
 				{
 					"type": "section",

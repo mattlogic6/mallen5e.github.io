@@ -19,12 +19,13 @@ ConverterConst.STR_RE_CLASS = `(?<name>artificer|barbarian|bard|cleric|druid|fig
 class ConverterUtils {
 	static splitConjunct (str) {
 		return str
-			.split(/,? (?:and|or) /gi)
+			.split(/(?:,? (?:and|or) |, )/gi)
 			.map(it => it.trim())
 			.filter(Boolean)
 		;
 	}
 }
+globalThis.ConverterUtils = ConverterUtils;
 
 class _ParseStateBase {
 	constructor (
@@ -220,6 +221,7 @@ class BaseParser {
 		opts = opts || {};
 
 		// If there is no previous entry to add to, do not continue
+		if (!entryArray) return false;
 		const lastEntry = entryArray.last();
 		if (typeof lastEntry !== "string") return false;
 
@@ -954,7 +956,8 @@ class EntryConvert {
 		getCurrentEntryArray () {
 			if (this.stack.last().type === "list") return this.stack.last().items;
 			if (this.stack.last().type === "entries") return this.stack.last().entries;
-			return this.stack.last();
+			if (this.stack.last() instanceof Array) return this.stack.last();
+			return null;
 		}
 
 		addEntry ({entry, isAllowCombine = false}) {

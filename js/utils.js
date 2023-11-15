@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.192.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.193.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
@@ -428,6 +428,7 @@ CleanUtil.STR_REPLACEMENTS = {
 	"‑": "\\u2011",
 	"−": "\\u2212",
 	" ": "\\u00A0",
+	" ": "\\u2007",
 };
 CleanUtil.SHARED_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.SHARED_REPLACEMENTS).join("|"), "g");
 CleanUtil.STR_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.STR_REPLACEMENTS).join("|"), "g");
@@ -5769,6 +5770,26 @@ globalThis.DataUtil = {
 		static _FILENAME = "fluff-rewards.json";
 	},
 
+	trap: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+		static _FILENAME = "trapshazards.json";
+	},
+
+	trapFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+		static _FILENAME = "fluff-trapshazards.json";
+	},
+
+	hazard: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+		static _FILENAME = "trapshazards.json";
+	},
+
+	hazardFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+		static _FILENAME = "fluff-trapshazards.json";
+	},
+
 	quickreference: {
 		/**
 		 * @param uid
@@ -5851,10 +5872,6 @@ globalThis.RollerUtil = {
 	 */
 	roll (max, fn = Math.random) {
 		return Math.floor(fn() * max);
-	},
-
-	addListRollButton (isCompact) {
-
 	},
 
 	getColRollType (colLabel) {
@@ -6612,11 +6629,17 @@ Array.prototype.getNext || Object.defineProperty(Array.prototype, "getNext", {
 	},
 });
 
+// See: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
 Array.prototype.shuffle || Object.defineProperty(Array.prototype, "shuffle", {
 	enumerable: false,
 	writable: true,
 	value: function () {
-		for (let i = 0; i < 10000; ++i) this.sort(() => Math.random() - 0.5);
+		const len = this.length;
+		const ixLast = len - 1;
+		for (let i = 0; i < len; ++i) {
+			const j = i + Math.floor(Math.random() * (ixLast - i + 1));
+			[this[i], this[j]] = [this[j], this[i]];
+		}
 		return this;
 	},
 });

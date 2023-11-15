@@ -564,6 +564,7 @@ class RendererMarkdown {
 	}
 
 	_renderGallery (entry, textStack, meta, options) {
+		if (entry.name) textStack += `##### ${entry.name}\n`;
 		const len = entry.images.length;
 		for (let i = 0; i < len; ++i) {
 			const img = MiscUtil.copyFast(entry.images[i]);

@@ -156,13 +156,7 @@ export class EncounterBuilderRandomizer {
 	}
 
 	_mutEncounterAddCreatureByXp ({candidateEncounter, xp}) {
-		// region Try to add another copy of an existing creature
-		const existingMetas = candidateEncounter.getCreatureMetas({isSkipLocked: true, xp});
-		if (existingMetas.length && RollerUtil.roll(100) < 85) { // 85% chance to add another copy of an existing monster
-			RollerUtil.rollOnArray(existingMetas).count++;
-			return;
-		}
-		// endregion
+		if (candidateEncounter.tryIncreaseExistingCreatureCount({xp})) return;
 
 		// region Try to add a new creature
 		// We retrieve the list of all available creatures for this XP, then randomly pick creatures from that list until

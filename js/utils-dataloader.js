@@ -893,6 +893,14 @@ class _DataTypeLoaderConditionDiseaseFluff extends _DataTypeLoaderSingleSource {
 	_filename = "fluff-conditionsdiseases.json";
 }
 
+class _DataTypeLoaderTrapHazardFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["trapFluff", "hazardFluff"];
+	static PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-trapshazards.json";
+}
+
 class _DataTypeLoaderPredefined extends _DataTypeLoader {
 	_loader;
 	_loadJsonArgs = null;
@@ -1702,6 +1710,7 @@ class DataLoader {
 		_DataTypeLoaderRecipeFluff.register({fnRegister});
 
 		_DataTypeLoaderConditionDiseaseFluff.register({fnRegister});
+		_DataTypeLoaderTrapHazardFluff.register({fnRegister});
 		// endregion
 	}
 

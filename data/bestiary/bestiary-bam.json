@@ -2897,6 +2897,11 @@
 			"name": "Feyr",
 			"source": "BAM",
 			"page": 22,
+			"otherSources": [
+				{
+					"source": "BMT"
+				}
+			],
 			"size": [
 				"L"
 			],

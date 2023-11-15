@@ -391,6 +391,7 @@ export class EncounterBuilderUi extends BaseComponent {
 		absurd: "An &quot;absurd&quot; encounter is a deadly encounter as per the rules, but is differentiated here to provide an additional tool for judging just how deadly a &quot;deadly&quot; encounter will be. It is calculated as: &quot;deadly + (deadly - hard)&quot;.",
 	};
 	static _TITLE_BUDGET_DAILY = "This provides a rough estimate of the adjusted XP value for encounters the party can handle before the characters will need to take a long rest.";
+	static _TITLE_XP_TO_NEXT_LEVEL = "The total XP required to allow each member of the party to level up to their next level.";
 	static _TITLE_TTK = "Time to Kill: The estimated number of turns the party will require to defeat the encounter. This assumes single-target damage only.";
 
 	static _getDifficultyKey ({partyMeta, encounterXpInfo}) {
@@ -424,6 +425,7 @@ export class EncounterBuilderUi extends BaseComponent {
 		const $dispTtk = $(`<div></div>`);
 
 		const $dispBudgetDaily = $(`<div></div>`);
+		const $dispExpToLevel = $(`<div class="ve-muted"></div>`);
 
 		this._addHookBase("derivedGroupAndDifficulty", () => {
 			const {
@@ -445,6 +447,9 @@ export class EncounterBuilderUi extends BaseComponent {
 
 			$dispBudgetDaily
 				.html(`<span class="help-subtle" title="${this.constructor._TITLE_BUDGET_DAILY}">Daily Budget:</span> ${partyMeta.dailyBudget.toLocaleString()} XP`);
+
+			$dispExpToLevel
+				.html(`<span class="help-subtle" title="${this.constructor._TITLE_XP_TO_NEXT_LEVEL}">XP to Next Level:</span> ${partyMeta.xpToNextLevel.toLocaleString()} XP`);
 		})();
 
 		return $$`<div class="w-30 text-right">
@@ -457,6 +462,7 @@ export class EncounterBuilderUi extends BaseComponent {
 			${$dispTtk}
 			<br>
 			${$dispBudgetDaily}
+			${$dispExpToLevel}
 		</div>`;
 	}
 
