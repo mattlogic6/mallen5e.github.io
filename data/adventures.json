@@ -31955,6 +31955,95 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Peril in Pinegrove",
+			"id": "PiP",
+			"source": "PiP",
+			"group": "supplement-alt",
+			"coverUrl": "img/covers/PiP.webp",
+			"published": "2023-11-20",
+			"storyline": "Family Friendly",
+			"level": {
+				"start": 1,
+				"end": 1
+			},
+			"contents": [
+				{
+					"name": "Peril in Pinegrove",
+					"headers": [
+						"Introduction",
+						"Adventure Introduction",
+						"Starting the Adventure",
+						"Encounter 1: A Not-So-Fearsome Dragon",
+						"Encounter 2: Living Icicles",
+						"Encounter 3: A Dangerous Lair",
+						"Encounter 4: Dragon Eggs and Soaring Silver",
+						"Conclusion",
+						"Appendix A"
+					]
+				}
+			]
+		},
+		{
+			"name": "Heroes' Feast: Saving the Childrens Menu",
+			"id": "HFStCM",
+			"source": "HFStCM",
+			"group": "supplement-alt",
+			"coverUrl": "img/covers/HFStCM.webp",
+			"published": "2023-11-21",
+			"storyline": "Heroes' Feast",
+			"level": {
+				"start": 10,
+				"end": 10
+			},
+			"contents": [
+				{
+					"name": "Heroes' Feast: Saving the Children's Menu",
+					"headers": [
+						"Overview",
+						"Adventure Background",
+						"The Adventure Begins",
+						"Holrow Homestead",
+						{
+							"depth": 1,
+							"header": "1: Main Hall"
+						},
+						{
+							"depth": 1,
+							"header": "2: Library"
+						},
+						{
+							"depth": 1,
+							"header": "3: Greenhouse"
+						},
+						{
+							"depth": 1,
+							"header": "4: Barn"
+						},
+						{
+							"depth": 1,
+							"header": "5: Nursery"
+						},
+						{
+							"depth": 1,
+							"header": "6: Basement"
+						},
+						{
+							"depth": 1,
+							"header": "7: Cheese Storage Room"
+						},
+						{
+							"depth": 1,
+							"header": "8: Storage Room"
+						},
+						"Invido Returns",
+						"Conclusion",
+						"Appendix A: Cheesemonger's Almanac",
+						"Appendix B: Kender Stumblenoodles Recipe"
+					]
+				}
+			]
 		}
 	]
 }

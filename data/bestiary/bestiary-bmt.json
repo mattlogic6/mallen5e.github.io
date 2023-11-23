@@ -52,6 +52,8 @@
 				},
 				"canHover": true
 			},
+			"tokenCredit": "MOAI",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -232,6 +234,8 @@
 				},
 				"canHover": true
 			},
+			"tokenCredit": "Smite, Hirez",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -1333,7 +1337,8 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Deck Defender",
@@ -1458,6 +1463,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -2168,6 +2174,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Nidoart",
 			"traitTags": [
 				"Incorporeal Movement",
 				"Legendary Resistances"
@@ -2201,6 +2208,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2966,6 +2974,8 @@
 				},
 				"canHover": true
 			},
+			"tokenCredit": "Databuffer",
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -4284,7 +4294,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Oddlewin",
@@ -4861,6 +4872,7 @@
 				},
 				"canHover": true
 			},
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4948,6 +4960,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Chris Cold",
 			"traitTags": [
 				"Incorporeal Movement"
 			],
@@ -4966,7 +4979,8 @@
 			],
 			"conditionInflict": [
 				"frightened"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Riffler",

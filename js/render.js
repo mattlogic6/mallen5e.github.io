@@ -3244,7 +3244,7 @@ Renderer.utils = {
 					.join("/")
 				: v.map(sp => {
 					if (typeof sp === "string") return Parser.prereqSpellToFull(sp, {isTextOnly});
-					return Renderer.get().render(`{@filter ${sp.entry}|spells|${sp.choose}}`);
+					return isTextOnly ? Renderer.stripTags(sp.entry) : Renderer.get().render(`{@filter ${sp.entry}|spells|${sp.choose}}`);
 				})
 					.joinConjunct(", ", " or ");
 		}

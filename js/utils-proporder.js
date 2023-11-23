@@ -1318,6 +1318,7 @@ PropOrder._ITEM = [
 
 	"ability",
 	"grantsProficiency",
+	"grantsLanguage",
 
 	"bonusWeapon",
 	"bonusWeaponAttack",

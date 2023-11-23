@@ -3181,7 +3181,7 @@ class InputUiUtil {
 			propCurMin: "cur",
 			fnDisplay: ix => Parser.CRS[ix],
 		});
-		slider.$get().appendTo($modalInner);
+		$$`<div class="ve-flex-col w-640p">${slider.$get()}</div>`.appendTo($modalInner);
 
 		const $btnOk = this._$getBtnOk({opts, doClose});
 		const $btnCancel = this._$getBtnCancel({opts, doClose});

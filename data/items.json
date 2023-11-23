@@ -184,7 +184,6 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"grantsProficiency": true,
 			"bonusSpellAttack": "+1",
 			"bonusSpellSaveDc": "+1",
 			"entries": [
@@ -429,7 +428,6 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"grantsProficiency": true,
 			"bonusSpellAttack": "+2",
 			"bonusSpellSaveDc": "+2",
 			"entries": [
@@ -740,7 +738,6 @@
 			],
 			"wondrous": true,
 			"weight": 3,
-			"grantsProficiency": true,
 			"bonusSpellAttack": "+3",
 			"bonusSpellSaveDc": "+3",
 			"entries": [
@@ -4686,7 +4683,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"entries": [
 				"This horned mask of glossy ebony has horns and a skull-like mien. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
 				{
@@ -4940,7 +4937,7 @@
 					"type": "entries",
 					"name": "Spells",
 					"entries": [
-						"While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: {@spell cone of cold} (5 charges), {@spell fireball} (5th-level version, 5 charges), {@spell globe of invulnerability} (6 charges), {@spell hold monster} (5 charges), {@spell levitate} (2 charges). {@spell lightning bolt} (5th-level version, 5 charges), {@spell magic missile} (1 charge), {@spell ray of enfeeblement} (1 charge), or {@spell wall of force} (5 charges)."
+						"While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: {@spell cone of cold} (5 charges), {@spell fireball} (5th-level version, 5 charges), {@spell globe of invulnerability} (6 charges), {@spell hold monster} (5 charges), {@spell levitate} (2 charges), {@spell lightning bolt} (5th-level version, 5 charges), {@spell magic missile} (1 charge), {@spell ray of enfeeblement} (1 charge), or {@spell wall of force} (5 charges)."
 					]
 				},
 				{
@@ -5564,7 +5561,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"entries": [
 				"This mask of glossy azure has spikes around its edges and a ridged horn in its center. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
 				{
@@ -11198,6 +11195,9 @@
 							"67-00",
 							"Roll again"
 						]
+					],
+					"footnotes": [
+						"* Found in the {@item Deck of Many Things} as depicted in the {@book Dungeon Master's Guide|DMG}"
 					]
 				},
 				{
@@ -12295,7 +12295,8 @@
 							"Ten {@item arrow|PHB|arrows}"
 						]
 					]
-				}
+				},
+				"The face of each card bears an illustration of a different item or set of items. As an action, you can draw a card of your choice from the deck and throw it to the ground in an unoccupied space within 5 feet of yourself. When the card hits the ground, the card permanently transforms into the item or set of items depicted on its face. An altered deck of real-world playing cards can simulate the deck, as shown on the Deck of Miscellany table."
 			]
 		},
 		{
@@ -14381,7 +14382,7 @@
 			"dmg1": "1d6",
 			"dmgType": "P",
 			"dmg2": "1d8",
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"bonusWeapon": "+1",
 			"entries": [
 				"A steel trident decorated with bronze barnacles along the upper part of its haft, Drown has a sea-green jewel just below the tines and a silver shell at the end of its haft. It floats on the surface if dropped onto water, and it floats in place if it is released underwater. The trident is always cool to the touch, and it is immune to any damage due to exposure to water. Drown contains a spark of {@creature Olhydra|pota}, the Princess of Evil Water.",
@@ -18875,7 +18876,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"entries": [
 				"This mottled green mask is surmounted by a frilled crest and has leathery spiked plates along its jaw. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties",
 				{
@@ -23231,7 +23232,7 @@
 			"weaponCategory": "martial",
 			"dmg1": "1d8",
 			"dmgType": "P",
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"bonusWeapon": "+2",
 			"recharge": "dawn",
 			"rechargeAmount": "{@dice 1d3}",
@@ -25765,7 +25766,6 @@
 			],
 			"wondrous": true,
 			"weight": 2,
-			"grantsProficiency": true,
 			"entries": [
 				"While holding this {@item lyre|PHB}, you can cast {@spell mending} as an action. You can also play the {@item lyre|PHB} as a reaction when an object or a structure you can see within 300 feet of you takes damage, causing it to be immune to that damage and any further damage of the same type until the start of your next turn.",
 				"In addition, you can play the {@item lyre|PHB} as an action to cast {@spell fabricate}, {@spell move earth}, {@spell passwall}, or {@spell summon construct|TCE}, and that spell can't be cast from it again until the next dawn."
@@ -33178,7 +33178,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"entries": [
 				"This mask of glossy crimson has swept-back horns and spiked cheek ridges. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
 				{
@@ -44142,7 +44142,7 @@
 			"range": "20/60",
 			"dmg1": "1d4",
 			"dmgType": "P",
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"bonusWeapon": "+2",
 			"entries": [
 				"A flint dagger, Tinderstrike is uncommonly sharp, and sparks cascade off its edge whenever it strikes something solid. Its handle is always warm to the touch, and the blade smolders for {@dice 1d4} minutes after it is used to deal damage. It contains a spark of {@creature Imix|PotA}, Prince of Evil Fire.",
@@ -48426,7 +48426,7 @@
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"entries": [
 				"This gleaming mask is white with highlights of pale blue and is topped by a spined crest. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
 				{
@@ -48771,7 +48771,7 @@
 			"dmg1": "1d6",
 			"dmgType": "P",
 			"dmg2": "1d8",
-			"grantsProficiency": true,
+			"grantsLanguage": true,
 			"bonusWeapon": "+2",
 			"entries": [
 				"A silver spear, Windvane has dark sapphires on the filigreed surface of its polished head. Held by its shining haft, the weapon feels insubstantial, as if clutching a cool, gently flowing breeze. The spear contains a spark of {@creature Yan-C-Bin|PotA}, the Prince of Evil Air.",

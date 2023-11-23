@@ -55,7 +55,8 @@
 				"L",
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Eyestalk of Gzemnid",
@@ -124,7 +125,8 @@
 			"alignment": [
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Gertrube",
@@ -153,7 +155,8 @@
 				"C",
 				"E"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Giant Whirlwyrm",
@@ -202,7 +205,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Kal the Crisp",
@@ -248,7 +252,8 @@
 				"C",
 				"G"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Modron Planar Incarnate",
@@ -286,7 +291,8 @@
 				}
 			},
 			"type": "fiend",
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Morte",
@@ -401,7 +407,8 @@
 			"languages": [
 				"Common"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Parvaz",
@@ -428,7 +435,8 @@
 			"languages": [
 				"Common"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "R04M",
@@ -456,7 +464,8 @@
 				"Common",
 				"Modron"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Shariel",
@@ -475,7 +484,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Vecna Impersonator",
@@ -491,7 +501,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Whirlwyrm",
@@ -507,7 +518,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "X01",
@@ -526,7 +538,8 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Zaythir",
@@ -548,7 +561,8 @@
 			"alignment": [
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		}
 	]
 }

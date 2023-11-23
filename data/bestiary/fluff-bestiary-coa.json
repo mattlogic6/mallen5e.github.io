@@ -6,6 +6,26 @@
 	},
 	"monsterFluff": [
 		{
+			"name": "Abigor",
+			"source": "CoA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/CoA/Abigor.webp"
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/CoA/Abigoralt.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Aeshma",
 			"source": "CoA",
 			"entries": [

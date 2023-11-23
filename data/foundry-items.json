@@ -11,7 +11,7 @@
 						{
 							"key": "data.attributes.hp.max",
 							"mode": "ADD",
-							"value": "@details.level"
+							"value": "+ @details.level"
 						}
 					]
 				}
@@ -120,7 +120,7 @@
 						{
 							"key": "data.skills.slt.bonuses.check",
 							"mode": "ADD",
-							"value": "+5"
+							"value": "+ 5"
 						}
 					]
 				}
@@ -169,7 +169,7 @@
 						{
 							"key": "system.bonuses.rwak.damage",
 							"mode": "ADD",
-							"value": "+2"
+							"value": "+ 2"
 						},
 						{
 							"key": "system.traits.weaponProf.value",

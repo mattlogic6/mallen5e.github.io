@@ -3639,7 +3639,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/03-balance.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Balance|BMT|2} chapter in the {@book Book of Many Things|BMT}."
@@ -3655,7 +3657,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/12-comet.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Comet|BMT|11} chapter in the {@book Book of Many Things|BMT}."
@@ -3671,7 +3675,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/17-donjon.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Donjon|BMT|16} chapter in the {@book Book of Many Things|BMT}."
@@ -3687,7 +3693,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/22-euryale.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Euryale|BMT|21} chapter in the {@book Book of Many Things|BMT}."
@@ -3703,7 +3711,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/08-fates.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Fates|BMT|7} chapter in the {@book Book of Many Things|BMT}."
@@ -3719,7 +3729,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/20-flames.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Flames|BMT|19} chapter in the {@book Book of Many Things|BMT}."
@@ -3735,7 +3747,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/01-fool.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Fool|BMT|0} chapter in the {@book Book of Many Things|BMT}."
@@ -3751,7 +3765,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/05-gem.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Gem|BMT|4} chapter in the {@book Book of Many Things|BMT}."
@@ -3767,7 +3783,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/14-jester.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Jester|BMT|13} chapter in the {@book Book of Many Things|BMT}."
@@ -3783,7 +3801,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/02-key.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Key|BMT|1} chapter in the {@book Book of Many Things|BMT}."
@@ -3799,7 +3819,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/09-knight.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Knight|BMT|8} chapter in the {@book Book of Many Things|BMT}."
@@ -3815,7 +3837,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/11-moon.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Moon|BMT|10} chapter in the {@book Book of Many Things|BMT}."
@@ -3831,7 +3855,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/04-puzzle.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Puzzle|BMT|3} chapter in the {@book Book of Many Things|BMT}."
@@ -3847,7 +3873,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/06-rogue.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Rogue|BMT|5} chapter in the {@book Book of Many Things|BMT}."
@@ -3863,7 +3891,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/16-ruin.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Ruin|BMT|15} chapter in the {@book Book of Many Things|BMT}."
@@ -3879,7 +3909,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/07-sage.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Sage|BMT|6} chapter in the {@book Book of Many Things|BMT}."
@@ -3895,7 +3927,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/19-skull.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Skull|BMT|18} chapter in the {@book Book of Many Things|BMT}."
@@ -3911,7 +3945,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/13-star.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Star|BMT|12} chapter in the {@book Book of Many Things|BMT}."
@@ -3927,7 +3963,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/10-sun.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Sun|BMT|9} chapter in the {@book Book of Many Things|BMT}."
@@ -3943,7 +3981,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/21-talons.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Talons|BMT|20} chapter in the {@book Book of Many Things|BMT}."
@@ -3959,7 +3999,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/15-throne.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Throne|BMT|14} chapter in the {@book Book of Many Things|BMT}."
@@ -3975,7 +4017,9 @@
 				"href": {
 					"type": "internal",
 					"path": "decks/BMT/Deck of Many Things/18-void.webp"
-				}
+				},
+				"width": 850,
+				"height": 1552
 			},
 			"entries": [
 				"See the {@book Void|BMT|17} chapter in the {@book Book of Many Things|BMT}."

@@ -51,7 +51,7 @@
 						{
 							"key": "data.attributes.hp.bonuses.level",
 							"mode": "ADD",
-							"value": "1"
+							"value": "+ 1"
 						}
 					]
 				}
@@ -70,7 +70,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
 				}
@@ -137,7 +137,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 3
+							"value": "+ 3"
 						}
 					]
 				}
@@ -252,7 +252,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -272,7 +272,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -292,7 +292,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -312,7 +312,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -332,7 +332,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -376,7 +376,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 4
+							"value": "+ 4"
 						}
 					],
 					"disabled": true
@@ -396,7 +396,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
 				}
@@ -415,7 +415,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
 				}
@@ -434,7 +434,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
 				}
@@ -1314,7 +1314,7 @@
 						{
 							"key": "data.attributes.init.total",
 							"mode": "ADD",
-							"value": "@attributes.prof"
+							"value": "+ @attributes.prof"
 						}
 					]
 				}

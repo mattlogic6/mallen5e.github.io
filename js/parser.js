@@ -2634,6 +2634,7 @@ Parser.SRC_SCREEN_DUNGEON_KIT = "ScreenDungeonKit";
 Parser.SRC_SCREEN_SPELLJAMMER = "ScreenSpelljammer";
 Parser.SRC_HF = "HF";
 Parser.SRC_HFFotM = "HFFotM";
+Parser.SRC_HFStCM = "HFStCM";
 Parser.SRC_CM = "CM";
 Parser.SRC_NRH = "NRH";
 Parser.SRC_NRH_TCMC = "NRH-TCMC";
@@ -2651,6 +2652,7 @@ Parser.SRC_HAT_LMI = "HAT-LMI";
 Parser.SRC_GotSF = "GotSF";
 Parser.SRC_LK = "LK";
 Parser.SRC_CoA = "CoA";
+Parser.SRC_PiP = "PiP";
 
 Parser.SRC_AL_PREFIX = "AL";
 
@@ -2875,6 +2877,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_DUNGEON_KIT] = "Dungeon Master's Sc
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_SPELLJAMMER] = "Dungeon Master's Screen: Spelljammer";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HF] = "Heroes' Feast";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFFotM] = "Heroes' Feast: Flavors of the Multiverse";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HFStCM] = "Heroes' Feast: Saving the Childrens Menu";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CM] = "Candlekeep Mysteries";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_NRH] = Parser.NRH_NAME;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_NRH_TCMC] = `${Parser.NRH_NAME}: The Candy Mountain Caper`;
@@ -2892,6 +2895,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_HAT_LMI] = "Honor Among Thieves: Legendary
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GotSF] = "Giants of the Star Forge";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_LK] = "Lightning Keep";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_CoA] = "Chains of Asmodeus";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_PiP] = "Peril in Pinebrook";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ALCoS] = `${Parser.AL_PREFIX}Curse of Strahd`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ALEE] = `${Parser.AL_PREFIX}Elemental Evil`;
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ALRoD] = `${Parser.AL_PREFIX}Rage of Demons`;
@@ -3091,6 +3095,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_DUNGEON_KIT] = "ScDun";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_SPELLJAMMER] = "ScSJ";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HF] = "HF";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFFotM] = "HFFotM";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HFStCM] = "HFStCM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CM] = "CM";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_NRH] = "NRH";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_NRH_TCMC] = "NRH-TCMC";
@@ -3108,6 +3113,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_HAT_LMI] = "HAT-LMI";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GotSF] = "GotSF";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_LK] = "LK";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_CoA] = "CoA";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_PiP] = "PiP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ALCoS] = "ALCoS";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ALEE] = "ALEE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ALRoD] = "ALRoD";
@@ -3306,6 +3312,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_DUNGEON_KIT] = "2020-09-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_SPELLJAMMER] = "2022-08-16";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HF] = "2020-10-27";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFFotM] = "2023-11-07";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HFStCM] = "2023-11-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CM] = "2021-03-16";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_NRH] = "2021-09-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_NRH_TCMC] = "2021-09-01";
@@ -3323,6 +3330,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_HAT_LMI] = "2023-03-31";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GotSF] = "2023-08-01";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_LK] = "2023-09-26";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_CoA] = "2023-10-30";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_PiP] = "2023-11-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ALCoS] = "2016-03-15";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ALEE] = "2015-04-07";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ALRoD] = "2015-09-15";
@@ -3491,6 +3499,8 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_PaBTSO,
 	Parser.SRC_LK,
 	Parser.SRC_CoA,
+	Parser.SRC_PiP,
+	Parser.SRC_HFStCM,
 
 	Parser.SRC_AWM,
 ]);
@@ -3536,6 +3546,8 @@ Parser.SOURCES_NON_STANDARD_WOTC = new Set([
 	Parser.SRC_LK,
 	Parser.SRC_AATM,
 	Parser.SRC_CoA,
+	Parser.SRC_PiP,
+	Parser.SRC_HFStCM,
 ]);
 Parser.SOURCES_PARTNERED_WOTC = new Set([
 	Parser.SRC_RMBRE,
@@ -3591,6 +3603,7 @@ Parser.SOURCES_COMEDY = new Set([
 	Parser.SRC_MCV3MC,
 	Parser.SRC_MisMV1,
 	Parser.SRC_LK,
+	Parser.SRC_PiP,
 ]);
 
 // Any opinionated set of sources that are "other settings"
@@ -3756,6 +3769,8 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_ToFW,
 	Parser.SRC_LK,
 	Parser.SRC_CoA,
+	Parser.SRC_PiP,
+	Parser.SRC_HFStCM,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;

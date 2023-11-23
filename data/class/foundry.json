@@ -255,27 +255,27 @@
 						{
 							"key": "data.attributes.movement.walk",
 							"mode": "ADD",
-							"value": "sign(@attributes.movement.walk) * @scale.monk.unarmored-movement"
+							"value": "+ (sign(@attributes.movement.walk) * @scale.monk.unarmored-movement)"
 						},
 						{
 							"key": "data.attributes.movement.burrow",
 							"mode": "ADD",
-							"value": "sign(@attributes.movement.burrow) * @scale.monk.unarmored-movement"
+							"value": "+ (sign(@attributes.movement.burrow) * @scale.monk.unarmored-movement)"
 						},
 						{
 							"key": "data.attributes.movement.climb",
 							"mode": "ADD",
-							"value": "sign(@attributes.movement.climb) * @scale.monk.unarmored-movement"
+							"value": "+ (sign(@attributes.movement.climb) * @scale.monk.unarmored-movement)"
 						},
 						{
 							"key": "data.attributes.movement.fly",
 							"mode": "ADD",
-							"value": "sign(@attributes.movement.fly) * @scale.monk.unarmored-movement"
+							"value": "+ (sign(@attributes.movement.fly) * @scale.monk.unarmored-movement)"
 						},
 						{
 							"key": "data.attributes.movement.swim",
 							"mode": "ADD",
-							"value": "sign(@attributes.movement.swim) * @scale.monk.unarmored-movement"
+							"value": "+ (sign(@attributes.movement.swim) * @scale.monk.unarmored-movement)"
 						}
 					]
 				}
@@ -415,7 +415,7 @@
 						{
 							"key": "data.attributes.movement.walk",
 							"mode": "ADD",
-							"value": 10
+							"value": "+ 10"
 						}
 					]
 				}
@@ -842,12 +842,12 @@
 						{
 							"key": "data.abilities.str.value",
 							"mode": "ADD",
-							"value": 4
+							"value": "+ 4"
 						},
 						{
 							"key": "data.abilities.con.value",
 							"mode": "ADD",
-							"value": 4
+							"value": "+ 4"
 						}
 					]
 				}
@@ -989,12 +989,12 @@
 						{
 							"key": "data.bonuses.msak.damage",
 							"mode": "ADD",
-							"value": "1d8"
+							"value": "+ 1d8"
 						},
 						{
 							"key": "data.bonuses.rsak.damage",
 							"mode": "ADD",
-							"value": "1d8"
+							"value": "+ 1d8"
 						}
 					]
 				}
@@ -2202,7 +2202,7 @@
 						{
 							"key": "data.attributes.movement.walk",
 							"mode": "ADD",
-							"value": "10"
+							"value": "+ 10"
 						}
 					]
 				}
@@ -3803,7 +3803,7 @@
 						{
 							"key": "data.bonuses.heal.damage",
 							"mode": "ADD",
-							"value": "@item.level + 2"
+							"value": "+ @item.level + 2"
 						}
 					]
 				}
@@ -4117,7 +4117,7 @@
 						{
 							"key": "data.attributes.hp.max",
 							"mode": "ADD",
-							"value": "@classes.sorcerer.levels"
+							"value": "+ @classes.sorcerer.levels"
 						}
 					]
 				}
@@ -4161,7 +4161,7 @@
 						{
 							"key": "data.attributes.hp.max",
 							"mode": "ADD",
-							"value": "@classes.mystic.levels"
+							"value": "+ @classes.mystic.levels"
 						}
 					]
 				}
@@ -4204,7 +4204,7 @@
 						{
 							"key": "data.attributes.init.total",
 							"mode": "ADD",
-							"value": "@abilities.int.mod"
+							"value": "+ @abilities.int.mod"
 						}
 					]
 				}
@@ -4272,7 +4272,7 @@
 						{
 							"key": "data.abilities.con.value",
 							"mode": "ADD",
-							"value": 2
+							"value": "+ 2"
 						}
 					]
 				}
@@ -4497,7 +4497,7 @@
 						{
 							"key": "data.attributes.movement.walk",
 							"mode": "ADD",
-							"value": 5
+							"value": "+ 5"
 						}
 					],
 					"disabled": true

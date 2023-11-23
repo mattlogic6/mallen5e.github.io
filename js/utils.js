@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.193.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.194.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
@@ -118,7 +118,7 @@ String.prototype.toTitleCase = String.prototype.toTitleCase || function () {
 	for (let i = 0; i < len1; i++) {
 		str = str.replace(
 			StrUtil._TITLE_UPPER_WORDS_PLURAL_RE[i],
-			`${StrUtil.TITLE_UPPER_WORDS_PLURAL[i].toUpperCase()}`,
+			`${StrUtil.TITLE_UPPER_WORDS_PLURAL[i].slice(0, -1).toUpperCase()}${StrUtil.TITLE_UPPER_WORDS_PLURAL[i].slice(-1).toLowerCase()}`,
 		);
 	}
 
@@ -498,7 +498,11 @@ globalThis.SourceUtil = {
 	},
 
 	isNonstandardSourceWotc (source) {
-		return source.startsWith(Parser.SRC_UA_PREFIX) || source.startsWith(Parser.SRC_UA_ONE_PREFIX) || source.startsWith(Parser.SRC_PS_PREFIX) || source.startsWith(Parser.SRC_AL_PREFIX) || source.startsWith(Parser.SRC_MCVX_PREFIX) || Parser.SOURCES_NON_STANDARD_WOTC.has(source);
+		return SourceUtil.isPrereleaseSource(source)
+			|| source.startsWith(Parser.SRC_PS_PREFIX)
+			|| source.startsWith(Parser.SRC_AL_PREFIX)
+			|| source.startsWith(Parser.SRC_MCVX_PREFIX)
+			|| Parser.SOURCES_NON_STANDARD_WOTC.has(source);
 	},
 
 	FILTER_GROUP_STANDARD: 0,

@@ -137,6 +137,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Mate Lukacs",
 			"attachedItems": [
 				"warhammer|phb"
 			],
@@ -169,7 +170,9 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Aeshma",
@@ -276,6 +279,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -537,6 +541,7 @@
 					]
 				}
 			],
+			"tokenCredit": "jameszapata",
 			"senseTags": [
 				"SD",
 				"U"
@@ -562,7 +567,8 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Anagwendol",
@@ -702,6 +708,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1248,6 +1255,7 @@
 					]
 				}
 			],
+			"tokenCredit": "sμ (smew)",
 			"traitTags": [
 				"Legendary Resistances",
 				"Spider Climb"
@@ -1268,7 +1276,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Ayperobo Swarm",
@@ -1817,6 +1826,7 @@
 			"savingThrowForced": [
 				"charisma"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2461,6 +2471,7 @@
 				"intelligence",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -2663,6 +2674,7 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -2864,6 +2876,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -3184,6 +3197,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Rahzy",
 			"traitTags": [
 				"Legendary Resistances"
 			],
@@ -3211,7 +3225,8 @@
 			"savingThrowForced": [
 				"constitution",
 				"dexterity"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Dispater",
@@ -3698,6 +3713,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Donggeon Son",
 			"traitTags": [
 				"Regeneration"
 			],
@@ -3747,7 +3763,8 @@
 				"constitution",
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Eriflamme",
@@ -3902,6 +3919,7 @@
 				"MW",
 				"RCH"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -4000,6 +4018,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Paizo",
 			"senseTags": [
 				"D"
 			],
@@ -5171,6 +5190,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5307,6 +5327,7 @@
 				"charisma",
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6912,6 +6933,7 @@
 				"charisma",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7073,6 +7095,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -7120,6 +7143,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Bufflewump, Kekai Kotaki",
 			"senseTags": [
 				"D"
 			],
@@ -7333,6 +7357,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7526,7 +7551,7 @@
 				"poison"
 			],
 			"languages": [
-				"Language s of the host"
+				"Languages of the host"
 			],
 			"cr": "12",
 			"trait": [
@@ -7563,6 +7588,7 @@
 					]
 				}
 			],
+			"tokenCredit": "V-OneShot",
 			"traitTags": [
 				"Devil's Sight",
 				"Magic Resistance"
@@ -7923,6 +7949,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -8371,6 +8398,7 @@
 					]
 				}
 			],
+			"tokenCredit": "RussFairchild",
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance"
@@ -8397,7 +8425,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "War Devil",
@@ -8713,6 +8742,7 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
@@ -9148,6 +9178,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		}

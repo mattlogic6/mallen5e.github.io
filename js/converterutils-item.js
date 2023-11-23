@@ -487,7 +487,8 @@ class ItemMiscTag {
 		strEntries.replace(/you[^.]* (gain|have)? proficiency/gi, (...m) => tgt.grantsProficiency = true);
 		strEntries.replace(/you gain[^.]* following proficiencies/gi, (...m) => tgt.grantsProficiency = true);
 		strEntries.replace(/you are[^.]* considered proficient/gi, (...m) => tgt.grantsProficiency = true);
-		strEntries.replace(/[Yy]ou can speak( and understand)? [A-Z]/g, (...m) => tgt.grantsProficiency = true);
+
+		strEntries.replace(/[Yy]ou can speak( and understand)? [A-Z]/g, (...m) => tgt.grantsLanguage = true);
 	}
 }
 

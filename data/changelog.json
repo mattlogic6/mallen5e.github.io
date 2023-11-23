@@ -1669,7 +1669,7 @@
 		"ver": "1.129.0",
 		"date": "2021-05-16",
 		"title": "Horrifying",
-		"txt": "- Added Van Richten's Guide to Ravenloft https://5e.tools/book.html#vrgr\n- Added page numbers to Heroes Feast content\n- Fixed Spells page Subclass filter items\n- Fixed Source filters failing to be applied on Bestiary/Spells pages when refreshing without changing the defaults\n- (Homebrew) Added support for `\"includes\"` meta-prop. This allows the contents of another file to be \"included\" as part of a file when it is loaded; this is mainly relevant for Plutonium which \"instances\" lists.\n- (Homebrew) Fixed Renderer Demo layout on mobile\n- (Fixed typos/added tags)"
+		"txt": "- Added Van Richten's Guide to Ravenloft https://5e.tools/book.html#vrgr\n- Added page numbers to Heroes' Feast content\n- Fixed Spells page Subclass filter items\n- Fixed Source filters failing to be applied on Bestiary/Spells pages when refreshing without changing the defaults\n- (Homebrew) Added support for `\"includes\"` meta-prop. This allows the contents of another file to be \"included\" as part of a file when it is loaded; this is mainly relevant for Plutonium which \"instances\" lists.\n- (Homebrew) Fixed Renderer Demo layout on mobile\n- (Fixed typos/added tags)"
 	},
 	{
 		"ver": "1.130.0",
@@ -2584,5 +2584,11 @@
 		"date": "2023-11-15",
 		"title": "The Cards of the Heart",
 		"txt": "- Added The Book of Many Things content\n- Added \"XP to Next Level\" display the Bestiary Encounter Builder\n- Tweaked Bestiary Encounter Builder random generation to prefer a soft max of 5 different creature types\n- (Brew) Improved Item Text Converter handling of various `\"magicvariant\"` requirements\n- (Brew) Added fluff support to traps/hazards\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.194.0",
+		"date": "2023-11-23",
+		"title": "Child's Play",
+		"txt": "- Added Heroes' Feast: Saving the Childrens Menu content\n- Added Peril in Pinegrove content\n- Added remaining Chains of Asmodeus tokens; Book of Many Things tokens\n- Added Dynamic Map Viewer support for Book of Many Things maps\n- Split Items page \"Grants Language\" filter from \"Grants Proficiency\"\n- Fixed Omnisearch failing to correctly categorize prerelease sources for \"Include Homebrew\"/\"Include UA/etc.\" options\n- (Fixed typos/added tags)"
 	}
 ]
