@@ -530,12 +530,6 @@
 				"nameSuffix": " Armblade",
 				"source": "ERLW",
 				"page": 276,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 120
-					}
-				],
 				"rarity": "common",
 				"reqAttune": "by a warforged",
 				"reqAttuneTags": [
@@ -1938,12 +1932,6 @@
 				"namePrefix": "Fernian Ash ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -1973,12 +1961,6 @@
 				"namePrefix": "Irian Rosewood ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2008,12 +1990,6 @@
 				"namePrefix": "Kythrian Manchineel ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2043,12 +2019,6 @@
 				"namePrefix": "Lamannian Oak ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2078,12 +2048,6 @@
 				"namePrefix": "Mabaran Ebony ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2113,12 +2077,6 @@
 				"namePrefix": "Risian Pine ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2148,12 +2106,6 @@
 				"namePrefix": "Shavarran Birch ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2183,12 +2135,6 @@
 				"namePrefix": "Xorian Wenge ",
 				"source": "ERLW",
 				"page": 277,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2599,12 +2545,6 @@
 				"namePrefix": "Fernian Basalt ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2634,12 +2574,6 @@
 				"namePrefix": "Irian Quartz ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2669,12 +2603,6 @@
 				"namePrefix": "Kythrian Skarn ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2704,12 +2632,6 @@
 				"namePrefix": "Lamannian Flint ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2739,12 +2661,6 @@
 				"namePrefix": "Mabaran Obsidian ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2774,12 +2690,6 @@
 				"namePrefix": "Risian Shale ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2809,12 +2719,6 @@
 				"namePrefix": "Shavarran Chert ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,
@@ -2844,12 +2748,6 @@
 				"namePrefix": "Xorian Marble ",
 				"source": "ERLW",
 				"page": 278,
-				"otherSources": [
-					{
-						"source": "UAWGE",
-						"page": 114
-					}
-				],
 				"rarity": "common",
 				"reqAttune": true,
 				"wondrous": true,

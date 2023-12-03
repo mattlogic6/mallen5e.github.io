@@ -31957,7 +31957,7 @@
 			]
 		},
 		{
-			"name": "Peril in Pinegrove",
+			"name": "Peril in Pinebrook",
 			"id": "PiP",
 			"source": "PiP",
 			"group": "supplement-alt",
@@ -31970,7 +31970,7 @@
 			},
 			"contents": [
 				{
-					"name": "Peril in Pinegrove",
+					"name": "Peril in Pinebrook",
 					"headers": [
 						"Introduction",
 						"Adventure Introduction",

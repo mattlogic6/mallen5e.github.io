@@ -1377,7 +1377,10 @@ RendererMarkdown.race = class {
 RendererMarkdown.feat = class {
 	static getCompactRenderedString (ent, opts = {}) {
 		const entries = [
-			RendererMarkdown.generic.getRenderedPrerequisite(ent),
+			Renderer.feat.getJoinedCategoryPrerequisites(
+				ent.category,
+				RendererMarkdown.generic.getRenderedPrerequisite(ent),
+			),
 			Renderer.utils.getRepeatableEntry(ent),
 			Renderer.feat.getFeatRendereableEntriesMeta(ent)?.entryMain,
 		]
@@ -1877,7 +1880,7 @@ RendererMarkdown.generic = class {
 
 	static getRenderedPrerequisite (ent) {
 		const out = Renderer.utils.prerequisite.getHtml(ent.prerequisite, {isTextOnly: true, isSkipPrefix: true});
-		return out ? `**Prerequisite:** ${out}` : "";
+		return out ? `Prerequisite: ${out}` : "";
 	}
 };
 

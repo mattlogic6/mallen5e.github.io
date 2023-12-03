@@ -1613,7 +1613,7 @@
 				{
 					"name": "Pungent Eruption (Slug Form Only, Recharge 4-6)",
 					"entries": [
-						"Baalzebul causes refuse and caustic liquid to spill from the ground at a point he can see within 300 feet. Each creature in a 15-foot-ra- dius sphere centered on that point must make a {@dc 21} Constitution saving throw. Targets take 36 ({@damage 8d8}) acid damage on a failed save, or half as much on a successful one. Creatures that fail the save have the {@condition poisoned} condition for 1 minute."
+						"Baalzebul causes refuse and caustic liquid to spill from the ground at a point he can see within 300 feet. Each creature in a 15-foot-radius sphere centered on that point must make a {@dc 21} Constitution saving throw. Targets take 36 ({@damage 8d8}) acid damage on a failed save, or half as much on a successful one. Creatures that fail the save have the {@condition poisoned} condition for 1 minute."
 					]
 				},
 				{
@@ -4193,7 +4193,7 @@
 				{
 					"name": "Conjure Hellfire (Costs 2 Actions)",
 					"entries": [
-						"Fierna chooses a point she can see within 150 feet of her. All creatures in a 20-foot-ra- dius sphere centered on that point must make a {@dc 25} Dexterity saving throw, taking 28 ({@damage 8d6}) fire damage on a failed save, or half as much damage on a successful one."
+						"Fierna chooses a point she can see within 150 feet of her. All creatures in a 20-foot-radius sphere centered on that point must make a {@dc 25} Dexterity saving throw, taking 28 ({@damage 8d6}) fire damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
@@ -4569,7 +4569,7 @@
 				{
 					"name": "Disorient (Costs 2 Actions)",
 					"entries": [
-						"Glasya casts {@spell Confusion} (30-foot-ra- dius, spell save {@dc 25}), but only lasting until the end of Glasya's next turn."
+						"Glasya casts {@spell Confusion} (30-foot-radius, spell save {@dc 25}), but only lasting until the end of Glasya's next turn."
 					]
 				},
 				{

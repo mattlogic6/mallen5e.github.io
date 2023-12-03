@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.194.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.195.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
@@ -7420,6 +7420,7 @@ if (!IS_VTT && typeof window !== "undefined") {
 	window.addEventListener("load", () => {
 		const docRoot = document.querySelector(":root");
 
+		// TODO(iOS)
 		if (CSS?.supports("top: constant(safe-area-inset-top)")) {
 			docRoot.style.setProperty("--safe-area-inset-top", "constant(safe-area-inset-top, 0)");
 			docRoot.style.setProperty("--safe-area-inset-right", "constant(safe-area-inset-right, 0)");
@@ -7507,54 +7508,3 @@ if (!IS_VTT && typeof window !== "undefined") {
 	// 	$(`.cancer__sidebar-rhs-inner--bottom`).append(`<div class="TEST_RHS_BOTTOM"></div>`)
 	// });
 }
-
-globalThis._Donate = {
-	// TAG Disabled until further notice
-	/*
-	init () {
-		if (IS_DEPLOYED) {
-			DataUtil.loadJSON(`https://get.5etools.com/money.php`).then(dosh => {
-				const pct = Number(dosh.donated) / Number(dosh.Goal);
-				$(`#don-total`).text(`€${dosh.Goal}`);
-				if (isNaN(pct)) {
-					throw new Error(`Was not a number! Values were ${dosh.donated} and ${dosh.Goal}`);
-				} else {
-					const $bar = $(`.don__bar_inner`);
-					$bar.css("width", `${Math.min(Math.ceil(100 * pct), 100)}%`).html(pct !== 0 ? `€${dosh.donated}&nbsp;` : "");
-					if (pct >= 1) $bar.css("background-color", "lightgreen");
-				}
-			}).catch(noDosh => {
-				$(`#don-wrapper`).remove();
-				throw noDosh;
-			});
-		}
-	},
-
-	async pNotDonating () {
-		const isFake = await StorageUtil.pIsAsyncFake();
-		const isNotDonating = await StorageUtil.pGet("notDonating");
-		return isFake || isNotDonating;
-	},
-	*/
-
-	// region Test code, please ignore
-	cycleLeader (ele) {
-		const modes = [{width: 970, height: 90}, {width: 970, height: 250}, {width: 320, height: 50}, {width: 728, height: 90}];
-		_Donate._cycleMode(ele, modes);
-	},
-
-	cycleSide (ele) {
-		const modes = [{width: 300, height: 250}, {width: 300, height: 600}];
-		_Donate._cycleMode(ele, modes);
-	},
-
-	_cycleMode (ele, modes) {
-		const $e = $(ele);
-		const pos = $e.data("pos") || 0;
-		const mode = modes[pos];
-		$e.css(mode);
-		$e.text(`${mode.width}*${mode.height}`);
-		$e.data("pos", (pos + 1) % modes.length);
-	},
-	// endregion
-};

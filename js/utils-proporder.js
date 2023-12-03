@@ -482,6 +482,10 @@ PropOrder._SPELL_LIST = [
 	"source",
 
 	"spellListType",
+
+	"className",
+	"classSource",
+
 	"spells",
 ];
 PropOrder._ACTION = [
@@ -1089,6 +1093,7 @@ PropOrder._FEAT = [
 	"additionalSources",
 	"otherSources",
 
+	"category",
 	"prerequisite",
 
 	"repeatable",
@@ -1125,6 +1130,15 @@ PropOrder._FEAT = [
 	"foundryFlags",
 	"foundryEffects",
 	"foundryImg",
+];
+PropOrder._FOUNDRY_FEAT = [
+	"name",
+	"source",
+
+	"system",
+	"effects",
+	"flags",
+	"img",
 ];
 PropOrder._VEHICLE = [
 	"name",
@@ -1772,6 +1786,8 @@ PropOrder._RECIPE = [
 	"source",
 	"page",
 
+	"otherSources",
+
 	"type",
 	"dishTypes",
 
@@ -1965,6 +1981,7 @@ PropOrder._PROP_TO_LIST = {
 	"boon": PropOrder._BOON,
 	"deity": PropOrder._DEITY,
 	"feat": PropOrder._FEAT,
+	"foundryFeat": PropOrder._FOUNDRY_FEAT,
 	"vehicle": PropOrder._VEHICLE,
 	"vehicleUpgrade": PropOrder._VEHICLE_UPGRADE,
 	"item": PropOrder._ITEM,

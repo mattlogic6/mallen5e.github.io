@@ -344,12 +344,6 @@
 			"name": "Double-Bladed Scimitar",
 			"source": "ERLW",
 			"page": 21,
-			"otherSources": [
-				{
-					"source": "UAWGE",
-					"page": 74
-				}
-			],
 			"type": "M",
 			"rarity": "none",
 			"weight": 6,

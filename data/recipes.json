@@ -7259,6 +7259,11 @@
 			"name": "Kender Stumblenoodles",
 			"source": "HFFotM",
 			"page": 76,
+			"otherSources": [
+				{
+					"source": "PiP"
+				}
+			],
 			"type": "Solamnia",
 			"diet": "C",
 			"allergenGroups": [

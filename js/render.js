@@ -2098,6 +2098,8 @@ Renderer.applyProperties = function (entry, object) {
 				continue;
 			}
 
+			if (fromProp == null) throw new Error(`Could not apply property in "${s}"; "${path}" value was null!`);
+
 			modifiers
 				.split("")
 				.sort((a, b) => Renderer.applyProperties._OP_ORDER.indexOf(a) - Renderer.applyProperties._OP_ORDER.indexOf(b));
@@ -3199,7 +3201,7 @@ Renderer.utils = {
 					? listOfChoicesTrimmed.join(" Or, ")
 					: listOfChoicesTrimmed.joinConjunct(listOfChoicesTrimmed.some(it => / or /.test(it)) ? "; " : ", ", " or ")
 			) + sharedSuffix;
-			return `${isSkipPrefix ? "" : `<b>Prerequisite${cntPrerequisites === 1 ? "" : "s"}:</b> `}${[shared, joinedChoices].filter(Boolean).join(", plus ")}`;
+			return `${isSkipPrefix ? "" : `Prerequisite${cntPrerequisites === 1 ? "" : "s"}: `}${[shared, joinedChoices].filter(Boolean).join(", plus ")}`;
 		}
 
 		static _getHtml_level ({v, isListMode}) {
@@ -3429,7 +3431,7 @@ Renderer.utils = {
 		static _getHtml_psionics ({v, isListMode, isTextOnly}) {
 			return isListMode
 				? "Psionics"
-				: (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))("Psionic Talent feature or {@feat Wild Talent|UA2020PsionicOptionsRevisited} feat");
+				: (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))("Psionic Talent feature or Wild Talent feat");
 		}
 
 		static _getHtml_alignment ({v, isListMode}) {
@@ -5122,6 +5124,14 @@ Renderer.feat = class {
 		};
 	}
 
+	static getJoinedCategoryPrerequisites (category, rdPrereqs) {
+		const ptCategory = category ? `${category.toTitleCase()} Feat` : "";
+
+		return ptCategory && rdPrereqs
+			? `${ptCategory} (${rdPrereqs})`
+			: (ptCategory || rdPrereqs);
+	}
+
 	/**
 	 * @param feat
 	 * @param [opts]
@@ -5133,14 +5143,17 @@ Renderer.feat = class {
 		const renderer = Renderer.get().setFirstSection(true);
 		const renderStack = [];
 
-		const prerequisite = Renderer.utils.prerequisite.getHtml(feat.prerequisite);
+		const ptCategoryPrerequisite = Renderer.feat.getJoinedCategoryPrerequisites(
+			feat.category,
+			Renderer.utils.prerequisite.getHtml(feat.prerequisite),
+		);
 		const ptRepeatable = Renderer.utils.getRepeatableHtml(feat);
 
 		renderStack.push(`
 			${Renderer.utils.getExcludedTr({entity: feat, dataProp: "feat", page: UrlUtil.PG_FEATS})}
 			${opts.isSkipNameRow ? "" : Renderer.utils.getNameTr(feat, {page: UrlUtil.PG_FEATS})}
 			<tr class="text"><td colspan="6" class="text">
-			${prerequisite ? `<p>${prerequisite}</p>` : ""}
+			${ptCategoryPrerequisite ? `<p>${ptCategoryPrerequisite}</p>` : ""}
 			${ptRepeatable ? `<p>${ptRepeatable}</p>` : ""}
 		`);
 		renderer.recursiveRender(Renderer.feat.getFeatRendereableEntriesMeta(feat)?.entryMain, renderStack, {depth: 2});
@@ -7000,13 +7013,21 @@ Renderer.monster = class {
 	}
 
 	static getLegendaryActionIntro (mon, {renderer = Renderer.get(), isUseDisplayName = false} = {}) {
+		return renderer.render(Renderer.monster.getLegendaryActionIntroEntry(mon, {isUseDisplayName}));
+	}
+
+	static getLegendaryActionIntroEntry (mon, {isUseDisplayName = false} = {}) {
 		if (mon.legendaryHeader) {
-			return renderer.render({entries: mon.legendaryHeader});
-		} else {
-			const legendaryActions = mon.legendaryActions || 3;
-			const legendaryNameTitle = Renderer.monster.getShortName(mon, {isTitleCase: true, isUseDisplayName});
-			return `${legendaryNameTitle} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryNameTitle} regains spent legendary actions at the start of its turn.`;
+			return {entries: mon.legendaryHeader};
 		}
+
+		const legendaryActions = mon.legendaryActions || 3;
+		const legendaryNameTitle = Renderer.monster.getShortName(mon, {isTitleCase: true, isUseDisplayName});
+		return {
+			entries: [
+				`${legendaryNameTitle} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryNameTitle} regains spent legendary actions at the start of its turn.`,
+			],
+		};
 	}
 
 	static getSectionIntro (mon, {renderer = Renderer.get(), prop}) {
@@ -7530,7 +7551,7 @@ Renderer.monster = class {
 	}
 
 	static getSafeAbilityScore (mon, abil, {isDefaultTen = false} = {}) {
-		if (!mon) return isDefaultTen ? 10 : 0;
+		if (!mon || abil == null) return isDefaultTen ? 10 : 0;
 		if (mon[abil] == null) return isDefaultTen ? 10 : 0;
 		return typeof mon[abil] === "number" ? mon[abil] : (isDefaultTen ? 10 : 0);
 	}

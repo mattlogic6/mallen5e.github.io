@@ -12910,7 +12910,6 @@
 						{
 							"type": "entries",
 							"name": "Supreme Judge Isperia",
-							"page": 0,
 							"entries": [
 								"{@creature Isperia|GGR} is the current guildmaster of the Azorius Senate. As a sphinx, she is aloof and values solitude above all. However, she has been forced to give up her privacy to deal with the increased crime and chaos on Ravnica.",
 								"{@creature Isperia|GGR} is devoted to her guild's belief that law is the ultimate bulwark against chaos, and it is her steady hand that guides the Azorius through these uncertain times. As guildmaster, {@creature Isperia|GGR} serves as the supreme judge, a role that takes advantage of her encyclopedic knowledge of Ravnica's labyrinthine legal system.",

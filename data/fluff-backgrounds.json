@@ -999,13 +999,6 @@
 			]
 		},
 		{
-			"name": "Gate Warden",
-			"source": "UA2022WondersOfTheMultiverse",
-			"entries": [
-				"You spent a significant amount of time somewhere influenced by a portal to another plane of existence or by intense planar forces. You're accustomed to experiences that would leave others reeling in terror or enraptured by otherworldly beauty, and you're as comfortable dealing with fiends and celestials as you are with vendors in town."
-			]
-		},
-		{
 			"name": "Giant Foundling",
 			"source": "BGG",
 			"entries": [
@@ -1022,14 +1015,6 @@
 					"title": "A giant foundling is used to a larger world",
 					"credit": "Kai Carpenter"
 				}
-			]
-		},
-		{
-			"name": "Giant Foundling",
-			"source": "UA2022WondersOfTheMultiverse",
-			"entries": [
-				"Though you aren't a Giant, you grew up among giants. Maybe you were an orphan taken in by a sympathetic family of stone giants who raised you as one of their own. Or perhaps you lived in a lost prehistoric pocket of the world, surrounded by giants and fearsome behemoths or hulking dinosaurs.",
-				"Something about your environment\u2014perhaps the food or water that sustained you through childhood, elemental magic inherent in the site of your home, or some verdant blessing of growth placed on you\u2014ensured that you grew to a remarkable size. With the aid of this magic, you have learned how to embody the titanic might of giants. You are used to moving through a world much bigger than you, and that is reflected in your skills, attitude, and perspective on life."
 			]
 		},
 		{
@@ -1471,20 +1456,6 @@
 			]
 		},
 		{
-			"name": "Knight of Solamnia",
-			"source": "UA2022HeroesOfKrynn",
-			"entries": [
-				"You have trained to be a valorous warrior known as a Knight of Solamnia. Strict rules guide your every action, and you work to uphold them as you strive to defend the weak and oppose all forms of evil. Your honor is as important to you as your life."
-			]
-		},
-		{
-			"name": "Knight of Solamnia",
-			"source": "UA2022HeroesOfKrynnRevisited",
-			"entries": [
-				"You have trained to be a valorous warrior known as a Knight of Solamnia. Strict rules guide your every action, and you work to uphold them as you strive to defend the weak and oppose evil. Your honor is as important to you as your life."
-			]
-		},
-		{
 			"name": "Knight of the Order",
 			"source": "SCAG",
 			"entries": [
@@ -1592,22 +1563,6 @@
 					"title": "Mages of High Sorcery of the Orders of the Black, Red, and White Robes",
 					"credit": "Linda Lithén"
 				}
-			]
-		},
-		{
-			"name": "Mage of High Sorcery",
-			"source": "UA2022HeroesOfKrynn",
-			"entries": [
-				"Your talent for magic came to the attention of the Mages of High Sorcery, an organization of spellcasters that study magic and prevent its misuse. You've trained among the Mages, but whether or not you'll face the dangerous tests required to become a true member of the group remains to be determined. Your passion for studying magic has likely already predisposed you toward one of the organization's three orders: the benevolent Order of the White Robes, the balance-pursuing Order of the Red Robes, or the ruthless Order of the Black Robes.",
-				"In the world of Krynn, many refer to the Mages of High Sorcery as the Wizards of High Sorcery. The organization accepts more than wizards, though, with bards, sorcerers, warlocks, and other spellcasters included among their ranks."
-			]
-		},
-		{
-			"name": "Mage of High Sorcery",
-			"source": "UA2022HeroesOfKrynnRevisited",
-			"entries": [
-				"Your talent for magic came to the attention of the Mages of High Sorcery, an organization of spellcasters that study magic and prevent its misuse. You've trained among the Mages, but whether or not you'll face the dangerous tests required to become a true member of the group remains to be determined. Your passion for studying magic has likely already predisposed you toward one of the organization's three orders: the benevolent Order of the White Robes, the balance-pursuing Order of the Red Robes, or the ruthless Order of the Black Robes.",
-				"In the world of Krynn, many refer to the Mages of High Sorcery as the Wizards of High Sorcery. The organization accepts more than wizards, though, with sorcerers, warlocks, and other spellcasters included among their ranks."
 			]
 		},
 		{
@@ -1847,13 +1802,6 @@
 			]
 		},
 		{
-			"name": "Planar Philosopher",
-			"source": "UA2022WondersOfTheMultiverse",
-			"entries": [
-				"You subscribe to a distinct philosophy that seeks to understand the nature of the planes or some hidden truth of the multiverse. You draw strength from your conviction and, perhaps, a network of like-minded believers. In your travels, you seek to deepen the depths of your understanding and spread your philosophy."
-			]
-		},
-		{
 			"name": "Prismari Student",
 			"source": "SCC",
 			"entries": [
@@ -2013,14 +1961,6 @@
 					"title": "Orc Rune Carver",
 					"credit": "Nikki Dawes"
 				}
-			]
-		},
-		{
-			"name": "Rune Carver",
-			"source": "UA2022WondersOfTheMultiverse",
-			"entries": [
-				"You've dedicated your life to studying the practice of runecraft. Whether you were personally taught by a master rune carver or learned by poring over engravings in ancient ruins, you understand how to tap into the supernatural power held within runes.",
-				"The art of runecraft was initially created by the giants of yore, but over time, the practice has been adopted by individuals of all races and backgrounds. As such, though Giant runes are the most common, many rune carvers incorporate symbols from their native languages into the craft."
 			]
 		},
 		{

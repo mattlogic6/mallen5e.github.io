@@ -5911,6 +5911,20 @@
 					]
 				}
 			],
+			"reaction": [
+				{
+					"name": "Searing Gaze",
+					"entries": [
+						"In response to being hit by an attack roll, the incarnate turns its magical gaze toward one creature it can see within 120 feet of itself and commands it to combust. The target must succeed on a {@dc 20} Wisdom saving throw or take 16 ({@damage 3d10}) fire damage."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"Immediately after a creature the incarnate sees ends its turn, the incarnate teleports up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance",
@@ -5926,6 +5940,7 @@
 				"XX"
 			],
 			"damageTags": [
+				"F",
 				"N",
 				"O"
 			],
@@ -5938,7 +5953,8 @@
 				"blinded"
 			],
 			"savingThrowForced": [
-				"constitution"
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

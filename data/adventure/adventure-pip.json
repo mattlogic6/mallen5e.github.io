@@ -251,7 +251,7 @@
 										},
 										{
 											"type": "item",
-											"name": "Use \"Yes, and ...\" or \"No, but ...\"",
+											"name": "Use \"Yes, and...\" or \"No, but...\"",
 											"entry": "Allow the players to succeed as much as possible, and let them participate in the telling of the story. If they want to try something unexpected, try to say \"yes\" and then work their ideas into the story. If you have to say \"no\" to a player's idea, suggest options that let them do something similar."
 										},
 										{
@@ -315,7 +315,7 @@
 								"We're going to play a short game of Dungeons & Dragons. These character sheets have information about your characters on them. You can each have one character to play."
 							]
 						},
-						"You can let the players choose their characters, but if you're time is limited, consider choosing characters for them.",
+						"You can let the players choose their characters, but if your time is limited, consider choosing characters for them.",
 						"Once each player has a character sheet, read the following:",
 						{
 							"type": "insetReadaloud",
@@ -606,15 +606,15 @@
 									]
 								},
 								{
-								    "type": "variantInner",
+									"type": "variantInner",
 									"name": "Attack",
 									"entries": [
 										{
-										    "type": "entries",
-										    "name": "Claws",
-										    "entries": [
-										        "{@atk mw} {@hit 2} to hit. {@h}{@damage 1d6} slashing damage."
-										    ]
+											"type": "entries",
+											"name": "Claws",
+											"entries": [
+												"{@atk mw} {@hit 2} to hit. {@h}{@damage 1d6} slashing damage."
+											]
 										}
 									]
 								}
@@ -936,7 +936,7 @@
 							]
 						},
 						"There are three egg snatchers. If you have three or fewer players, remove one egg snatcher, leaving the characters with two enemies. If you have two or fewer players, reduce the starting hit points of the two egg snatchers to 10.",
-						"This combat runs the same way as in \"Encounter 2: Living Icicles.\" Refer to the DM Tip in that encounter to remind the players how to make melee and ranged attacks if you needed.",
+						"This combat runs the same way as in \"Encounter 2: Living Icicles.\" Refer to the DM Tip in that encounter to remind the players how to make melee and ranged attacks if needed.",
 						{
 							"type": "entries",
 							"name": "Taking Turns",
@@ -1100,7 +1100,7 @@
 							"name": "Return to Pinebrook",
 							"page": 13,
 							"entries": [
-								"At the conclusion of the conversation, Rorn shows the characters a secret passage that leads from the mountain, which ends the characters' adventure ... for now!"
+								"At the conclusion of the conversation, Rorn shows the characters a secret passage that leads from the mountain, which ends the characters' adventure... for now!"
 							]
 						}
 					]

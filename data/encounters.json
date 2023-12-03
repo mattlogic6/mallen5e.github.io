@@ -809,6 +809,7 @@
 		{
 			"name": "Cloud Giant",
 			"source": "BGG",
+			"page": 44,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -1485,6 +1486,7 @@
 		{
 			"name": "Death Giant",
 			"source": "BGG",
+			"page": 45,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -2371,6 +2373,7 @@
 		{
 			"name": "Dinosaur World",
 			"source": "BGG",
+			"page": 49,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -2432,6 +2435,7 @@
 		{
 			"name": "Elemental Air",
 			"source": "BGG",
+			"page": 49,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -2503,6 +2507,7 @@
 		{
 			"name": "Elemental Earth",
 			"source": "BGG",
+			"page": 50,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -2574,6 +2579,7 @@
 		{
 			"name": "Elemental Fire",
 			"source": "BGG",
+			"page": 51,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -2645,6 +2651,7 @@
 		{
 			"name": "Elemental Water",
 			"source": "BGG",
+			"page": 51,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -2716,6 +2723,7 @@
 		{
 			"name": "Fiendish Incursion",
 			"source": "BGG",
+			"page": 52,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -2777,6 +2785,7 @@
 		{
 			"name": "Fire Giant",
 			"source": "BGG",
+			"page": 46,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -2848,6 +2857,7 @@
 		{
 			"name": "Fomorian",
 			"source": "BGG",
+			"page": 46,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -3964,6 +3974,7 @@
 		{
 			"name": "Frost Giant",
 			"source": "BGG",
+			"page": 46,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -4035,6 +4046,7 @@
 		{
 			"name": "Giant Construct",
 			"source": "BGG",
+			"page": 53,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -4096,6 +4108,7 @@
 		{
 			"name": "Giant Kin",
 			"source": "BGG",
+			"page": 53,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -4157,6 +4170,7 @@
 		{
 			"name": "Giant Necropolis",
 			"source": "BGG",
+			"page": 54,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -5653,6 +5667,7 @@
 		{
 			"name": "Hill Giant",
 			"source": "BGG",
+			"page": 47,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -5724,6 +5739,7 @@
 		{
 			"name": "Megafauna World",
 			"source": "BGG",
+			"page": 54,
 			"tables": [
 				{
 					"diceExpression": "d10",
@@ -7585,6 +7601,7 @@
 		{
 			"name": "Stone Giant",
 			"source": "BGG",
+			"page": 48,
 			"tables": [
 				{
 					"diceExpression": "d12",
@@ -7656,6 +7673,7 @@
 		{
 			"name": "Storm Giant",
 			"source": "BGG",
+			"page": 48,
 			"tables": [
 				{
 					"diceExpression": "d12",
