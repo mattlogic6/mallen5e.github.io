@@ -78,6 +78,7 @@
 	$rgb-source-CoA: #a13a0f;
 	$rgb-source-HFFotM: #7b702c;
 	$rgb-source-BMT: #694165;
+	$rgb-source-GHLoE: #c07e4e;
 
 	// region Categories
 
@@ -596,6 +597,12 @@
 		color: $rgb-source-BMT !important;
 		border-color: $rgb-source-BMT !important;
 		text-decoration-color: $rgb-source-BMT !important;
+	}
+
+	&GHLoE {
+		color: $rgb-source-GHLoE !important;
+		border-color: $rgb-source-GHLoE !important;
+		text-decoration-color: $rgb-source-GHLoE !important;
 	}
 	// endregion
 }

@@ -1193,6 +1193,23 @@
 			]
 		},
 		{
+			"name": "Blightscale Dragon",
+			"source": "GHLoE",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), an adult or ancient blightscale dragon takes a lair action to cause one of the following effects. The dragon can't use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+						"Insects burst from a hive built on a surface that the dragon can see within 120 feet of it. Any creature within 20 feet of the hive must succeed on a DC 15 Constitution saving throw, taking 10 ({@dice 3d6}) piercing damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the cloud takes 10 ({@dice 3d6}) piercing damage. The insects disperse on initiative count 20 of the next round. They disperse early if subjected to intense wind or a damaging area effect.",
+						"Puslike fluid erupts in a 20-foot radius centered on a point on the ground the dragon can see within 120 feet of it. That area becomes difficult terrain, and a creature moving through this terrain must succeed on a DC 15 Strength saving throw or be grappled (escape DC 15) by the sucking glop and restrained while grappled in this way. Another creature can pull a restrained target free by taking an action and succeeding on a DC 15 Strength (",
+						"{@skill Athletics}",
+						") check. The ground dries sufficiently to return to normal on initiative count 20 of the next round.",
+						"Foul gas belches forth in a 20-foot-radius sphere from a point the dragon can see within 120 feet of it. The cloud spreads around corners, and its area is heavily obscured. Each creature within the cloud at the start of its turn must make a DC 15 Constitution saving throw against poison. On a failed save, the creature is poisoned. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw. This cloud disperses on initiative count 20 of the next round. It disperses early if subjected to intense wind."
+					]
+				}
+			]
+		},
+		{
 			"name": "Blue Dragon",
 			"source": "MM",
 			"page": 91,
@@ -2484,6 +2501,21 @@
 			"lairActions": [
 				"If Gar is in the water node while {@creature Olhydra|PotA} isn't, he can take lair actions. On initiative count 20 (losing initiative ties), Gar uses a lair action to use his Multiattack or cast one of his spells, up to 3rd level, without using components or a spell slot. He can't cast the same spell two rounds in a row, but he can continue to concentrate on a spell he previously cast using a lair action. He can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. His favorite use of this capability is casting {@spell inflict wounds} or {@spell call lightning}.",
 				"If Gar casts {@spell cure wounds} using this lair action, he regains the maximum number of hit points from the spell (28)."
+			]
+		},
+		{
+			"name": "Gegazol",
+			"source": "GHLoE",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Gegazol takes a lair action to cause one of the following effects. Gegazol can't use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+						"Tendrils of necrotic power rise and reach for living creatures within the lair. Each living creature in the lair must attempt a DC 21 Constitution saving throw or take 13 ({@dice 3d8}) necrotic damage and gain one level of exhaustion until initiative count 20 on the next round.",
+						"Gegazol crashes her wings upon the ground, and rime spreads in a sphere with a 120-foot radius around her. This sphere spreads around corners and creates difficult terrain made of ice. Creatures in that area must make a DC 21 Constitution saving throw. Those who fail take 18 ({@dice 4d8}) cold damage and are grappled (escape DC 21). On a success, the creature takes half the damage and isn't grappled. The difficult terrain disappears on initiative count 20 on the next round.",
+						"Gegazol creates an opaque wall of black ice on a solid surface she can see within 120 feet of her. The wall is made up of twenty contiguous 10-foot square panels that are each 2 feet thick. When the wall appears, each creature in its area is pushed 5 feet out of the wall's space, appearing on whichever side of the wall the creature wants. Each 10-foot section of the wall has AC 5, 60 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears when Gegazol uses this lair action again or when she dies."
+					]
+				}
 			]
 		},
 		{

@@ -2175,7 +2175,7 @@ Parser.spVariantClassesToCurrentAndLegacy = function (fromVariantClassList) {
 	const current = [];
 	const legacy = [];
 	fromVariantClassList.forEach(cls => {
-		if (cls.definedInSource === Parser.SRC_UACFV) legacy.push(cls);
+		if (SourceUtil.isPrereleaseSource(cls.definedInSource)) legacy.push(cls);
 		else current.push(cls);
 	});
 	return [current, legacy];
@@ -2628,6 +2628,7 @@ Parser.SRC_SatO = "SatO";
 Parser.SRC_ToFW = "ToFW";
 Parser.SRC_MPP = "MPP";
 Parser.SRC_BMT = "BMT";
+Parser.SRC_GHLoE = "GHLoE";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
 Parser.SRC_SCREEN_DUNGEON_KIT = "ScreenDungeonKit";
@@ -2798,6 +2799,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SatO] = "Sigil and the Outlands";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ToFW] = "Turn of Fortune's Wheel";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MPP] = "Morte's Planar Parade";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BMT] = "The Book of Many Things";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_DUNGEON_KIT] = "Dungeon Master's Screen: Dungeon Kit";
@@ -2943,6 +2945,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SatO] = "SatO";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ToFW] = "ToFW";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MPP] = "MPP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BMT] = "BMT";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GHLoE] = "GHLoE";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Screen";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScWild";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_DUNGEON_KIT] = "ScDun";
@@ -3087,6 +3090,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SatO] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ToFW] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MPP] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BMT] = "2023-11-14";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GHLoE] = "2023-11-30";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_DUNGEON_KIT] = "2020-09-21";
@@ -3268,6 +3272,7 @@ Parser.SOURCES_PARTNERED_WOTC = new Set([
 	Parser.SRC_CRCotN,
 	Parser.SRC_TDCSR,
 	Parser.SRC_HftT,
+	Parser.SRC_GHLoE,
 ]);
 // region Source categories
 
@@ -3321,7 +3326,6 @@ Parser.SOURCES_NON_FR = new Set([
 	Parser.SRC_KKW,
 	Parser.SRC_ERLW,
 	Parser.SRC_EFR,
-	Parser.SRC_UAWGE,
 	Parser.SRC_EGW,
 	Parser.SRC_EGW_ToR,
 	Parser.SRC_EGW_DD,
@@ -3480,6 +3484,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_CoA,
 	Parser.SRC_PiP,
 	Parser.SRC_HFStCM,
+	Parser.SRC_GHLoE,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;

@@ -2596,5 +2596,11 @@
 		"date": "2023-12-03",
 		"title": "Unhurriedly Aborted",
 		"txt": "- Migrated all remaining Unearthed Arcana content _[except the Mystic]_ to the prerelease content repository (this is accessed via \"Utilities\" -> \"Prerelease Content Manager\")\n- Added \"Export List as URL\" to prerelease/homebrew managers, allowing the currently-loaded prerelease + homebrew set to be baked into a link\n- Added page numbers to Glory of the Giants book/content\n- Improved minimized Dice Roller display on iOS (thanks @ nimids)\n- (Brew) When editing an existing homebrew entity via the \"Edit in Homebrew Builder\" option on a list page, the Homebrew Builder will now attempt to load and edit the original entity, rather than creating a copy\n- (Brew) Improved Text Converter handling of spell level/classes\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.196.0",
+		"date": "2023-12-06",
+		"title": "Surprisingly Pleasant",
+		"txt": "- Added Grim Hollow: Lairs of Etharis content _[As \"D&D Beyond Partnered,\" this has been added to the main site. Note that this, and other partnered content, may be migrated out the the Homebrew repository in the future.]_\n- Adjusted filtering to better support \"D&D Beyond Partnered\" sources\n  - The default filter set no longer includes \"D&D Beyond Partnered\" sources\n  - Added \"Select All Partnered Sources\" option to Source Filter menu\n  - Reworked modifier key bindings for \"Core/Supplements\", \"Adventures\", and \"Homebrew\" buttons. SHIFT now adds to the current selection, and CTRL includes UA/extras\n  - Added \"Partnered\" button (with SHIFT to add to the current selection)\n- (Brew) Added \"Generic\" (Markdown) mode to Text Converter, allowing basic Markdown conversion to be accessed independent of specific entity types (thanks @ Lyra)\n- (Fixed typos/added tags)"
 	}
 ]

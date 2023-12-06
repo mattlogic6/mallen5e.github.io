@@ -1109,6 +1109,8 @@ globalThis.Renderer = function () {
 	};
 
 	this._renderQuote = function (entry, textStack, meta, options) {
+		textStack[0] += `<div class="${this._renderList_getQuoteCssClasses(entry, textStack, meta, options)}">`;
+
 		const len = entry.entries.length;
 		for (let i = 0; i < len; ++i) {
 			textStack[0] += `<p class="rd__quote-line ${i === len - 1 && entry.by ? `rd__quote-line--last` : ""}">${i === 0 && !entry.skipMarks ? "&ldquo;" : ""}`;
@@ -1130,6 +1132,16 @@ globalThis.Renderer = function () {
 			textStack[0] += `<span class="rd__quote-by">\u2014 ${byArr ? tempStack.join("") : ""}${byArr && entry.from ? `, ` : ""}${entry.from ? `<i>${entry.from}</i>` : ""}</span>`;
 			textStack[0] += `</p>`;
 		}
+
+		textStack[0] += `</div>`;
+	};
+
+	this._renderList_getQuoteCssClasses = function (entry, textStack, meta, options) {
+		const out = [`rd__quote`];
+		if (entry.style) {
+			if (entry.style) out.push(...entry.style.split(" ").map(it => `rd__${it}`));
+		}
+		return out.join(" ");
 	};
 
 	this._renderQuote_getBy = function (entry) {

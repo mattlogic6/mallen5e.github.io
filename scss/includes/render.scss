@@ -289,6 +289,14 @@ $rgb-inset-border: #656565;
 			font-style: italic;
 		}
 
+		&quote {
+			&-pull {
+				padding: 10px 15px;
+				text-align: center;
+				font-size: 125%;
+			}
+		}
+
 		// section headers
 		&h {
 			margin: 0;

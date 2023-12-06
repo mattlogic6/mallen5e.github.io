@@ -32044,6 +32044,803 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Grim Hollow: Lairs of Etharis",
+			"id": "GHLoE",
+			"source": "GHLoE",
+			"group": "supplement-alt",
+			"coverUrl": "img/covers/GHLoE.webp",
+			"published": "2023-11-30",
+			"storyline": "Grim Hollow",
+			"level": {
+				"start": 1,
+				"end": 20
+			},
+			"contents": [
+				{
+					"name": "Welcome to Lairs of Etharis",
+					"headers": [
+						"Introduction",
+						"Monster Hunting",
+						"Horror Triggers Horror",
+						"Capturing the Grim",
+						"A Little Knowledge Goes a Long Way",
+						"Ultimately, the Goal is Fun",
+						"You are a Game Master",
+						"Monsters, Magic, and More"
+					]
+				},
+				{
+					"name": "1: Bone House",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Ruined Cabin"
+						},
+						{
+							"depth": 1,
+							"header": "2. Faevlin Camp"
+						},
+						{
+							"depth": 1,
+							"header": "3. Refuse Pit"
+						},
+						{
+							"depth": 1,
+							"header": "4. Knifewing Den"
+						},
+						{
+							"depth": 1,
+							"header": "5. Bone Manse"
+						},
+						{
+							"depth": 1,
+							"header": "6. Bedroom and Showcase"
+						},
+						{
+							"depth": 1,
+							"header": "7. Storeroom"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "2: Faren's Rest",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. The Outrageous Pig (Inn and Tavern)"
+						},
+						{
+							"depth": 1,
+							"header": "2. Stables"
+						},
+						{
+							"depth": 1,
+							"header": "3. Faren's Mansion"
+						},
+						{
+							"depth": 1,
+							"header": "4. Defaced Statue of Faren"
+						},
+						{
+							"depth": 1,
+							"header": "5. Well"
+						},
+						{
+							"depth": 1,
+							"header": "6. Outhouses"
+						},
+						{
+							"depth": 1,
+							"header": "7. Wealthy Merchant's Home"
+						},
+						{
+							"depth": 1,
+							"header": "8. Ambitious Merchant's Home"
+						},
+						{
+							"depth": 1,
+							"header": "9. Assorted Homes"
+						},
+						{
+							"depth": 1,
+							"header": "10. Open Road"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "3: The Leatherhollow",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. First Cave (Entrance)"
+						},
+						{
+							"depth": 1,
+							"header": "2. Lavatory Pit & Cages"
+						},
+						{
+							"depth": 1,
+							"header": "3. Barracks"
+						},
+						{
+							"depth": 1,
+							"header": "4. Root Cellar"
+						},
+						{
+							"depth": 1,
+							"header": "5. Spider Lair"
+						},
+						{
+							"depth": 1,
+							"header": "6. Skinweaver's Blinds"
+						},
+						{
+							"depth": 1,
+							"header": "7. Skinweaver Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "8. Tanning Area"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "4: Apostate Temple",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Stylobate Base"
+						},
+						{
+							"depth": 1,
+							"header": "2. Barracks"
+						},
+						{
+							"depth": 1,
+							"header": "3. Storeroom"
+						},
+						{
+							"depth": 1,
+							"header": "4. Armory"
+						},
+						{
+							"depth": 1,
+							"header": "5. Bloodbonded Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "6. Sanctuary Stairs"
+						},
+						{
+							"depth": 1,
+							"header": "7. The Sanctuary"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "5: Gloomrock Caverns",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Caverns Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "2. Grimlock Island"
+						},
+						{
+							"depth": 1,
+							"header": "3. Drake Lake"
+						},
+						{
+							"depth": 1,
+							"header": "4. Slow Rise"
+						},
+						{
+							"depth": 1,
+							"header": "5. Horror Flit Nest"
+						},
+						{
+							"depth": 1,
+							"header": "6. Unsteady Stalagmites"
+						},
+						{
+							"depth": 1,
+							"header": "7. Dawndrinker Glimmercave"
+						},
+						{
+							"depth": 1,
+							"header": "8. Sloped Tunnel"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "6: Boulderwood Path",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Forest Path"
+						},
+						{
+							"depth": 1,
+							"header": "2. Watering Hole"
+						},
+						{
+							"depth": 1,
+							"header": "3. Ruined Wagon"
+						},
+						{
+							"depth": 1,
+							"header": "4. Elder Mount"
+						},
+						{
+							"depth": 1,
+							"header": "5. Hillside Nest"
+						},
+						{
+							"depth": 1,
+							"header": "6. Ancient Altar"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "7: Flamegrit Iron Mine",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "2. North Side"
+						},
+						{
+							"depth": 1,
+							"header": "3. Smoking Crates"
+						},
+						{
+							"depth": 1,
+							"header": "4. Trapped Miners"
+						},
+						{
+							"depth": 1,
+							"header": "5. West Cave"
+						},
+						{
+							"depth": 1,
+							"header": "6. General Store"
+						},
+						{
+							"depth": 1,
+							"header": "7. South Side"
+						},
+						{
+							"depth": 1,
+							"header": "8. Bunkroom"
+						},
+						{
+							"depth": 1,
+							"header": "9. Abandoned Excavation"
+						},
+						{
+							"depth": 1,
+							"header": "10. East Cave"
+						},
+						{
+							"depth": 1,
+							"header": "11. Stone Bridge"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "8: Shadowsteel Citadel",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Path and Cliffs"
+						},
+						{
+							"depth": 1,
+							"header": "2. Collapsed Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "3. Undead Guards"
+						},
+						{
+							"depth": 1,
+							"header": "4. Empty Room"
+						},
+						{
+							"depth": 1,
+							"header": "5. Bunkroom"
+						},
+						{
+							"depth": 1,
+							"header": "6. Guarded Negotiations Chamber"
+						},
+						{
+							"depth": 1,
+							"header": "7. Armory"
+						},
+						{
+							"depth": 1,
+							"header": "8. Dead in Waiting"
+						},
+						{
+							"depth": 1,
+							"header": "9. Dining Room"
+						},
+						{
+							"depth": 1,
+							"header": "10. Kitchen"
+						},
+						{
+							"depth": 1,
+							"header": "11. Storage"
+						},
+						{
+							"depth": 1,
+							"header": "12. Sacristy"
+						},
+						{
+							"depth": 1,
+							"header": "13. Ruined Cathedral"
+						},
+						{
+							"depth": 1,
+							"header": "14. Undead Alchemy Lab"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "9: Storm Sanctuary",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Open Pagoda"
+						},
+						{
+							"depth": 1,
+							"header": "2. Air Elemental Statue"
+						},
+						{
+							"depth": 1,
+							"header": "3. Ruined Hall"
+						},
+						{
+							"depth": 1,
+							"header": "4. Ruined Study"
+						},
+						{
+							"depth": 1,
+							"header": "5. Magic Gate"
+						},
+						{
+							"depth": 1,
+							"header": "6. The Sacred Pool"
+						},
+						{
+							"depth": 1,
+							"header": "7. Nesting Cave"
+						},
+						{
+							"depth": 1,
+							"header": "8. Dragon Sanctuary"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "10: Sardonyx Necropolis",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Cobblestone Walkway"
+						},
+						{
+							"depth": 1,
+							"header": "2. Angel of Health"
+						},
+						{
+							"depth": 1,
+							"header": "3. Unmarked Mausoleum"
+						},
+						{
+							"depth": 1,
+							"header": "4. Obelisk"
+						},
+						{
+							"depth": 1,
+							"header": "5. Crypt Niches"
+						},
+						{
+							"depth": 1,
+							"header": "6. Statue of Lady Gilrain"
+						},
+						{
+							"depth": 1,
+							"header": "7. Assorted Graves"
+						},
+						{
+							"depth": 1,
+							"header": "8. General's Tomb"
+						},
+						{
+							"depth": 1,
+							"header": "9. Destroyed Crypts"
+						},
+						{
+							"depth": 1,
+							"header": "10. Niches & Mosaic"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "11: Foulest Truths",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Underdock"
+						},
+						{
+							"depth": 1,
+							"header": "2. Path of Planks"
+						},
+						{
+							"depth": 1,
+							"header": "3. Pumping Room"
+						},
+						{
+							"depth": 1,
+							"header": "4. The Liar's Test"
+						},
+						{
+							"depth": 1,
+							"header": "5. Mauro's Lair"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "12: The Tower of Flicker and Shadow",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. First Floor\u2013Grand Hall"
+						},
+						{
+							"depth": 1,
+							"header": "2. Second Floor - Library"
+						},
+						{
+							"depth": 1,
+							"header": "3. Third Floor\u2013Living Quarters"
+						},
+						{
+							"depth": 1,
+							"header": "4. Fourth Floor\u2013Laboratory"
+						},
+						{
+							"depth": 1,
+							"header": "5. Fifth Floor\u2013Summoning Chamber"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "13: Swamp of Fate",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. The Hanging Tree"
+						},
+						{
+							"depth": 1,
+							"header": "2. Standing Stones"
+						},
+						{
+							"depth": 1,
+							"header": "3. Ruins of Astranag"
+						},
+						{
+							"depth": 1,
+							"header": "4. Wooded Hill"
+						},
+						{
+							"depth": 1,
+							"header": "5. The Ordeal Tree"
+						},
+						{
+							"depth": 1,
+							"header": "6. Shallows"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "14: Street Prophet",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Fountain Square"
+						},
+						{
+							"depth": 1,
+							"header": "2. Storefront"
+						},
+						{
+							"depth": 1,
+							"header": "3. Chapel"
+						},
+						{
+							"depth": 1,
+							"header": "4. Abattoir"
+						},
+						{
+							"depth": 1,
+							"header": "5. Abandoned Shop"
+						},
+						{
+							"depth": 1,
+							"header": "6. Summoning Shop"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "15: The Thundering Hills",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Cave Entrance"
+						},
+						{
+							"depth": 1,
+							"header": "2. Windy Ravine"
+						},
+						{
+							"depth": 1,
+							"header": "3. Burrow of the Lickscale"
+						},
+						{
+							"depth": 1,
+							"header": "4. Nursery Pit"
+						},
+						{
+							"depth": 1,
+							"header": "5. Lair of the Lindwyrms"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "16: Safe in the Stillborn",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Logging Road"
+						},
+						{
+							"depth": 1,
+							"header": "2. Destroyed Dwelling"
+						},
+						{
+							"depth": 1,
+							"header": "3. Krumm's Estate"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "17: Cave of Rising Sands",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Midden"
+						},
+						{
+							"depth": 1,
+							"header": "2. Tainted Pool"
+						},
+						{
+							"depth": 1,
+							"header": "3. Ill-Gotten Gains"
+						},
+						{
+							"depth": 1,
+							"header": "4. Larder"
+						},
+						{
+							"depth": 1,
+							"header": "5. Barracks"
+						},
+						{
+							"depth": 1,
+							"header": "6. Study"
+						},
+						{
+							"depth": 1,
+							"header": "7. Shrine to Miklas"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "18: Mayhem at the Crossroads",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Floss Memorial Statue"
+						},
+						{
+							"depth": 1,
+							"header": "2. Rusk's Residence"
+						},
+						{
+							"depth": 1,
+							"header": "3. Private Tavern"
+						},
+						{
+							"depth": 1,
+							"header": "4. Yort's Residence"
+						},
+						{
+							"depth": 1,
+							"header": "5. Hostage"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "19: Prison of Good Intent",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						{
+							"depth": 1,
+							"header": "1. Moat"
+						},
+						{
+							"depth": 1,
+							"header": "2. Bridge"
+						},
+						{
+							"depth": 1,
+							"header": "3. Sty"
+						},
+						{
+							"depth": 1,
+							"header": "4. Tree"
+						},
+						{
+							"depth": 1,
+							"header": "5. Dwelling"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "20: Top of the World",
+					"headers": [
+						"Background",
+						"Lair Overview",
+						"Arrival",
+						{
+							"depth": 1,
+							"header": "1. Thunder Obelisk"
+						},
+						{
+							"depth": 1,
+							"header": "2. Ice Obelisk"
+						},
+						{
+							"depth": 1,
+							"header": "3. Flame Obelisk"
+						},
+						{
+							"depth": 1,
+							"header": "4. Lightning Obelisk"
+						},
+						{
+							"depth": 1,
+							"header": "5. Central Obelisk"
+						},
+						"Conclusion",
+						"Creatures"
+					]
+				},
+				{
+					"name": "Magic and Salvage",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					},
+					"headers": [
+						"The Power of Salvage",
+						"Overcoming Incredible Odds",
+						"Salvage and Crafting Rules",
+						"New Magic Items",
+						"New Spells"
+					]
+				},
+				{
+					"name": "Etharis Creatures",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
+				},
+				{
+					"name": "Credits"
+				}
+			]
 		}
 	]
 }

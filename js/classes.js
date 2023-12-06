@@ -1404,7 +1404,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 			{name: "View Default", subHashes: [], isClearSources: false},
 			{name: "View Official", subHashes: [], isClearSources: false, sourceCategories: ["official"]},
 			{name: "View Homebrew", subHashes: [], isClearSources: false, sourceCategories: ["homebrew"]},
-			{name: "View Most Recent", subHashes: [], isClearSources: false, sources: {[Parser.SRC_UACFV]: 2}},
+			{name: "View Most Recent", subHashes: [], isClearSources: false},
 			{name: "View All", subHashes: ["flstmiscellaneous:reprinted=0"], isClearSources: true},
 		];
 		const setFilterSet = ix => {

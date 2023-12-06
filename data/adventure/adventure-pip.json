@@ -10,7 +10,9 @@
 					"href": {
 						"type": "internal",
 						"path": "adventure/PiP/001-0000.webp"
-					}
+					},
+					"width": 2248,
+					"height": 2889
 				},
 				"Welcome to the adventure of a lifetime!",
 				"Peril in Pinebrook is an introductory Dungeons & Dragons (also known as D&D) adventure designed for younger players, but it can be enjoyed by players of all ages!",
@@ -23,7 +25,8 @@
 					"entries": [
 						"Dungeons & Dragons is a collaborative storytelling and roleplaying game. Each player takes on the role of an adventuring character: a hero with skill and knowledge\u2014and sometimes magic\u2014that lets them overcome challenges and achieve greatness!",
 						"One of the participants in the game takes the role of the Dungeon Master (DM). The DM acts as the lead storyteller, the keeper of secrets, and the referee. This document provides everything you need to know to get started as a DM."
-					]
+					],
+					"id": "001"
 				},
 				{
 					"type": "section",
@@ -33,7 +36,8 @@
 						"Characters in Dungeons & Dragons undertake quests throughout their lives, heroic journeys and death-defying acts of courage that become tales of legend\u2014or tales of doom!",
 						"Peril in Pinebrook contains helpful hints, suggestions, and rules explanations that assist new Dungeon Masters in running the adventure. If you're the DM, you can run this adventure as it's written, or you can add your own bits of story. Your imagination, and the imaginations of the other players, make each game of D&D unique.",
 						"The \"Running an Adventure\" section has information that can help you decide whether you want to be a DM. If you prefer to play a character instead, don't read \"Adventure Introduction\" or any of the adventure beyond that. If you do, some of the fun of playing might be spoiled for you."
-					]
+					],
+					"id": "002"
 				},
 				{
 					"type": "section",
@@ -43,7 +47,8 @@
 						"Dungeons & Dragons is a special type of game known as a roleplaying game (RPG). In D&D, the rules help determine if the characters succeed or fail at the challenges they face. They also help the entire group of players tell a fun, exciting, and memorable story.",
 						"The rules are explained in the \"Using the Rules\" section. The \"Running an Adventure\" section provides the DM advice on leading the other players through a game session.",
 						"The adventure text also explains rules and game play along the way."
-					]
+					],
+					"id": "003"
 				},
 				{
 					"type": "section",
@@ -68,9 +73,11 @@
 										"{@5etools Shalefire Stoutheart|pdf/adventure/PiP/Shalefire_Stoutheart.pdf}"
 									]
 								}
-							]
+							],
+							"id": "005"
 						}
-					]
+					],
+					"id": "004"
 				},
 				{
 					"type": "section",
@@ -86,9 +93,12 @@
 								"type": "internal",
 								"path": "adventure/PiP/0000.webp"
 							},
-							"maxWidth": 300
+							"maxWidth": 300,
+							"width": 1063,
+							"height": 1135
 						}
-					]
+					],
+					"id": "006"
 				},
 				{
 					"type": "section",
@@ -103,7 +113,8 @@
 							"entries": [
 								"A character's actions hold the potential for either success or failure. Can you hit a monster with your weapon? Can you balance on a narrow ledge as you ascend a mountain? Can you convince a dragon not to eat you?",
 								"You find the answer to these questions during the game by making a {@dice d20} roll!"
-							]
+							],
+							"id": "008"
 						},
 						{
 							"type": "entries",
@@ -114,7 +125,8 @@
 								"Things a character might try to do are listed under \"Attacks\" and \"Skills\" on the character sheets. Next to attacks and skills are number expressions, such as \"+5 to hit.\" This is the number you add to your die roll when your character uses that attack or skill.",
 								"For example, the character sheet for Shalefire Stoutheart lists \"Handaxe\" under \"Attacks,\" with \"+6 to hit\" next to it. If Shalefire wants to attack a monster with their handaxe, the player rolls a {@dice d20}. If the die roll is a 10, the player adds 6 to the die roll for a final attack score of 16.",
 								"How does the player know if their roll succeeds or fails? Read on to find out!"
-							]
+							],
+							"id": "009"
 						},
 						{
 							"type": "entries",
@@ -122,7 +134,8 @@
 							"page": 3,
 							"entries": [
 								"The number a character tries to equal or exceed with an attack roll is called Armor Class (also called AC). The higher a creature's Armor Class, the harder that creature is to hit. In the previous example, Shalefire's attack roll with a handaxe would hit a creature with an Armor Class of 16 or lower."
-							]
+							],
+							"id": "00a"
 						},
 						{
 							"type": "entries",
@@ -130,7 +143,8 @@
 							"page": 3,
 							"entries": [
 								"When an attack roll hits, it deals damage. The damage roll appears after the attack on the character sheet. Shalefire's handaxe does \"{@damage 1d6 + 4} damage,\" so the player would roll one 6-sided die ({@dice d6}) and add 4 to the die roll."
-							]
+							],
+							"id": "00b"
 						},
 						{
 							"type": "entries",
@@ -140,7 +154,8 @@
 								"Difficulty Class (DC) is the number that a character must equal or exceed to succeed at an action that is not an attack. This includes rolls to use skills.",
 								"For example, if Shalefire wants to move a heavy boulder blocking the mouth of a cave, that requires a skill called {@skill Athletics}. Under \"Skills\" on Shalefire's character sheet, it says \"{@skill Athletics} +6,\" so Shalefire's player rolls a 20-sided die and adds 6 to the number on the die. If the Difficulty Class to move the boulder is 12, the player would need to roll a 6 or higher for Shalefire to move the boulder.",
 								"The Difficulty Class for actions a character can attempt is given in the adventure text. In general, a Difficulty Class of 10 ({@dc 10}) is easy, while a DC of 15 is challenging. Most of the actions in this adventure are {@dc 10}. The Dungeon Master can change DCs if circumstances make an action easier or harder. They can also make up their own DCs when the characters attempt actions not covered in the adventure."
-							]
+							],
+							"id": "00c"
 						},
 						{
 							"type": "entries",
@@ -154,7 +169,8 @@
 									"page": 3,
 									"entries": [
 										"Advantage and disadvantage are powerful game tools. They make {@dice d20} rolls more likely to succeed or fail, so use them wisely. They are best used as a reward for clever play by the players, or to represent good or bad luck affecting the story. In the full version of the D&D rules, certain rules automatically give a character advantage or disadvantage. For this adventure, the DM can decide when to apply advantage or disadvantage to rolls. If a character has both advantage and disadvantage on a roll, they cancel each other out, and the roll is made normally."
-									]
+									],
+									"id": "00e"
 								},
 								{
 									"type": "entries",
@@ -163,7 +179,8 @@
 									"entries": [
 										"If Shalefire attacks a monster with a handaxe while the monster is distracted by another character, the monster can't see the attack coming. The DM might decide the monster is easier to hit while distracted, so Shalefire would make the attack roll with advantage.",
 										"Advantage means that instead of rolling the {@dice d20} once for the attack roll, Shalefire's player rolls the {@dice d20} twice and uses the higher roll. They then add the normal modifier (+6 for Shalefire's handaxe) to get a final attack result."
-									]
+									],
+									"id": "00f"
 								},
 								{
 									"type": "entries",
@@ -172,9 +189,11 @@
 									"entries": [
 										"Disadvantage works like advantage in reverse. If something in the game makes it harder to take an action, the roll for that action is made with disadvantage. For example, as Shalefire climbs a cliff using a rope, a monster at the top of the cliff shakes the rope. Because it's now harder to climb, Shalefire makes the {@dice d20} roll to climb the rope with disadvantage.",
 										"Disadvantage means that instead of rolling the {@dice d20} once to make the {@skill Athletics} check to climb, Shalefire's player rolls the {@dice d20} twice and uses the lower roll. They then add the normal modifier (+6 for Shalefire's {@skill Athletics} skill) to get a final result."
-									]
+									],
+									"id": "010"
 								}
-							]
+							],
+							"id": "00d"
 						},
 						{
 							"type": "entries",
@@ -184,9 +203,11 @@
 								"Every creature in D&D has a number of \"hit points.\" This number reflects the damage a creature can take before it falls {@condition unconscious} or is defeated. When a character or creature is damaged by an attack roll or a hazard in the game, the amount of damage dealt is subtracted from the character's or creature's hit points.",
 								"If a creature reaches 0 hit points, they are defeated. The players can decide if this means a creature is dead or {@condition unconscious} or if they run away.",
 								"When a character reaches 0 hit points, they are {@condition unconscious}. In this adventure, a character at 0 hit points remains {@condition unconscious} until they regain hit points through healing or until the end of the encounter, when they regain 1 hit point automatically. The adventure details ways to regain hit points."
-							]
+							],
+							"id": "011"
 						}
-					]
+					],
+					"id": "007"
 				},
 				{
 					"type": "section",
@@ -200,7 +221,8 @@
 							"page": 4,
 							"entries": [
 								"This adventure is divided into \"encounters,\" which are like scenes from a movie or show. Each encounter has specific challenges. Once the players complete the challenges, move on to the next scene. The flow of the game is described below."
-							]
+							],
+							"id": "013"
 						},
 						{
 							"type": "entries",
@@ -214,7 +236,8 @@
 								"If the action is possible and very easy to do, the character automatically succeeds. Opening an unlocked door or lifting a light object doesn't require heroic effort, so no {@dice d20} roll is necessary.",
 								"When the action is somewhere between easy and impossible, trying to do it could lead to success or failure. That's when the DM calls for a {@dice d20} roll. See the \"{@dice d20} Rolls\" section earlier in this document.",
 								"The {@dice d20} roll, plus its modifiers, determines whether the action succeeds or fails. What does success or failure mean for an adventure? This is where you and the players get to tell a story together!"
-							]
+							],
+							"id": "014"
 						},
 						{
 							"type": "entries",
@@ -223,7 +246,8 @@
 							"entries": [
 								"When a {@dice d20} roll succeeds or fails, the DM and the players can turn that result into a part of the ongoing story. What does it look like when a monster is defeated? What does Shalefire say or do if the heavy boulder blocking the cave doesn't budge? These points in the game can spark great storytelling and acting moments.",
 								"Remember, though, that part of the DM's job is to keep the game's story moving forward. If describing every single attack roll in a long combat gets boring, just say how much damage the attack deals and get to the next exciting moment."
-							]
+							],
+							"id": "015"
 						},
 						{
 							"type": "entries",
@@ -287,11 +311,15 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/PiP/0002.webp"
-									}
+									},
+									"width": 1680,
+									"height": 1396
 								}
-							]
+							],
+							"id": "016"
 						}
-					]
+					],
+					"id": "012"
 				},
 				{
 					"type": "section",
@@ -305,7 +333,8 @@
 							"page": 5,
 							"entries": [
 								"Text that appears in a box like this is meant to be read aloud to the players. You can read boxed text word-for-word, or use your own words."
-							]
+							],
+							"id": "018"
 						},
 						"To begin the adventure, show your players the character sheets. Then read the following passage aloud to your players:",
 						{
@@ -313,7 +342,8 @@
 							"page": 5,
 							"entries": [
 								"We're going to play a short game of Dungeons & Dragons. These character sheets have information about your characters on them. You can each have one character to play."
-							]
+							],
+							"id": "019"
 						},
 						"You can let the players choose their characters, but if your time is limited, consider choosing characters for them.",
 						"Once each player has a character sheet, read the following:",
@@ -323,7 +353,8 @@
 							"entries": [
 								"Write your name in the space where it says \"Player Name.\" Your character already has a name, which you can use if you want, or you can change the name. There's space below the name where you can give your character a nickname and add your character's pronouns.",
 								"Each character sheet has a \"Description\" area for your character's appearance, personality, and attitude. Choose from the options there or make up your own. You can act out how your character behaves based on their description and personality."
-							]
+							],
+							"id": "01a"
 						},
 						"Offer to help the players fill out these parts of their character sheets if needed. Do your best to answer questions from players, but some questions are best answered as they come up during play. Let the players know that you'll give them more information along the way. Still, you may need to pause between each section to answer questions as you present the following information:",
 						{
@@ -379,7 +410,8 @@
 										}
 									]
 								}
-							]
+							],
+							"id": "01b"
 						},
 						"Explain how {@dice d20} rolls work with the following example:",
 						{
@@ -387,7 +419,8 @@
 							"page": 5,
 							"entries": [
 								"The character Noorah Eldenfield has a shortbow attack that says \"+5 to hit.\" When Noorah attacks with a shortbow, Noorah's player rolls a {@dice d20} and adds 5 to the number rolled on the die. I'll tell you if that attack hits the monster. If it does, Noorah's shortbow attack also says \"Damage {@dice 1d6 + 3}.\" The player rolls a 6-sided die and adds 3 to determine the damage dealt by the attack."
-							]
+							],
+							"id": "01c"
 						},
 						"A \"Player Reference Sheet\" also details some of the terms on the character sheets.",
 						"Now let's get on with the game!",
@@ -396,9 +429,12 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/PiP/0004.webp"
-							}
+							},
+							"width": 1320,
+							"height": 1236
 						}
-					]
+					],
+					"id": "017"
 				},
 				{
 					"type": "section",
@@ -414,7 +450,8 @@
 								"You are from the village of Pinebrook, a small settlement near the base of a mountain range called the Spine of the World. In addition to their normal jobs, the citizens of Pinebrook take turns patrolling the forest and hills around the village, making sure the area is safe for the loggers who work in the forest and the miners who dig in the mountains for iron ore. Today, it's your turn to patrol the forest with some of your friends.",
 								"Dangerous creatures sometimes wander the woods, but it has been safe recently. Rumors have spread through the area that a friendly silver dragon recently established a lair in the nearest mountain. The more hostile creatures of the mountains, especially the dangerous ice trolls, haven't been seen in the past two months. Yesterday, however, a patrol saw large, frosty troll footprints in the forest. Could the rumors of a friendly silver dragon be just rumors after all? Your patrol today is led by the head of the village guards, Captain Emmajeen Kole. Captain Kole glances nervously at the forest trail before she nods at your group.",
 								"\"I've not patrolled with any of you before. Tell me a little about yourselves.\""
-							]
+							],
+							"id": "01e"
 						},
 						"Ask each player to give their character's name or nickname and describe what they look like. They can reveal the things they are carrying that the other characters would see, explain what attacks and skills they have, and maybe even describe their personalities. They can use their character sheets as prompts.",
 						{
@@ -441,20 +478,25 @@
 									"page": 6,
 									"entries": [
 										"\"Well, this forest needs to be patrolled, so let's get to it. I'm ready to fight if we have to!\""
-									]
+									],
+									"id": "020"
 								},
 								"Let the players respond for their characters if they want to. Then, describe how Captain Kole moves carefully into the forest, motioning for the characters to follow.",
 								"Proceed to Encounter 1: A Not-So-Fearsome Dragon."
-							]
+							],
+							"id": "01f"
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
 								"path": "adventure/PiP/001-0049.webp"
-							}
+							},
+							"width": 1675,
+							"height": 2991
 						}
-					]
+					],
+					"id": "01d"
 				},
 				{
 					"type": "section",
@@ -469,9 +511,11 @@
 							"entries": [
 								"You move along the forest trail for fifteen minutes before Captain Kole stops and holds up a hand. \"Do you hear that?\" she asks.",
 								"You're going to make a {@skill Perception} check to see if you can hear what Captain Kole hears. \"{@skill Perception}\" is listed on your character sheet under \"Skills.\" Each of you should roll a 20-sided die and add the number next to your {@skill Perception} skill on your character sheet. Then tell me the total of your {@skill Perception} check."
-							]
+							],
+							"id": "022"
 						}
-					]
+					],
+					"id": "021"
 				},
 				{
 					"type": "section",
@@ -486,7 +530,8 @@
 							"entries": [
 								"The underbrush at the edge of the trail rustles as a creature the size of a large dog crawls from the thorns and leaves. At first, the creature looks like a strange lizard made of metal. But as you look more closely, you see that it is a small dragon with blue-gray scales and a long, pointy tongue.",
 								"As the dragon crawls in your direction, it feebly tries to scrape pieces of silver eggshell off its head and face. It makes a hissy, whimpering sound."
-							]
+							],
+							"id": "024"
 						},
 						"Ask the players what they want to do. Let them play their characters as they react, talk, speculate, and investigate further. As long as the characters don't try to hurt the baby silver dragon, Captain Kole simply stares in confusion, unsure what to do next.",
 						{
@@ -531,10 +576,12 @@
 										"Captain Kole pulls a book from her backpack, The Practically Complete Guide to Dragons. She flips to the middle of the book. \"It's true! This is a newborn silver dragon. The mother's lair must be in the nearest mountain just beyond the forest, as the rumors said. We need to get this baby to its mother quickly. I wonder how the baby got so far from home?\"",
 										"Captain Kole hesitates, then sighs. \"I must return to Pinebrook and tell them what we've found. I need you to take the baby to the lair and its mother. Protect this dragon with your lives. Trails in the forest lead right up to the mountain. Give this poor thing a name and get it some food. It looks weak.\"",
 										"She tears a page from the book and holds it out. \"Here. This might be useful. According to the book, silver dragons are peaceful and usually like people.\""
-									]
+									],
+									"id": "026"
 								},
 								"The page Captain Kole gives the characters is found in appendix A. It contains translations of Draconic, the language of dragons, into the Common language the characters know. The characters don't need to read it now, but the information will be useful in the adventure."
-							]
+							],
+							"id": "025"
 						},
 						{
 							"type": "entries",
@@ -544,7 +591,8 @@
 								"After Captain Kole leaves, the characters should attempt to find food for the dragon. You may want to point out that all the characters have rations listed on their character sheets under \"Other Equipment.\" Alternatively, Shalefire can make a {@dc 10} {@skill Survival} check or Gallantine can make a {@dc 10} {@skill Nature} check to find berries and nuts the dragon can eat. Remind players how to make {@dice d20} rolls if needed.",
 								"After the dragon is fed, it says one word: \"Nytha.\" The characters won't learn this until later, but the baby just called the characters \"Mama\" in Draconic.",
 								"Once the dragon eats, it perks up and follows the characters. They can carry the dragon, who enjoys the attention. The dragon also loves belly rubs!"
-							]
+							],
+							"id": "027"
 						},
 						{
 							"type": "entries",
@@ -553,9 +601,11 @@
 							"entries": [
 								"The mountain Captain Kole pointed the characters toward is visible above the trees.",
 								"When the players are ready, proceed to Encounter 2: Living Icicles."
-							]
+							],
+							"id": "028"
 						}
-					]
+					],
+					"id": "023"
 				},
 				{
 					"type": "section",
@@ -570,7 +620,8 @@
 							"page": 8,
 							"entries": [
 								"By carefully following the correct forest trails, you arrive at the base of the mountain. You see a cave opening not far ahead. If a dragon built a lair in the mountain, this would be an obvious entrance."
-							]
+							],
+							"id": "02a"
 						},
 						"The cave is the only visible entrance leading to the dragon's lair. When the baby dragon gets near the entrance, it sniffs the air and struggles to move closer, recognizing the smell of home.",
 						"As the characters move closer to the cave, read the following:",
@@ -580,7 +631,8 @@
 							"entries": [
 								"The cave entrance is wide and filled with sunlight, but the cave quickly grows dark beyond, with no way to see if there is anything inside. Broken icicles and patches of frosty snow cover the ground at the cave entrance.",
 								"Suddenly, the shards of ice begin to twitch. The icicles and snow come together to form small ice creatures with wicked, pointy claws. One of them cries, \"Intruders! Slash 'em good!\" as they attack!"
-							]
+							],
+							"id": "02b"
 						},
 						"Five living icicles dwell in the cave entrance. If you are playing this adventure with fewer than four characters, remove one living icicle per player missing, to a minimum of two living icicles. Use the information below to play the living icicles during combat.",
 						{
@@ -614,11 +666,14 @@
 											"name": "Claws",
 											"entries": [
 												"{@atk mw} {@hit 2} to hit. {@h}{@damage 1d6} slashing damage."
-											]
+											],
+											"id": "02e"
 										}
-									]
+									],
+									"id": "02d"
 								}
-							]
+							],
+							"id": "02c"
 						},
 						"Read the following to get the players ready for their first combat:",
 						{
@@ -627,7 +682,8 @@
 							"entries": [
 								"Get ready for your first combat! Look at the \"Attacks\" section on your character sheet. If you want to make a melee attack, your character needs to move up to the icicle creatures. If you want to make a ranged attack, you can stay back.",
 								"Roll a 20-sided die and add the modifier listed by the attack you're using. Tell me the total, and I'll tell you if the attack hit or missed. If you hit, roll a 6-sided die and add the damage modifier listed by the attack you're using and tell me the total."
-							]
+							],
+							"id": "02f"
 						},
 						{
 							"type": "entries",
@@ -647,9 +703,11 @@
 										"You can intervene if the characters seem to be losing the battle. For instance, you can give the characters advantage on attack rolls or give the monsters disadvantage on attack rolls. See the \"Using the Rules\" section earlier in this document for details about advantage and disadvantage. Changing probabilities like this can improve the characters' odds in defeating the monsters.",
 										"Rather than having a monster attack one character until they fall {@condition unconscious}, have the monster attack a different character each turn. This tactic keeps more characters in the fight longer.",
 										"You can even say the baby dragon rushed in and took down a monster, but try not to use outside help very often."
-									]
+									],
+									"id": "031"
 								}
-							]
+							],
+							"id": "030"
 						},
 						{
 							"type": "entries",
@@ -664,7 +722,8 @@
 									"entries": [
 										"Some monsters carry treasure, so it's often a good idea for characters to search the monsters as well as the area around them. Unless treasure is hidden, the characters can easily find it without having to make a check.",
 										"Just inside the cave entrance, the characters find a worn leather backpack. Inside the backpack are the following items: a package of dried meat, five torches, flint and steel for starting fires, and a pouch containing 12 gold pieces."
-									]
+									],
+									"id": "033"
 								},
 								{
 									"type": "entries",
@@ -672,7 +731,8 @@
 									"page": 9,
 									"entries": [
 										"Let the players divide up the treasure as they wish. If they start to argue over who gets what, use the dragon to calm everyone down. The baby cries if the characters argue!"
-									]
+									],
+									"id": "034"
 								},
 								{
 									"type": "entries",
@@ -680,7 +740,8 @@
 									"page": 9,
 									"entries": [
 										"If any characters took damage from the living icicles, the best way to heal the damage is for Evandon to use their special ability to cast a spell called Cure Wounds. Shalefire also has a special ability to heal their own damage, but only once during the adventure. (The full rules of D&D have other ways to heal damage, but this adventure relies on Evandon's spells, Shalefire's special ability, and on other healing opportunities later in the adventure.)"
-									]
+									],
+									"id": "035"
 								},
 								{
 									"type": "entries",
@@ -688,25 +749,31 @@
 									"page": 9,
 									"entries": [
 										"Living icicles are magical creatures that ice trolls sometimes use to guard places. A character who succeeds on a {@dc 10} check using skills such as {@skill Arcana} or {@skill History} knows this and can tell the other characters what they know."
-									]
+									],
+									"id": "036"
 								}
-							]
+							],
+							"id": "032"
 						},
 						{
 							"type": "entries",
 							"name": "Moving the Adventure Forward",
 							"entries": [
 								"The baby dragon tries to run into the cave. When the characters are ready, proceed to Encounter 3: A Dangerous Lair."
-							]
+							],
+							"id": "037"
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
 								"path": "adventure/PiP/0005.webp"
-							}
+							},
+							"width": 1320,
+							"height": 1298
 						}
-					]
+					],
+					"id": "029"
 				},
 				{
 					"type": "section",
@@ -720,7 +787,8 @@
 							"page": 10,
 							"entries": [
 								"The front of the cave is lit by sunlight coming through the opening, leaving the back of the cave in darkness. The cave walls contain rough chalk drawings of creatures that look like trolls dancing and working."
-							]
+							],
+							"id": "039"
 						},
 						"Ask the players to make either a {@dc 10} {@skill History} or {@skill Religion} check for their characters. Although Evandon is the only character who has a bonus to their {@skill Religion} skill and Gallantine is the only character with a bonus to their {@skill History} skill, the other characters can still attempt a {@skill History} or {@skill Religion} check. The players just don't add anything to the {@dice d20} roll when they do.",
 						"If any of the characters succeeds on the skill check, tell the players that ice trolls once lived and worked in the cave.",
@@ -730,7 +798,8 @@
 							"page": 10,
 							"entries": [
 								"The baby dragon gets more excited after entering the cave, as if it knows it's close to home. Barely visible in the shadows at the back of the cave, a passageway turns into a tunnel that slopes upward toward the center of the mountain."
-							]
+							],
+							"id": "03a"
 						},
 						"Because the cave is dark and spooky beyond the entrance, the characters need to use the torches found in the worn leather backpack to light their way as they explore. The flint and steel in the backpack can be used to light the torches.",
 						{
@@ -751,7 +820,8 @@
 											"page": 10,
 											"entries": [
 												"The cold, frosty passage continues until you reach an ice-covered wall. The passage continues fifty feet above. You'll have to climb the wall to move deeper into the mountain."
-											]
+											],
+											"id": "03d"
 										},
 										"Characters must succeed on a {@dc 10} {@skill Athletics} or {@skill Acrobatics} check to climb the wall. If a character fails the check, roll {@dice 1d6}. Tell the player to subtract that number from the character's hit points to represent the damage the character takes from falling before they eventually reach the top.",
 										"Noorah has a Climber's Kit on her character sheet (under \"Other Equipment\") that gives her advantage on the check. If a character who reaches the top has a rope, they can lower the rope to help the other characters. Characters who use the rope can reach the top without making a check.",
@@ -762,9 +832,11 @@
 											"page": 10,
 											"entries": [
 												"If a character carries the baby dragon and falls during the climb, the dragon doesn't take damage. You can reward a character protecting the baby dragon by giving them advantage on certain rolls."
-											]
+											],
+											"id": "03e"
 										}
-									]
+									],
+									"id": "03c"
 								},
 								{
 									"type": "entries",
@@ -777,7 +849,8 @@
 											"page": 10,
 											"entries": [
 												"The winding, upward-sloping passage is interrupted by a thin sheet of solid ice. Through the ice sheet, you can see the passage continues on the other side. As your torchlight flickers, the ice suddenly becomes as reflective as a mirror, its surface shimmering strangely. In those reflections, you and your companions are all silver dragons, and the baby dragon looks like a human toddler with silver skin."
-											]
+											],
+											"id": "040"
 										},
 										"Let the players roleplay and react to this unique discovery, then continue:",
 										{
@@ -786,7 +859,8 @@
 											"entries": [
 												"The head of a large, platinum-colored dragon appears in the ice and speaks. You understand the words the Dragon speaks, even though it isn't speaking in a language you know.",
 												"\"You are on a blessed quest, but you must speak the correct words in the correct language to enter the lair of one of my children. What two words correctly answer this question: What type of creature are you escorting home?\""
-											]
+											],
+											"id": "041"
 										},
 										"Ask the players to make a {@dc 10} {@skill Arcana}, {@skill History}, or {@skill Religion} check. If a character succeeds on the check, tell them that the figure in the ice represents Bahamut, the god of the metalliccolored dragons (brass, bronze, copper, gold, and silver).",
 										"The correct answer to the question is \"silver dragon.\" However, the characters must say this in the Draconic language. They can use the page from Captain Kole's book to find the correct words: \"orn darastrix.\"",
@@ -797,7 +871,8 @@
 											"page": 10,
 											"entries": [
 												"The ice mirror instantly melts, splashing you all with icy-cold water. But instead of freezing you, the water tingles as it runs down your skin, clothes, and armor. It feels wonderful."
-											]
+											],
+											"id": "042"
 										},
 										"Bahamut blessed this water. Tell your players that the healing magic restores each character's hit points to the maximum amount listed on their character sheets.",
 										"Additionally, each character has advantage on the first roll they make in the next challenge (the ice slides).",
@@ -808,9 +883,11 @@
 											"page": 11,
 											"entries": [
 												"Even if the players roll poorly, always allow them to continue forward in the adventure. Consequences for failing challenges might include character's losing hit points, which might make the final encounter more challenging. But you don't want to prevent the characters from continuing with the adventure because of bad luck."
-											]
+											],
+											"id": "043"
 										}
-									]
+									],
+									"id": "03f"
 								},
 								{
 									"type": "entries",
@@ -824,7 +901,8 @@
 											"entries": [
 												"The passage has taken you higher and higher, and now you stand atop an icy cliff, looking down into a huge cavern inside the mountain. Slides made of stone and ice provide a way down, but they're steep and slick. Furthermore, these slides merge, crisscross, and loop around each other in a dizzying maze. The slides look like the only way forward. Some end in solid ice walls. Others are covered with razor-sharp icicles. You need to choose the best slides to get down.",
 												"Suddenly, you hear a cracking sound. The cliff you're standing on is starting to collapse! If you don't jump on a slide now, you'll fall!"
-											]
+											],
+											"id": "045"
 										},
 										"Each character must quickly jump on one of the slides. Once a character starts to slide, they can't stop. However, they can switch to a different intersecting slide while zipping down at high speed.",
 										{
@@ -833,7 +911,8 @@
 											"page": 11,
 											"entries": [
 												"Before starting to slide, the characters can try to quickly figure out which slide is safest. Ask the players to make a {@dc 10} {@skill Investigation} or {@skill Perception} check to determine the best choice. If a character succeeds on this check, they choose the best slide to reach the bottom safely. The character doesn't take any damage, but you can describe the wild ride they experience as they slide toward the cavern floor."
-											]
+											],
+											"id": "046"
 										},
 										{
 											"type": "entries",
@@ -842,7 +921,8 @@
 											"entries": [
 												"A character who fails the check jumps onto a slide and quickly reaches dangerous sections of razorsharp ice shards, long drops, ice walls, and other hazards. The character must succeed on a {@dc 15} {@skill Acrobatics} or {@skill Athletics} check to jump to a safer slide to avoid taking damage. A character who doesn't have {@skill Acrobatics} or {@skill Athletics} on their character sheet can still make checks with those skills, but they don't add any modifier to the {@dice d20} roll.",
 												"If a character fails the check, roll {@dice 1d6}. Tell the player to subtract that number from their character's hit points to represent the damage they take while reaching the bottom of the slide."
-											]
+											],
+											"id": "047"
 										},
 										{
 											"type": "entries",
@@ -856,11 +936,14 @@
 													"page": 11,
 													"entries": [
 														"If one character makes a check to find a safe path down the slides, the other players might say their characters follow on the same slide, which might make this challenge too easy. You can increase the challenge by saying the top of the safe slide collapses just after the first character starts down it. You can do this each time a new character chooses a slide to ensure that each character has to navigate their own path."
-													]
+													],
+													"id": "049"
 												}
-											]
+											],
+											"id": "048"
 										}
-									]
+									],
+									"id": "044"
 								},
 								{
 									"type": "entries",
@@ -873,13 +956,18 @@
 											"href": {
 												"type": "internal",
 												"path": "adventure/PiP/001-0103.webp"
-											}
+											},
+											"width": 2022,
+											"height": 916
 										}
-									]
+									],
+									"id": "04a"
 								}
-							]
+							],
+							"id": "03b"
 						}
-					]
+					],
+					"id": "038"
 				},
 				{
 					"type": "section",
@@ -895,7 +983,8 @@
 								"This large chamber is filled with stalactites and stalagmites covered in ice. The ceiling slopes up toward an ice-plugged hole far above you. On the ground in the center of the chamber, two large silver eggs rest upon heaps of frozen snow. A third spot now holds nothing but broken shell pieces. A fourth spot looks like it also held an egg, but that egg is missing.",
 								"Between you and the eggs stand two strange creatures the size of horses. They have bodies like frogs, but their skin is pure white and they have mouths full of sharp teeth.",
 								"The creatures are moving threateningly toward the two remaining eggs in the nest, but you've interrupted them. They turn toward you and hiss. Then with powerful hops, they hurl themselves toward you!"
-							]
+							],
+							"id": "04c"
 						},
 						"These creatures are egg snatchers, trained by ice trolls to steal dragon eggs. If the characters don't intervene, the last two eggs will be lost!",
 						{
@@ -929,11 +1018,14 @@
 											"name": "Bite",
 											"entries": [
 												"{@atk mw} {@hit 4} to hit. {@h}{@damage 1d6 + 2} piercing damage."
-											]
+											],
+											"id": "04f"
 										}
-									]
+									],
+									"id": "04e"
 								}
-							]
+							],
+							"id": "04d"
 						},
 						"There are three egg snatchers. If you have three or fewer players, remove one egg snatcher, leaving the characters with two enemies. If you have two or fewer players, reduce the starting hit points of the two egg snatchers to 10.",
 						"This combat runs the same way as in \"Encounter 2: Living Icicles.\" Refer to the DM Tip in that encounter to remind the players how to make melee and ranged attacks if needed.",
@@ -952,9 +1044,11 @@
 									"page": 12,
 									"entries": [
 										"A character that reaches 0 hit points falls {@condition unconscious} and remains {@condition unconscious} until they regain hit points through healing. At the end of the encounter, any {@condition unconscious} player characters regain 1 hit point automatically."
-									]
+									],
+									"id": "051"
 								}
-							]
+							],
+							"id": "050"
 						},
 						{
 							"type": "entries",
@@ -962,7 +1056,8 @@
 							"page": 12,
 							"entries": [
 								"Once the eggs snatchers are defeated, the baby dragon crawls into the nest, settles among the broken eggshells, and falls asleep."
-							]
+							],
+							"id": "052"
 						},
 						{
 							"type": "entries",
@@ -976,7 +1071,8 @@
 									"entries": [
 										"A loud crash erupts from high above. Chunks of ice and snow fall around you as an enormous silver dragon bursts through a frozen section of the cavern ceiling. The dragon plummets and lands before you, frigid air streaming from between sharp teeth.",
 										"\"What is happening here?\" the dragon roars."
-									]
+									],
+									"id": "054"
 								},
 								"The characters have some explaining to do! Proceed to the Conclusion.",
 								{
@@ -984,11 +1080,15 @@
 									"href": {
 										"type": "internal",
 										"path": "adventure/PiP/0006.webp"
-									}
+									},
+									"width": 1320,
+									"height": 1079
 								}
-							]
+							],
+							"id": "053"
 						}
-					]
+					],
+					"id": "04b"
 				},
 				{
 					"type": "section",
@@ -1023,7 +1123,8 @@
 										"If the characters continue acting in a hostile or belligerent manner, Rorn uses her magical dragon breath on them. This leaves the characters unhurt but unable to move. She then leaves them outside the mountain unharmed, but they don't get any reward from her."
 									]
 								}
-							]
+							],
+							"id": "056"
 						},
 						{
 							"type": "entries",
@@ -1065,9 +1166,11 @@
 									"page": 13,
 									"entries": [
 										"As the characters speak with Rorn, the other two eggs hatch. Rorn watches carefully as the wyrmlings break their shells and then crawl over to nuzzle their mother. She pulls some frozen meat from the nest and feeds them."
-									]
+									],
+									"id": "058"
 								}
-							]
+							],
+							"id": "057"
 						},
 						{
 							"type": "entries",
@@ -1082,7 +1185,8 @@
 										"Rorn thanks you again for your help. \"Please, take these as a sign of my gratitude.\" She digs into the snow where the eggs were set and pulls out a small shiny diamond for each of you.",
 										"\"More importantly, you have already bonded with my first hatchling. He deserves to continue to learn what it is like to grow up in the realm of people. Would you be willing to take him back to your settlement and raise him? I will watch over your area to help you out, and I'm always here if you have any questions.\"",
 										"The dragon continues. \"I have another request for you. When I find the exact location where the ice trolls took my final egg, would you retrieve it, so my child can be safe from whatever the ice trolls have planned for them?\""
-									]
+									],
+									"id": "05a"
 								},
 								"Let the characters react to Rorn's offer. No matter how the characters respond to Rorn's requests, she is kind and polite to them if they are kind and polite to her.",
 								{
@@ -1091,9 +1195,11 @@
 									"page": 13,
 									"entries": [
 										"Each of the small diamonds is worth 50 gold pieces. Each character can add this to their character sheet under \"Other Equipment.\""
-									]
+									],
+									"id": "05b"
 								}
-							]
+							],
+							"id": "059"
 						},
 						{
 							"type": "entries",
@@ -1101,9 +1207,11 @@
 							"page": 13,
 							"entries": [
 								"At the conclusion of the conversation, Rorn shows the characters a secret passage that leads from the mountain, which ends the characters' adventure... for now!"
-							]
+							],
+							"id": "05c"
 						}
-					]
+					],
+					"id": "055"
 				},
 				{
 					"type": "section",
@@ -1581,7 +1689,8 @@
 								"Believe me, it took me quite some time to learn Draconic words, but once I did, it greatly helped my relationships with dragons."
 							]
 						}
-					]
+					],
+					"id": "05d"
 				},
 				{
 					"type": "gallery",
@@ -1591,18 +1700,23 @@
 							"href": {
 								"type": "internal",
 								"path": "adventure/PiP/0007.webp"
-							}
+							},
+							"width": 1963,
+							"height": 1926
 						},
 						{
 							"type": "image",
 							"href": {
 								"type": "internal",
 								"path": "adventure/PiP/0010.webp"
-							}
+							},
+							"width": 2550,
+							"height": 2553
 						}
 					]
 				}
-			]
+			],
+			"id": "000"
 		}
 	]
 }

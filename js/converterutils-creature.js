@@ -243,6 +243,10 @@ class AcConvert {
 			case "damaged plate": // BGG :: Firegaunt
 			case "intellect fortress": // N.b. *not* the spell of the same name, as this usually appears as a creature feature
 			case "veiled presence": // BMT :: Enchanting Infiltrator
+			case "coat of lies": // Grim Hollow: Lairs of Etharis
+			case "rotting buff coat":
+			case "battered splint mail":
+			case "natural & tailored leather":
 				return fromLow;
 				// endregion
 
