@@ -1,4 +1,11 @@
 {
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		}
+	},
 	"monster": [
 		{
 			"name": "Abigor",
@@ -711,6 +718,37 @@
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Animated Furniture",
+			"source": "CoA",
+			"page": 170,
+			"_copy": {
+				"name": "Stone Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "golem",
+						"with": "animated furniture"
+					}
+				}
+			},
+			"immune": [
+				"cold",
+				"fire",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			]
 		},
 		{
 			"name": "Asmodeus",
@@ -3074,6 +3112,33 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Demon Ichor",
+			"source": "CoA",
+			"page": 78,
+			"_copy": {
+				"name": "Black Pudding",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "pudding",
+						"with": "ichor"
+					}
+				}
+			},
+			"hp": {
+				"average": 120,
+				"formula": "10d10 + 30"
+			},
+			"immune": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"slashing"
+			]
+		},
+		{
 			"name": "Devorastus",
 			"isNpc": true,
 			"isNamedCreature": true,
@@ -4407,6 +4472,30 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Frozen Golem",
+			"source": "CoA",
+			"page": 132,
+			"_copy": {
+				"name": "Iron Golem",
+				"source": "MM"
+			},
+			"immune": [
+				"cold",
+				"fire",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			]
+		},
+		{
 			"name": "Glasya",
 			"isNamedCreature": true,
 			"source": "CoA",
@@ -4798,6 +4887,30 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Grotesque Tentacle",
+			"source": "CoA",
+			"page": 78,
+			"_copy": {
+				"name": "Guardian Naga",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "naga",
+						"with": "tentacle"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"speed": {
+				"walk": 0
+			},
+			"spellcasting": null
+		},
+		{
 			"name": "Halog",
 			"source": "CoA",
 			"page": 242,
@@ -5040,6 +5153,25 @@
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Icy Simulacrum",
+			"source": "CoA",
+			"page": 176,
+			"_copy": {
+				"name": "Doppelganger",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "doppelganger",
+						"with": "simulacrum"
+					}
+				}
+			},
+			"immune": [
+				"cold"
+			]
 		},
 		{
 			"name": "Jenevere",
@@ -5330,6 +5462,45 @@
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Kuo-toa Heretic",
+			"source": "CoA",
+			"page": 129,
+			"_copy": {
+				"name": "Kuo-toa Monitor",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "Bite",
+							"items": {
+								"name": "Bite",
+								"entries": [
+									"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing or radiant damage."
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "Unarmed Strike",
+							"items": {
+								"name": "Unarmed Strike",
+								"entries": [
+									"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning or radiant damage plus 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+								]
+							}
+						}
+					]
+				}
+			},
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"R"
+			]
 		},
 		{
 			"name": "Lesser Tyrant Shadow",
@@ -6936,6 +7107,31 @@
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Regular Orthoclath",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoA",
+			"page": 171,
+			"_copy": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "golem",
+						"with": "orthoclath"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"int": 16,
+			"wis": 16,
+			"cha": 16
 		},
 		{
 			"name": "Rimmon",

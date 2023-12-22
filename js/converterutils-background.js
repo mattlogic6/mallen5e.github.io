@@ -2,7 +2,7 @@
 
 class BackgroundConverterConst {
 	static RE_NAME_SKILLS = /^Skill Proficienc(?:ies|y):/;
-	static RE_NAME_TOOLS = /^Tools?:/;
+	static RE_NAME_TOOLS = /^(?:Tools?|Tool Proficienc(?:ies|y)):/;
 	static RE_NAME_LANGUAGES = /^Languages?:/;
 	static RE_NAME_EQUIPMENT = /^Equipment?:/;
 }
@@ -562,6 +562,56 @@ class BackgroundSkillToolLanguageTag {
 		const skillProf = list.items.find(ent => BackgroundConverterConst.RE_NAME_SKILLS.test(ent.name));
 		if (!skillProf) return;
 
+		const mOneStaticOneChoice = /^(?<predefined>.*)\band one choice from the following:(?<choices>.*)$/i.exec(skillProf.entry);
+		if (mOneStaticOneChoice) {
+			const predefined = {};
+			mOneStaticOneChoice.groups.predefined
+				.replace(/{@skill (?<skill>[^}]+)/g, (...m) => {
+					predefined[m.last().skill.toLowerCase().trim()] = true;
+					return "";
+				});
+
+			if (!Object.keys(predefined).length) return cbWarning(`(${bg.name}) Skills require manual tagging`);
+
+			const choices = [];
+			mOneStaticOneChoice.groups.choices
+				.replace(/{@skill (?<skill>[^}]+)/g, (...m) => {
+					choices.push(m.last().skill.toLowerCase().trim());
+					return "";
+				});
+
+			bg.skillProficiencies = [
+				{
+					...predefined,
+					choose: {
+						from: choices,
+					},
+				},
+			];
+
+			return;
+		}
+
+		if (/^Two of the following:/.test(skillProf.entry)) {
+			const choices = [];
+			skillProf.entry
+				.replace(/{@skill (?<skill>[^}]+)/g, (...m) => {
+					choices.push(m.last().skill.toLowerCase().trim());
+					return "";
+				});
+
+			bg.skillProficiencies = [
+				{
+					choose: {
+						from: choices,
+						count: 2,
+					},
+				},
+			];
+
+			return;
+		}
+
 		if (!/^({@skill [^}]+}(?:, )?)+$/.test(skillProf.entry)) return cbWarning(`(${bg.name}) Skills require manual tagging`);
 
 		bg.skillProficiencies = [
@@ -585,6 +635,8 @@ class BackgroundSkillToolLanguageTag {
 			.replace(/one type of artisan's tools/g, "artisan's tools")
 			.replace(/one type of gaming set/g, "gaming set")
 			.replace(/one type of musical instrument/g, "musical instrument")
+			.replace(/one other set of artisan's tools/g, "artisan's tools")
+			.replace(/s' supplies/g, "'s supplies")
 		;
 
 		const isChoice = /\bany |\bchoose |\bone type|\bchoice|\bor /g.exec(entry);
@@ -603,8 +655,11 @@ class BackgroundSkillToolLanguageTag {
 		}
 
 		if (isChoice) {
+			const entryClean = entry
+				.replace(/^either /gi, "");
+
 			const out = {};
-			switch (entry) {
+			switch (entryClean) {
 				case "cartographer's tools or navigator's tools":
 					out.choose = {from: ["navigator's tools", "cartographer's tools"]};
 					break;
@@ -637,6 +692,9 @@ class BackgroundSkillToolLanguageTag {
 				case "gaming set or musical instrument":
 					out.choose = {from: ["gaming set", "musical instrument"]};
 					break;
+				case "calligrapher's supplies or alchemist's supplies":
+					out.choose = {from: ["calligrapher's supplies", "alchemist's supplies"]};
+					break;
 				default:
 					cbWarning(`(${bg.name}) Tool proficiencies require manual tagging in "${entry}"`);
 			}
@@ -662,6 +720,9 @@ class BackgroundSkillToolLanguageTag {
 	}
 
 	static _getLanguageTags ({langProf}) {
+		langProf.entry = langProf.entry
+			.replace(/\bElven\b/, "Elvish");
+
 		let str = langProf.entry
 			.replace(/\([^)]+ recommended\)$/, "")
 			.trim();

@@ -93,7 +93,7 @@ class RechargeTypeTag {
 		const mLongRest = /All charges are restored when you finish a long rest/i.test(strEntries);
 		if (mLongRest) return obj.recharge = "restLong";
 
-		const mDawn = /charges? at dawn|charges? daily at dawn|charges? each day at dawn|charges and regains all of them at dawn|charges and regains[^.]+each dawn|recharging them all each dawn|charges that are replenished each dawn/gi.exec(strEntries);
+		const mDawn = /charges? at dawn|charges? daily at dawn|charges?(?:, which (?:are|you) regain(?:ed)?)? each day at dawn|charges and regains all of them at dawn|charges and regains[^.]+each dawn|recharging them all each dawn|charges that are replenished each dawn/gi.exec(strEntries);
 		if (mDawn) return obj.recharge = "dawn";
 
 		const mDusk = /charges? daily at dusk|charges? each (?:day at dusk|nightfall)|regains all charges at dusk/gi.exec(strEntries);
@@ -101,6 +101,9 @@ class RechargeTypeTag {
 
 		const mMidnight = /charges? daily at midnight|Each night at midnight[^.]+charges/gi.exec(strEntries);
 		if (mMidnight) return obj.recharge = "midnight";
+
+		const mDecade = /regains [^ ]+ expended charge every ten years/gi.exec(strEntries);
+		if (mDecade) return obj.recharge = "decade";
 
 		if (opts.cbMan) opts.cbMan(obj.name, obj.source);
 	}
@@ -114,25 +117,33 @@ class RechargeTypeTag {
 globalThis.RechargeTypeTag = RechargeTypeTag;
 
 class RechargeAmountTag {
-	// Note that ordering is important--handle dice versions first
+	// Note that ordering is important--handle dice versions; text numbers first
 	static _PTS_CHARGES = [
 		"{@dice [^}]+}",
+		"(?:one|two|three|four|five|six|seven|eight|nine|ten)",
 		"\\d+",
 	];
 
 	static _RE_TEMPLATES_CHARGES = [
+		// region Dawn
 		[
 			"(?<charges>",
-			")[^.]*?\\b(?:charges? (?:at|each) dawn|charges? daily at dawn|charges? each day at dawn)",
+			")[^.]*?\\b(?:charges? (?:at|each) dawn|charges? daily at dawn|charges?(?:, which (?:are|you) regain(?:ed)?)? each day at dawn)",
 		],
 		[
 			"charges and regains (?<charges>",
 			") each dawn",
 		],
+		// endregion
+
+		// region Dusk
 		[
 			"(?<charges>",
 			")[^.]*?\\b(?:charges? daily at dusk|charges? each (?:day at dusk|nightfall))",
 		],
+		// endregion
+
+		// region Midnight
 		[
 			"(?<charges>",
 			")[^.]*?\\b(?:charges? daily at midnight)",
@@ -141,6 +152,14 @@ class RechargeAmountTag {
 			"Each night at midnight[^.]+regains (?<charges>",
 			")[^.]*\\bcharges",
 		],
+		// endregion
+
+		// region Decade
+		[
+			"regains (?<charges>",
+			")[^.]*?\\b(?:charges? every ten years)",
+		],
+		// endregion
 	];
 
 	static _RES_CHARGES = null;
@@ -155,7 +174,10 @@ class RechargeAmountTag {
 	];
 
 	static _getRechargeAmount (str) {
-		return isNaN(str) ? str : Number(str);
+		if (!isNaN(str)) return Number(str);
+		const fromText = Parser.textToNumber(str);
+		if (!isNaN(fromText)) return fromText;
+		return str;
 	}
 
 	static _checkAndTag (obj, opts) {
@@ -631,7 +653,7 @@ class ConditionImmunityTag {
 						all.add("disease");
 					});
 
-					str.replace(/you (?:have|gain|are) (?:[^.!?]+ )?(?:immune) ([^.!?]+)/, (...m) => {
+					str.replace(/you (?:have|gain|are) (?:[^.!?]+ )?(?:immune) ([^.!?]+)/gi, (...m) => {
 						m[1].replace(/{@condition ([^}]+)}/gi, (...n) => {
 							all.add(n[1].toLowerCase());
 						});

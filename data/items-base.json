@@ -36,7 +36,8 @@
 			"type": "A",
 			"rarity": "none",
 			"weight": 0.05,
-			"value": 5
+			"value": 5,
+			"arrow": true
 		},
 		{
 			"name": "Arrows (20)",
@@ -48,6 +49,7 @@
 			"rarity": "none",
 			"weight": 1,
 			"value": 100,
+			"arrow": true,
 			"packContents": [
 				{
 					"item": "arrow|phb",
@@ -267,7 +269,8 @@
 			"type": "A",
 			"rarity": "none",
 			"weight": 0.075,
-			"value": 5
+			"value": 5,
+			"bolt": true
 		},
 		{
 			"name": "Crossbow Bolts (20)",
@@ -279,6 +282,7 @@
 			"rarity": "none",
 			"weight": 1.5,
 			"value": 100,
+			"bolt": true,
 			"packContents": [
 				{
 					"item": "crossbow bolt|phb",

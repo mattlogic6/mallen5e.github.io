@@ -2,7 +2,7 @@
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 globalThis.IS_DEPLOYED = undefined;
-globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.196.0"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.197.0"/* 5ETOOLS_VERSION__CLOSE */;
 globalThis.DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 globalThis.DEPLOYED_IMG_ROOT = undefined;
 // for the roll20 script to set
@@ -351,6 +351,17 @@ globalThis.StrUtil = {
 	qq (str) { return (str = str || "").qq(); },
 };
 
+globalThis.NumberUtil = class {
+	static toFixedNumber (num, toFixed) {
+		if (num == null || isNaN(num)) return num;
+
+		num = Number(num);
+		if (!num) return num;
+
+		return Number(num.toFixed(toFixed));
+	}
+};
+
 globalThis.CleanUtil = {
 	getCleanJson (data, {isMinify = false, isFast = true} = {}) {
 		data = MiscUtil.copy(data);
@@ -545,7 +556,7 @@ globalThis.SourceUtil = {
 };
 
 // CURRENCY ============================================================================================================
-globalThis.CurrencyUtil = {
+globalThis.CurrencyUtil = class {
 	/**
 	 * Convert 10 gold -> 1 platinum, etc.
 	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
@@ -556,7 +567,7 @@ globalThis.CurrencyUtil = {
 	 * @param [opts.isPopulateAllValues] If all currency properties should be be populated, even if no currency of that
 	 * type is being returned (i.e. zero out unused coins).
 	 */
-	doSimplifyCoins (obj, opts) {
+	static doSimplifyCoins (obj, opts) {
 		opts = opts || {};
 
 		const conversionTable = opts.currencyConversionTable || Parser.getCurrencyConversionTable(opts.currencyConversionId);
@@ -636,23 +647,23 @@ globalThis.CurrencyUtil = {
 		if (opts.isPopulateAllValues) normalized.forEach(coinMeta => obj[coinMeta.coin] = obj[coinMeta.coin] || 0);
 
 		return obj;
-	},
+	}
 
 	/**
 	 * Convert a collection of coins into an equivalent value in copper.
 	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
 	 */
-	getAsCopper (obj) {
+	static getAsCopper (obj) {
 		return Parser.FULL_CURRENCY_CONVERSION_TABLE
 			.map(currencyMeta => (obj[currencyMeta.coin] || 0) * (1 / currencyMeta.mult))
 			.reduce((a, b) => a + b, 0);
-	},
+	}
 
 	/**
 	 * Convert a collection of coins into an equivalent number of coins of the highest denomination.
 	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
 	 */
-	getAsSingleCurrency (obj) {
+	static getAsSingleCurrency (obj) {
 		const simplified = CurrencyUtil.doSimplifyCoins({...obj});
 
 		if (Object.keys(simplified).length === 1) return simplified;
@@ -671,7 +682,24 @@ globalThis.CurrencyUtil = {
 			});
 
 		return out;
-	},
+	}
+
+	static getCombinedCurrency (currencyA, currencyB) {
+		const out = {};
+
+		[currencyA, currencyB]
+			.forEach(currency => {
+				Object.entries(currency)
+					.forEach(([coin, cnt]) => {
+						if (cnt == null) return;
+						if (isNaN(cnt)) throw new Error(`Unexpected non-numerical value "${JSON.stringify(cnt)}" for currency key "${coin}"`);
+
+						out[coin] = (out[coin] || 0) + cnt;
+					});
+			});
+
+		return out;
+	}
 };
 
 // CONVENIENCE/ELEMENTS ================================================================================================
@@ -2788,6 +2816,10 @@ UrlUtil.PG_CHANGELOG = "changelog.html";
 UrlUtil.PG_CHAR_CREATION_OPTIONS = "charcreationoptions.html";
 UrlUtil.PG_RECIPES = "recipes.html";
 UrlUtil.PG_CLASS_SUBCLASS_FEATURES = "classfeatures.html";
+UrlUtil.PG_CREATURE_FEATURES = "creaturefeatures.html";
+UrlUtil.PG_VEHICLE_FEATURES = "vehiclefeatures.html";
+UrlUtil.PG_OBJECT_FEATURES = "objectfeatures.html";
+UrlUtil.PG_TRAP_FEATURES = "trapfeatures.html";
 UrlUtil.PG_MAPS = "maps.html";
 UrlUtil.PG_SEARCH = "search.html";
 UrlUtil.PG_DECKS = "decks.html";
@@ -2823,6 +2855,10 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CHAR_CREATION_OPTIONS] = UrlUtil.URL_TO_H
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RECIPES] = (it) => `${UrlUtil.encodeArrayForHash(it.name, it.source)}${it._scaleFactor ? `${HASH_PART_SEP}${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}${it._scaleFactor}` : ""}`;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_DECKS] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASS_SUBCLASS_FEATURES] = (it) => (it.__prop === "subclassFeature" || it.subclassSource) ? UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"](it) : UrlUtil.URL_TO_HASH_BUILDER["classFeature"](it);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CREATURE_FEATURES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VEHICLE_FEATURES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OBJECT_FEATURES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TRAP_FEATURES] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_QUICKREF] = ({name, ixChapter, ixHeader}) => {
 	const hashParts = ["bookref-quick", ixChapter, UrlUtil.encodeForHash(name.toLowerCase())];
 	if (ixHeader) hashParts.push(ixHeader);
@@ -2946,7 +2982,10 @@ UrlUtil.PG_TO_NAME[UrlUtil.PG_TEXT_CONVERTER] = "Text Converter";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_CHANGELOG] = "Changelog";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_CHAR_CREATION_OPTIONS] = "Other Character Creation Options";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_RECIPES] = "Recipes";
-UrlUtil.PG_TO_NAME[UrlUtil.PG_CLASS_SUBCLASS_FEATURES] = "Class & Subclass Features";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_CREATURE_FEATURES] = "Creature Features";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_VEHICLE_FEATURES] = "Vehicle Features";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_OBJECT_FEATURES] = "Object Features";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_TRAP_FEATURES] = "Trap Features";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MAPS] = "Maps";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_DECKS] = "Decks";
 

@@ -769,8 +769,7 @@ class BestiaryPage extends ListPageMultiSource {
 
 				// add proficiency dice stuff for attack rolls, since those _generally_ have proficiency
 				// this is not 100% accurate; for example, ghouls don't get their prof bonus on bite attacks
-				// fixing it would probably involve machine learning though; we need an AI to figure it out on-the-fly
-				// (Siri integration forthcoming)
+				// fixing this would require additional context, which is not (yet) available in the renderer
 				case "hit": break;
 
 				case "abilityCheck": return null;
@@ -959,6 +958,7 @@ class BestiaryPage extends ListPageMultiSource {
 }
 
 const bestiaryPage = new BestiaryPage();
+window.bestiaryPage = bestiaryPage;
 const sublistManager = new BestiarySublistManager();
 
 const encounterBuilderCache = new EncounterBuilderCacheBestiaryPage({bestiaryPage});

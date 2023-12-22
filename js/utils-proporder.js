@@ -1353,9 +1353,11 @@ PropOrder._ITEM = [
 	"rechargeAmount",
 	"charges",
 
-	"axe",
 	"armor",
+	"arrow",
+	"axe",
 	"barding",
+	"bolt",
 	"bow",
 	"club",
 	"crossbow",

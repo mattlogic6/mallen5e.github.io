@@ -392,8 +392,9 @@ class ItemParser extends BaseParser {
 			case "sword": return [{"sword": true}];
 			case "axe": return [{"axe": true}];
 			case "armor": return [{"armor": true}];
-			case "bow": return [{"bow": true}, {"crossbow": true}];
+			case "bow": return [{"bow": true}];
 			case "crossbow": return [{"crossbow": true}];
+			case "bow or crossbow": return [{"bow": true}, {"crossbow": true}];
 			case "spear": return [{"spear": true}];
 			case "polearm": return [{"polearm": true}];
 			case "weapon that deals bludgeoning damage":
@@ -401,8 +402,12 @@ class ItemParser extends BaseParser {
 			case "piercing": return [{"dmgType": "P"}];
 			case "slashing": return [{"dmgType": "S"}];
 			case "ammunition": return [{"type": "A"}, {"type": "AF"}];
+			case "arrow": return [{"arrow": true}];
+			case "bolt": return [{"bolt": true}];
+			case "arrow or bolt": return [{"arrow": true}, {"bolt": true}];
 			case "melee": return [{"type": "M"}];
 			case "martial weapon": return [{"weaponCategory": "martial"}];
+			case "melee bludgeoning weapon": return [{"type": "M", "dmgType": "B"}];
 			default: {
 				options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Tagline part "${str}" requires manual conversion`);
 				return [{[str.toCamelCase()]: true}];
@@ -410,7 +415,7 @@ class ItemParser extends BaseParser {
 		}
 	}
 
-	static _RE_CATEGORIES_PREFIX_SUFFIX = /(?:weapon|armor|sword|polearm|bow|axe)/;
+	static _RE_CATEGORIES_PREFIX_SUFFIX = /(?:weapon|blade|armor|sword|polearm|bow|crossbow|axe|ammunition|arrows?|bolts?)/;
 	static _RE_CATEGORIES_PREFIX = new RegExp(`^${this._RE_CATEGORIES_PREFIX_SUFFIX.source} `, "i");
 	static _RE_CATEGORIES_SUFFIX = new RegExp(` ${this._RE_CATEGORIES_PREFIX_SUFFIX.source}$`, "i");
 

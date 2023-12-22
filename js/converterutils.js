@@ -98,7 +98,8 @@ class BaseParser {
 			.replace(/\n\r/g, "\n")
 			.replace(/\r\n/g, "\n")
 			.replace(/\r/g, "\n")
-			.replace(/­\s*\n\s*/g, "")
+			.replace(/­\s*\n\s*/g, "") // Soft hyphen
+			.replace(/\s*\u00A0\s*/g, " ") // Non-breaking space
 			.replace(/[−–‒]/g, "-") // convert minus signs to hyphens
 		;
 

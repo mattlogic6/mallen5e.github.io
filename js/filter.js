@@ -3307,17 +3307,11 @@ class SourceFilter extends Filter {
 	getSources () {
 		const out = {
 			all: [],
-			official: [],
-			unofficial: [],
-			homebrew: [],
 		};
 		this._items.forEach(it => {
 			out.all.push(it.item);
-			switch (this._groupFn(it)) {
-				case 0: out.official.push(it.item); break;
-				case 1: out.unofficial.push(it.item); break;
-				case 2: out.homebrew.push(it.item); break;
-			}
+			const group = this._groupFn(it);
+			(out[group] ||= []).push(it.item);
 		});
 		return out;
 	}

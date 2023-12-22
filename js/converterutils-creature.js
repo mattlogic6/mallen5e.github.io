@@ -247,6 +247,7 @@ class AcConvert {
 			case "rotting buff coat":
 			case "battered splint mail":
 			case "natural & tailored leather":
+			case "canny defense": // Dungeons of Drakkenheim
 				return fromLow;
 				// endregion
 
@@ -1374,14 +1375,14 @@ class SpellcastingTraitConvert {
 
 			if (perDuration) {
 				hasAnyHeader = true;
-				let property = thisLine.substr(0, 1) + (thisLine.includes(" each:") ? "e" : "");
+				let property = thisLine.substring(0, 1) + (/ each(?::| - )/.test(thisLine) ? "e" : "");
 				const value = this._getParsedSpells({thisLine, isMarkdown});
 				if (!spellcastingEntry[perDuration.prop]) spellcastingEntry[perDuration.prop] = {};
 				spellcastingEntry[perDuration.prop][property] = value;
-			} else if (thisLine.startsWith("Constant: ")) {
+			} else if (/^Constant(?::| -) /.test(thisLine)) {
 				hasAnyHeader = true;
 				spellcastingEntry.constant = this._getParsedSpells({thisLine, isMarkdown});
-			} else if (thisLine.startsWith("At will: ")) {
+			} else if (/^At[- ][Ww]ill(?::| -) /.test(thisLine)) {
 				hasAnyHeader = true;
 				spellcastingEntry.will = this._getParsedSpells({thisLine, isMarkdown});
 			} else if (thisLine.includes("Cantrip")) {
@@ -1389,15 +1390,15 @@ class SpellcastingTraitConvert {
 				const value = this._getParsedSpells({thisLine, isMarkdown});
 				if (!spellcastingEntry.spells) spellcastingEntry.spells = {"0": {"spells": []}};
 				spellcastingEntry.spells["0"].spells = value;
-			} else if (thisLine.includes(" level") && thisLine.includes(": ")) {
+			} else if (/ [Ll]evel/.test(thisLine) && /(?::| -) /.test(thisLine)) {
 				hasAnyHeader = true;
-				let property = thisLine.substr(0, 1);
+				let property = thisLine.substring(0, 1);
 				const allSpells = this._getParsedSpells({thisLine, isMarkdown});
 				spellcastingEntry.spells = spellcastingEntry.spells || {};
 
 				const out = {};
 				if (thisLine.includes(" slot")) {
-					const mWarlock = /^(\d)..(?: level)?-(\d).. level \((\d) (\d)..[- ]level slots?\)/.exec(thisLine);
+					const mWarlock = /^(\d)..(?: [Ll]evel)?-(\d).. [Ll]evel \((\d) (\d)..[- ][Ll]evel slots?\)/.exec(thisLine);
 					if (mWarlock) {
 						out.lower = parseInt(mWarlock[1]);
 						out.slots = parseInt(mWarlock[3]);
@@ -1432,7 +1433,8 @@ class SpellcastingTraitConvert {
 	}
 
 	static _getParsedSpells ({thisLine, isMarkdown}) {
-		let spellPart = thisLine.substring(thisLine.indexOf(": ") + 2).trim();
+		const mLabelSep = /(?::| -) /.exec(thisLine);
+		let spellPart = thisLine.substring((mLabelSep?.index || 0) + (mLabelSep?.[0]?.length || 0)).trim();
 		if (isMarkdown) {
 			const cleanPart = (part) => {
 				part = part.trim();

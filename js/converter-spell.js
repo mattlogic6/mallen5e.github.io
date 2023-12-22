@@ -310,7 +310,7 @@ class SpellParser extends BaseParser {
 		const mSelfRadius = /^self \((\d+)-(foot|mile) radius\)$/i.exec(cleanRange);
 		if (mSelfRadius) return stats.range = {type: "radius", distance: {type: getUnit(mSelfRadius[2]), amount: Number(mSelfRadius[1])}};
 
-		const mSelfSphere = /^self \((\d+)-(foot|mile)-radius sphere\)$/i.exec(cleanRange);
+		const mSelfSphere = /^self \((\d+)-(foot|mile)(?:-radius)? sphere\)$/i.exec(cleanRange);
 		if (mSelfSphere) return stats.range = {type: "sphere", distance: {type: getUnit(mSelfSphere[2]), amount: Number(mSelfSphere[1])}};
 
 		const mSelfCone = /^self \((\d+)-(foot|mile) cone\)$/i.exec(cleanRange);
@@ -322,7 +322,7 @@ class SpellParser extends BaseParser {
 		const mSelfCube = /^self \((\d+)-(foot|mile) cube\)$/i.exec(cleanRange);
 		if (mSelfCube) return stats.range = {type: "cube", distance: {type: getUnit(mSelfCube[2]), amount: Number(mSelfCube[1])}};
 
-		const mSelfHemisphere = /^self \((\d+)-(foot|mile)-radius hemisphere\)$/i.exec(cleanRange);
+		const mSelfHemisphere = /^self \((\d+)-(foot|mile)(?:-radius)? hemisphere\)$/i.exec(cleanRange);
 		if (mSelfHemisphere) return stats.range = {type: "hemisphere", distance: {type: getUnit(mSelfHemisphere[2]), amount: Number(mSelfHemisphere[1])}};
 
 		// region Homebrew

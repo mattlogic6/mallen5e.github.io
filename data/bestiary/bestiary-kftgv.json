@@ -1598,7 +1598,8 @@
 				"C",
 				"N"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Prisoner 13",

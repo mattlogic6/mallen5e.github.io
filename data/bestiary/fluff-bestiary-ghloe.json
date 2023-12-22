@@ -140,7 +140,7 @@
 							"entries": [
 								"An avarice seraph's metal-tipped feathers can be sold. Those of the lesser seraph are worth 250 gp, while those of the seraph are worth 1,000 gp.",
 								"Someone who has proficiency with alchemist's supplies can melt the metal on the feathers of an avarice seraph and use some feathers as fletching to make one arrow of celestial slaying for a lesser seraph, or four such arrows from the seraph. Making one arrow takes 7 days of work, reagents worth 1,000 gp, and a successful DC 17 Intelligence or Wisdom check.",
-								"The saliva of a gluttony seraph functions as antitoxin\u2014 three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
+								"The saliva of a gluttony seraph functions as antitoxin\u2014three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
 							]
 						},
 						{
@@ -200,7 +200,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"Chapped brutes rarely carry treasure or equipment unless doing so as instructed by their master. An accomplished leatherworker can fashion the callused skin of a chapped brute into+1 armor\u2014leather, studded leather, or hide\u2014 that grants the wearer resistance to necrotic damage and doesn't require attunement. This armor takes 10 extra days of work to fashion, and magical components worth 100 gp must be expended in its creation."
+								"Chapped brutes rarely carry treasure or equipment unless doing so as instructed by their master. An accomplished leatherworker can fashion the callused skin of a chapped brute into+1 armor\u2014leather, studded leather, or hide\u2014that grants the wearer resistance to necrotic damage and doesn't require attunement. This armor takes 10 extra days of work to fashion, and magical components worth 100 gp must be expended in its creation."
 							]
 						},
 						{
@@ -385,7 +385,7 @@
 							"name": "Salvage",
 							"entries": [
 								"Bone trader lairs have many, many bones. Depending on how successful and powerful the bone trader is, it may also have the equipment and belongings of people it has killed or of the minions it employs. Its bone armor is infused with a peculiar magic.",
-								"Smashing the armor into a paste and mixing it with appropriate amounts of coagulant from a herbalism kit allows it to be applied it to a shield or weapon. This paste, called ready gunk (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}), can be completed with a successful Wisdom check (DC 10) by someone proficient with a herbalism kit. This process takes 10 minutes."
+								"Smashing the armor into a paste and mixing it with appropriate amounts of coagulant from a herbalism kit allows it to be applied it to a shield or weapon. This paste, called {@item ready gunk|GHLoE} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}), can be completed with a successful Wisdom check (DC 10) by someone proficient with a herbalism kit. This process takes 10 minutes."
 							]
 						},
 						{
@@ -565,7 +565,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"Chapped brutes rarely carry treasure or equipment unless doing so as instructed by their master. An accomplished leatherworker can fashion the callused skin of a chapped brute into+1 armor\u2014leather, studded leather, or hide\u2014 that grants the wearer resistance to necrotic damage and doesn't require attunement. This armor takes 10 extra days of work to fashion, and magical components worth 100 gp must be expended in its creation."
+								"Chapped brutes rarely carry treasure or equipment unless doing so as instructed by their master. An accomplished leatherworker can fashion the callused skin of a chapped brute into+1 armor\u2014leather, studded leather, or hide\u2014that grants the wearer resistance to necrotic damage and doesn't require attunement. This armor takes 10 extra days of work to fashion, and magical components worth 100 gp must be expended in its creation."
 							]
 						},
 						{
@@ -623,7 +623,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"Chapped brutes rarely carry treasure or equipment unless doing so as instructed by their master. An accomplished leatherworker can fashion the callused skin of a chapped brute into+1 armor\u2014leather, studded leather, or hide\u2014 that grants the wearer resistance to necrotic damage and doesn't require attunement. This armor takes 10 extra days of work to fashion, and magical components worth 100 gp must be expended in its creation."
+								"Chapped brutes rarely carry treasure or equipment unless doing so as instructed by their master. An accomplished leatherworker can fashion the callused skin of a chapped brute into+1 armor\u2014leather, studded leather, or hide\u2014that grants the wearer resistance to necrotic damage and doesn't require attunement. This armor takes 10 extra days of work to fashion, and magical components worth 100 gp must be expended in its creation."
 							]
 						},
 						{
@@ -1541,7 +1541,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"Someone who has proficiency with alchemist's supplies can use 1 pint of blood from a fzeg and mix it with silver and other reagents worth 50 gp to create a lycanthropy antidote (see Appendix A of Lairs of Etharis). A slain fzeg has 10 ({@dice 1d4 + 2}) usable pints of blood. The blood of a fzeglaich can be used, but it takes five times as much blood and twice as long to brew. Creating the antidote takes 4 hours of work and a successful DC 15 Intelligence ({@skill Religion}) check."
+								"Someone who has proficiency with alchemist's supplies can use 1 pint of blood from a fzeg and mix it with silver and other reagents worth 50 gp to create a {@item lycanthropy antidote|GHLoE} (see Appendix A of Lairs of Etharis). A slain fzeg has 10 ({@dice 1d4 + 2}) usable pints of blood. The blood of a fzeglaich can be used, but it takes five times as much blood and twice as long to brew. Creating the antidote takes 4 hours of work and a successful DC 15 Intelligence ({@skill Religion}) check."
 							]
 						},
 						{
@@ -1608,7 +1608,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"Someone who has proficiency with alchemist's supplies can use 1 pint of blood from a fzeg and mix it with silver and other reagents worth 50 gp to create a lycanthropy antidote (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). A slain fzeg has 10 ({@dice 1d4 + 2}) usable pints of blood. The blood of a fzeglaich can be used, but it takes five times as much blood and twice as long to brew. Creating the antidote takes 4 hours of work and a successful DC 15 Intelligence ({@skill Religion}) check."
+								"Someone who has proficiency with alchemist's supplies can use 1 pint of blood from a fzeg and mix it with silver and other reagents worth 50 gp to create a {@item lycanthropy antidote|GHLoE} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). A slain fzeg has 10 ({@dice 1d4 + 2}) usable pints of blood. The blood of a fzeglaich can be used, but it takes five times as much blood and twice as long to brew. Creating the antidote takes 4 hours of work and a successful DC 15 Intelligence ({@skill Religion}) check."
 							]
 						},
 						{
@@ -1749,7 +1749,7 @@
 							"entries": [
 								"An avarice seraph's metal-tipped feathers can be sold. Those of the lesser seraph are worth 250 gp, while those of the seraph are worth 1,000 gp.",
 								"Someone who has proficiency with alchemist's supplies can melt the metal on the feathers of an avarice seraph and use some feathers as fletching to make one arrow of celestial slaying for a lesser seraph, or four such arrows from the seraph. Making one arrow takes 7 days of work, reagents worth 1,000 gp, and a successful DC 17 Intelligence or Wisdom check.",
-								"The saliva of a gluttony seraph functions as antitoxin\u2014 three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
+								"The saliva of a gluttony seraph functions as antitoxin\u2014three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
 							]
 						},
 						{
@@ -1862,7 +1862,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"If defeated, the harvester's coat of lies (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}) can be claimed."
+								"If defeated, the harvester's {@item coat of lies|GHLoE} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}) can be claimed."
 							]
 						},
 						{
@@ -2328,7 +2328,7 @@
 							"entries": [
 								"An avarice seraph's metal-tipped feathers can be sold. Those of the lesser seraph are worth 250 gp, while those of the seraph are worth 1,000 gp.",
 								"Someone who has proficiency with alchemist's supplies can melt the metal on the feathers of an avarice seraph and use some feathers as fletching to make one arrow of celestial slaying for a lesser seraph, or four such arrows from the seraph. Making one arrow takes 7 days of work, reagents worth 1,000 gp, and a successful DC 17 Intelligence or Wisdom check.",
-								"The saliva of a gluttony seraph functions as antitoxin\u2014 three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
+								"The saliva of a gluttony seraph functions as antitoxin\u2014three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
 							]
 						},
 						{
@@ -2381,7 +2381,7 @@
 							"entries": [
 								"An avarice seraph's metal-tipped feathers can be sold. Those of the lesser seraph are worth 250 gp, while those of the seraph are worth 1,000 gp.",
 								"Someone who has proficiency with alchemist's supplies can melt the metal on the feathers of an avarice seraph and use some feathers as fletching to make one arrow of celestial slaying for a lesser seraph, or four such arrows from the seraph. Making one arrow takes 7 days of work, reagents worth 1,000 gp, and a successful DC 17 Intelligence or Wisdom check.",
-								"The saliva of a gluttony seraph functions as antitoxin\u2014 three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
+								"The saliva of a gluttony seraph functions as antitoxin\u2014three doses can be collected from a lesser seraph, while ten can be gathered from a seraph. Someone who has proficiency with alchemist's supplies or an herbalism kit can mix two doses of this saliva with reagents worth 50 gp and brew the mixture for 4 hours. The resulting elixir affects the imbiber as a protection from poison spell, curing a random poison in the drinker's system."
 							]
 						},
 						{
@@ -2487,7 +2487,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"A dose of lindwyrm venom (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}) can be harvested by someone proficient with a poisoner's kit and succeeds on a DC 18 Dexterity ({@skill Sleight of Hand}) check, but this must be done within 1 hour of the lindwyrm's death. If the check fails by 5 or more, the harvester instead poisons themselves. This injury poison is worth 1,000 gp."
+								"A dose of {@item lindwyrm venom|GHLoE} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}) can be harvested by someone proficient with a poisoner's kit and succeeds on a DC 18 Dexterity ({@skill Sleight of Hand}) check, but this must be done within 1 hour of the lindwyrm's death. If the check fails by 5 or more, the harvester instead poisons themselves. This injury poison is worth 1,000 gp."
 							]
 						},
 						{
@@ -3894,7 +3894,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"The glass from ten shatter corpses can be used to create a suit of glass-studded armor (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}) with a successful DC 10 Dexterity ({@skill Sleight of Hand}) check by someone proficient with jeweler's tools. Crafting this item takes 10 days and costs 1000 gp."
+								"The glass from ten shatter corpses can be used to create a suit of {@item glass-studded armor|GHLoE} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}) with a successful DC 10 Dexterity ({@skill Sleight of Hand}) check by someone proficient with jeweler's tools. Crafting this item takes 10 days and costs 1000 gp."
 							]
 						},
 						{
@@ -4666,7 +4666,7 @@
 							"name": "Salvage",
 							"entries": [
 								"Lycanthropes exist in a state of perpetual mental turmoil, and over time their memories fragment. As a result, many carry keepsakes of their past lives to strengthen the memories they do not want to lose. The pelt of a lycanthrope is prized by certain mages for the crafting of magical cloaks, particularly cloaks that allow a person to change their form such as the cloak of the bat or the cloak of the manta ray.",
-								"Weapons made from the fangs or claws of deceased lycanthropes have special properties and are known as lycan weapons (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). These weapons require a successful DC 15 Intelligence ({@skill Arcana}) check by a proficient weaponsmith, consuming 500 gp worth of components, and requiring 10 days of work."
+								"Weapons made from the fangs or claws of deceased lycanthropes have special properties and are known as {@item lycan weapon|GHLoE|lycan weapons} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). These weapons require a successful DC 15 Intelligence ({@skill Arcana}) check by a proficient weaponsmith, consuming 500 gp worth of components, and requiring 10 days of work."
 							]
 						},
 						{
@@ -4727,7 +4727,7 @@
 							"name": "Salvage",
 							"entries": [
 								"Lycanthropes exist in a state of perpetual mental turmoil, and over time their memories fragment. As a result, many carry keepsakes of their past lives to strengthen the memories they do not want to lose. The pelt of a lycanthrope is prized by certain mages for the crafting of magical cloaks, particularly cloaks that allow a person to change their form such as the cloak of the bat or the cloak of the manta ray.",
-								"Weapons made from the fangs or claws of deceased lycanthropes have special properties and are known as lycan weapons (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). These weapons require a successful DC 15 Intelligence ({@skill Arcana}) check by a proficient weaponsmith, consuming 500 gp worth of components, and requiring 10 days of work."
+								"Weapons made from the fangs or claws of deceased lycanthropes have special properties and are known as {@item lycan weapon|GHLoE|lycan weapons} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). These weapons require a successful DC 15 Intelligence ({@skill Arcana}) check by a proficient weaponsmith, consuming 500 gp worth of components, and requiring 10 days of work."
 							]
 						},
 						{
@@ -4787,7 +4787,7 @@
 							"type": "entries",
 							"name": "Salvage",
 							"entries": [
-								"A xakalonus brain is encased in a viscous jelly which can be turned into a substance called arcane oil (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). This oil's creation requires a proficient alchemist to spend 8 hours and 200 gp of components. They must succeed on a DC 15 Intelligence ({@skill Arcana}) check to create the substance."
+								"A xakalonus brain is encased in a viscous jelly which can be turned into a substance called {@item arcane oil|GHLoE} (see Appendix A of {@adventure Lairs of Etharis|GHLoE|21}). This oil's creation requires a proficient alchemist to spend 8 hours and 200 gp of components. They must succeed on a DC 15 Intelligence ({@skill Arcana}) check to create the substance."
 							]
 						},
 						{

@@ -132,6 +132,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Ben Tobitt",
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -160,6 +161,7 @@
 				"charisma",
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -364,6 +366,7 @@
 				"charisma",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -547,6 +550,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -662,6 +666,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -751,6 +756,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -879,6 +885,7 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -991,6 +998,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1178,6 +1186,7 @@
 				"restrained",
 				"unconscious"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1397,6 +1406,7 @@
 				"strength",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1493,6 +1503,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -1586,6 +1597,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Yannlian",
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -1612,6 +1624,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -1740,6 +1753,7 @@
 				"charisma",
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1829,6 +1843,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -1942,6 +1957,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2175,6 +2191,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2360,6 +2377,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -2461,6 +2479,7 @@
 				"MLW",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2651,6 +2670,7 @@
 				"intelligence",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -2789,6 +2809,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3002,6 +3023,7 @@
 			"savingThrowForced": [
 				"charisma"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3177,6 +3199,7 @@
 				"dexterity",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3232,6 +3255,7 @@
 			"senseTags": [
 				"D"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3302,6 +3326,7 @@
 			"conditionInflict": [
 				"blinded"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3407,6 +3432,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3599,6 +3625,7 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -3702,6 +3729,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Andréa Boloch",
 			"traitTags": [
 				"Keen Senses",
 				"Rampage",
@@ -3727,6 +3755,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3935,6 +3964,7 @@
 				"strength",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4121,6 +4151,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4227,6 +4258,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Paintcapsule",
 			"traitTags": [
 				"Brute",
 				"Charge",
@@ -4254,6 +4286,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -4437,6 +4470,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4534,6 +4568,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4773,6 +4808,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -4836,7 +4872,23 @@
 					"cond": true
 				},
 				{
-					"special": "all damage from spells"
+					"immune": [
+						"acid",
+						"bludgeoning",
+						"cold",
+						"fire",
+						"force",
+						"lightning",
+						"necrotic",
+						"piercing",
+						"poison",
+						"psychic",
+						"radiant",
+						"slashing",
+						"thunder"
+					],
+					"note": "from spells",
+					"cond": true
 				}
 			],
 			"conditionImmune": [
@@ -4955,6 +5007,7 @@
 				"constitution",
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5059,6 +5112,7 @@
 			"savingThrowForced": [
 				"charisma"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5170,6 +5224,7 @@
 				"grappled",
 				"restrained"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5253,6 +5308,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5411,6 +5467,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -5575,6 +5632,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -5745,6 +5803,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -5953,6 +6012,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6113,6 +6173,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6213,6 +6274,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6324,6 +6386,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -6423,6 +6486,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6567,6 +6631,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -6699,6 +6764,7 @@
 				"AOE",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -6851,6 +6917,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7001,6 +7068,7 @@
 				"AOE",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7152,6 +7220,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7248,6 +7317,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -7368,6 +7438,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7445,6 +7516,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7572,6 +7644,7 @@
 				"RW",
 				"THW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -7669,6 +7742,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Michele Giorgi",
 			"senseTags": [
 				"D"
 			],
@@ -7686,6 +7760,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -7788,6 +7863,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Clément Blum",
 			"senseTags": [
 				"D"
 			],
@@ -7807,6 +7883,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -7915,6 +7992,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -8024,6 +8102,7 @@
 				"constitution",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -8108,6 +8187,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -8228,6 +8308,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -8381,6 +8462,7 @@
 			"savingThrowForcedSpell": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -8492,6 +8574,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -8613,6 +8696,7 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -8739,6 +8823,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -8839,6 +8924,7 @@
 				"MW",
 				"RCH"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -8992,6 +9078,7 @@
 			"savingThrowForcedSpell": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9100,6 +9187,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9217,6 +9305,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9285,6 +9374,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9356,6 +9446,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9448,6 +9539,7 @@
 					]
 				}
 			],
+			"tokenCredit": "David Lozeau",
 			"senseTags": [
 				"SD"
 			],
@@ -9469,6 +9561,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -9557,6 +9650,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Safdar Ali Mirza",
 			"attachedItems": [
 				"pike|phb"
 			],
@@ -9579,6 +9673,7 @@
 				"MW",
 				"RCH"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -9672,6 +9767,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9790,6 +9886,7 @@
 			"savingThrowForced": [
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9897,6 +9994,7 @@
 				"MW",
 				"RCH"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -9967,6 +10065,7 @@
 			"miscTags": [
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -10037,6 +10136,7 @@
 					]
 				}
 			],
+			"tokenCredit": "Chayrot Shahrul",
 			"traitTags": [
 				"Hold Breath"
 			],
@@ -10058,7 +10158,8 @@
 			],
 			"savingThrowForced": [
 				"strength"
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Spythronar Sac",
@@ -10146,6 +10247,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -10275,6 +10377,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -10410,6 +10513,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -10529,6 +10633,7 @@
 			"savingThrowForced": [
 				"dexterity"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -10605,6 +10710,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -10669,6 +10775,7 @@
 				"AOE",
 				"MW"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -10782,6 +10889,7 @@
 				"MW",
 				"RW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -10899,6 +11007,7 @@
 			"conditionInflict": [
 				"unconscious"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -11108,6 +11217,7 @@
 				"dexterity",
 				"wisdom"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -11265,6 +11375,7 @@
 				"constitution",
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -11316,7 +11427,7 @@
 				{
 					"name": "Magic Absorption",
 					"entries": [
-						"If a xakalonus succeeds on a saving throw against a magical effect that would damage it, but it takes no damage instead, the xakalonus regains 11 ({@dice 2d10}) hit points instead. Alternatively, if the xakalonus is at full hit points, the next successful melee attack by the xakalonus deals an additional 11 ({@damage 2d10}) force damage."
+						"If a xakalonus succeeds on a saving throw against a magical effect that would damage it, it takes no damage. Instead, the xakalonus regains 11 ({@dice 2d10}) hit points. Alternatively, if the xakalonus is at full hit points, the next successful melee attack by the xakalonus deals an additional 11 ({@damage 2d10}) force damage."
 					]
 				},
 				{
@@ -11381,6 +11492,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -11510,6 +11622,7 @@
 			"savingThrowForced": [
 				"constitution"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -11622,6 +11735,7 @@
 			"savingThrowForced": [
 				"strength"
 			],
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		}

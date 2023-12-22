@@ -79,6 +79,7 @@
 	$rgb-source-HFFotM: #7b702c;
 	$rgb-source-BMT: #694165;
 	$rgb-source-GHLoE: #c07e4e;
+	$rgb-source-DoDk: #825494;
 
 	// region Categories
 
@@ -603,6 +604,12 @@
 		color: $rgb-source-GHLoE !important;
 		border-color: $rgb-source-GHLoE !important;
 		text-decoration-color: $rgb-source-GHLoE !important;
+	}
+
+	&DoDk {
+		color: $rgb-source-DoDk !important;
+		border-color: $rgb-source-DoDk !important;
+		text-decoration-color: $rgb-source-DoDk !important;
 	}
 	// endregion
 }

@@ -266,7 +266,7 @@
 								"type": "list",
 								"items": [
 									"Nested entries (generally) work, too.",
-									"Although why you would put a list in a table is beyond me."
+									"Although layout may start to deteriorate with more exotic nesting."
 								]
 							},
 							"{@spell bless||Spells, on the other hand, make sense.}",
@@ -451,11 +451,10 @@
 							"type": "item",
 							"name": "Multiple entry version",
 							"entries": [
-								"This was, again, required specifically for XGE's complex traps, which can have multiple lines of text; due to their large and complex nature, one would have to presume.",
-								"Speaking of lines, this one is very long (much like the one above, which was specifically packed with superfluous information to pad it out to a decent word count) to hopefully demonstrate the effects of having to wrap a paragraph into the column, which should indent the first line of the paragraph only. Of course, if you're viewing this on an obscenely wide monitor, this will have little or no effect, so if you're in the future where 10k monitors are standard, then congratulations. Otherwise, like the rest of us plebs, you should see the desired layout.",
-								"For most uses, the single-entry version is preferred.",
-								"And here's another really long run-on sentence, just to really hammer home the effects of {@s drugs} excessive text, something I'm sure my English teacher would have a few comments about; thankfully, they're not much of a fan of Dungeons & Dragons, or even fantasy in general (needless to say, they were at best ambivalent towards the vast majority of my literary interests as a teenager; at least, as much as an English teacher can be towards a student who enjoys reading and who would choose to do it of their own volition).",
-								"What on earth did I just write"
+								"This was, again, required specifically for XGE's complex traps, which can have multiple lines of text, often long enough to wrap into multiple rows in the same column. For example:",
+								"Either portal can be neutralized with three successful DC 20 Intelligence ({@skill Arcana}) checks, but the process of analyzing a portal to disrupt it takes time. Faint runes in the ceiling and floor at both ends of the hallway are involved in the functioning of the portals. A creature must first use an action to examine a set of runes, then use a subsequent action to attempt to vandalize the runes. Each successful check reduces the sphere's damage by 11 ({@dice 2d10}), as the disrupted sphere loses speed moving through the failing portal.",
+								"Alternatively, a set of runes can be disabled with three successful castings of {@spell dispel magic} (DC 19) targeting any of the runes in the set.",
+								"If the southern portal is destroyed, the sphere slams into the south wall and comes to a halt. It blocks the door to the tomb, but the characters can escape."
 							]
 						}
 					]

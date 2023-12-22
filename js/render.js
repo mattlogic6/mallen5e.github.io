@@ -474,10 +474,13 @@ globalThis.Renderer = function () {
 			? `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${entry.width}" height="${entry.height}"><rect width="100%" height="100%" fill="#ccc3"></rect></svg>`)}`
 			: null;
 		const ptTitleCreditTooltip = this._renderImage_getTitleCreditTooltipText(entry);
+		const ptTitle = ptTitleCreditTooltip ? `title="${ptTitleCreditTooltip}"` : "";
+		const pluginDataIsNoLink = this._getPlugins("image_isNoLink").map(plugin => plugin(entry, textStack, meta, options)).some(Boolean);
+
 		textStack[0] += `<div class="${this._renderImage_getWrapperClasses(entry, meta)}" ${entry.title && this._isHeaderIndexIncludeImageTitles ? `data-title-index="${this._headerIndex++}"` : ""}>
-			<a href="${href}" target="_blank" rel="noopener noreferrer" ${ptTitleCreditTooltip ? `title="${ptTitleCreditTooltip}"` : ""}>
-				<img class="${this._renderImage_getImageClasses(entry, meta)}" src="${svg || href}" ${entry.altText || entry.title ? `alt="${Renderer.stripTags((entry.altText || entry.title)).qq()}"` : ""} ${svg ? `data-src="${href}"` : `loading="lazy"`} ${this._renderImage_getStylePart(entry)}>
-			</a>
+			${pluginDataIsNoLink ? "" : `<a href="${href}" target="_blank" rel="noopener noreferrer" ${ptTitle}>`}
+				<img class="${this._renderImage_getImageClasses(entry, meta)}" src="${svg || href}" ${pluginDataIsNoLink ? ptTitle : ""} ${entry.altText || entry.title ? `alt="${Renderer.stripTags((entry.altText || entry.title)).qq()}"` : ""} ${svg ? `data-src="${href}"` : `loading="lazy"`} ${this._renderImage_getStylePart(entry)}>
+			${pluginDataIsNoLink ? "" : `</a>`}
 		</div>`;
 
 		if (!this._renderImage_isComicStyling(entry) && (entry.title || entry.credit || entry.mapRegions)) {
@@ -9720,7 +9723,7 @@ Renderer.vehicle = class {
 						],
 						[
 							`{@b Hit Points:} ${ent.hull?.hp ?? "\u2014"}`,
-							`{@b Crew:} ${ent.capCrew ?? "\u2014"}${ent.capCrewNote}`,
+							`{@b Crew:} ${ent.capCrew ?? "\u2014"}${ent.capCrewNote ? ` ${ent.capCrewNote}` : ""}`,
 						],
 						[
 							`{@b Damage Threshold:} ${ent.hull?.dt ?? "\u2014"}`,
@@ -12066,6 +12069,7 @@ Renderer.hover = {
 			case UrlUtil.PG_CHAR_CREATION_OPTIONS: return Renderer.charoption.getCompactRenderedString;
 			case UrlUtil.PG_RECIPES: return Renderer.recipe.getCompactRenderedString;
 			case UrlUtil.PG_CLASS_SUBCLASS_FEATURES: return Renderer.hover.getGenericCompactRenderedString;
+			case UrlUtil.PG_CREATURE_FEATURES: return Renderer.hover.getGenericCompactRenderedString;
 			case UrlUtil.PG_DECKS: return Renderer.deck.getCompactRenderedString;
 			// region props
 			case "classfeature":

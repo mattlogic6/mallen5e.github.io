@@ -2826,6 +2826,26 @@
 			]
 		},
 		{
+			"name": "Gravekeeper",
+			"source": "DoDk",
+			"lairActions": [
+				"When fighting inside its lair, the Gravekeeper can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the Gravekeeper can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"A 10 foot radius cylinder of delerium sludge spouts up from the floor and raises 30 feet into the air before bubbling back down. Any creature caught in this spout must succeed on a DC 18 Constitution saving throw. They take 42 ({@dice 12d6}) necrotic damage on a failed saving throw, and half as much on a successful one. In addition, characters who fail the saving throw gain one {@adventure level of contamination|DoDk|12}.",
+						"Walls within 120 feet of the Gravekeeper sprout grasping, fleshy arms. Each creature of the Gravekeepers choice that starts its turn within 10 feet of such a wall must succeed on a DC 15 Dexterity saving throw or be grappled. Escaping requires a successful DC 15 Strength (",
+						"{@skill Athletics}",
+						") or Dexterity (",
+						"{@skill Acrobatics}",
+						") check.",
+						"A torch or lantern hanging in the room emits one of the Gravekeeper's lantern blasts."
+					]
+				},
+				"The Gravekeeper can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+			]
+		},
+		{
 			"name": "Graz'zt",
 			"source": "MPMM",
 			"page": 148,

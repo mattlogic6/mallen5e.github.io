@@ -2068,14 +2068,6 @@ th.border {
 		left: 7px;
 	}
 
-	&btn-find {
-		border-bottom-left-radius: 0;
-	}
-
-	&btn-goto {
-		border-bottom-right-radius: 0;
-	}
-
 	&head-chapter--active,
 	&head-section--active {
 		background: $rgb-bg--alt;

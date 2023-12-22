@@ -373,7 +373,8 @@ class PageFilterSpells extends PageFilter {
 		this._subSchoolFilter = new Filter({
 			header: "Subschool",
 			items: [],
-			displayFn: Parser.spSchoolAbvToFull,
+			displayFn: it => Parser.spSchoolAbvToFull(it).toTitleCase(),
+			itemSortFn: (a, b) => SortUtil.ascSortLower(Parser.spSchoolAbvToFull(a.item), Parser.spSchoolAbvToFull(b.item)),
 		});
 		this._damageFilter = new Filter({
 			header: "Damage Type",

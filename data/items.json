@@ -2128,6 +2128,34 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Aqua Delerium",
+			"source": "DoDk",
+			"page": 230,
+			"type": "P",
+			"rarity": "rare",
+			"entries": [
+				"This purple potion glows dimly with octarine light. It swirls and sparkles in its small stoppered bottle.",
+				"When you drink this potion, you regain expended spell slots. Roll {@dice 1d6} - you choose spell slots to regain that have a combined level that is equal to or less than the result. None of the slots can be higher than 5th level.",
+				"For one hour after drinking aqua delerium, roll {@dice 1d20} each time you cast a spell of 1st level or higher. On a 1, you trigger a random arcane anomaly (see Dungeons of Drakkenheim).",
+				"If you consume more than one dose of aqua delerium before finishing your next long rest, you take ({@dice 1d12}) necrotic damage for each spell level regained, and your hit point maximum is reduced by an amount equal to the damage taken until you finish a long rest. This damage can't be reduced or prevented in any way.",
+				"When a creature who cannot cast spells using spell slots drinks aqua delerium, it takes 10 ({@damage 3d6}) necrotic damage and gains one {@adventure level of contamination|DoDk|12}."
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Aqua Expurgo",
+			"source": "DoDk",
+			"page": 230,
+			"type": "P",
+			"rarity": "rare",
+			"entries": [
+				"This bright orange fluid is stored in a syringe and charged with arcane magic. You can use an action to administer the shot directly to the heart of yourself or another willing creature.",
+				"You are protected against {@adventure contamination|DoDk|12} for six hours after receiving a dose of aqua expurgo. During this time, whenever you fail a saving throw against an effect that would cause you to gain one or more {@adventure contamination levels|DoDk|12}, you can choose to succeed instead. You can use this ability three times, after which the effects of aqua expurgo expire.",
+				"If the effects of aqua expurgo expire in this manner, you immediately take 10 ({@damage 3d6}) necrotic damage and become incapacitated for 1 minute while you violently retch corrupt bile. Your hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until you finish a long rest. You die if this effect reduces your hit point maximum to 0. The necrotic damage can't be reduced or prevented by any means."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Aquamarine",
 			"source": "DMG",
 			"page": 134,
@@ -6034,6 +6062,18 @@
 			]
 		},
 		{
+			"name": "Bottled Comet",
+			"source": "DoDk",
+			"page": 230,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This spherical glass orb contains an ignited delerium shard hovering gently within. Electrical currents of yellow, green, and purple energy streak from the crystal and cascade along the glass, rendering it warm to the touch.",
+				"As an action you can throw the orb up to 30 feet. It shatters on impact, releasing a 20-foot-radius burst of contaminated energy. Creatures in the area must succeed on a DC 15 Constitution save or take ({@dice 8d6}) necrotic damage, and take one {@adventure level of contamination|DoDk|12}. In addition, an arcane anomaly (see Dungeons of Drakkenheim) occurs, centred on the point of impact."
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "Bowl of Commanding Water Elementals",
 			"source": "DMG",
 			"page": 156,
@@ -7679,6 +7719,31 @@
 			"type": "G",
 			"rarity": "none",
 			"value": 1
+		},
+		{
+			"name": "Chancellor's Crest",
+			"source": "DoDk",
+			"page": 232,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While wearing this amulet, you can read all writing, and speak and understand any language.",
+				"You can use an action to cast one of the following spells: {@spell detect thoughts}, {@spell sending}, or {@spell Rary's telepathic bond}. Once the amulet has been used to cast one of these spells, it can't be used to cast that spell again until the next dawn. You can choose your Intelligence, Wisdom, or Charisma score as the spellcasting ability for casting these spells, and use your proficiency bonus to determine their attack bonus and saving throw DC.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				}
+			],
+			"attachedSpells": [
+				"detect thoughts",
+				"sending",
+				"rary's telepathic bond"
+			]
 		},
 		{
 			"name": "Chariot",
@@ -9428,6 +9493,34 @@
 			],
 			"attachedSpells": [
 				"fear"
+			]
+		},
+		{
+			"name": "Crown of Westemär",
+			"source": "DoDk",
+			"page": 233,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"recharge": "decade",
+			"rechargeAmount": 1,
+			"charges": 3,
+			"entries": [
+				"A character may only attune to the Crown of Westemär by performing a special one hour ceremony with six other characters who are each attuned to a different Seal of Drakkenheim. See the \"Developments\" section in Chapter 9: Castle Drakken for details on this ritual.",
+				"The crown has 3 charges. While wearing it, you can use an action to expend 1 charge to cast the {@spell wish} spell from it. The crown regains one expended charge every ten years.",
+				"The {@creature ancient bronze dragon} Minazorond, the {@creature tower dragon|DoDk|tower dragons}, and the {@creature wall gargoyle|DoDk|wall gargoyles} are under your control and obey your spoken commands while you wear the crown.",
+				"While wearing the crown and seated on the Throne of Drakkenheim in Castle Drakken, you may use an action to communicate telepathically with one dragon or twelve gargoyles so long as they are within 100 miles of Castle Drakken. When you do, you can issue commands to those creatures, see through one of the creature's eyes, and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the creature has. During this time, you are deaf and blind with regard to your own senses.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				}
+			],
+			"attachedSpells": [
+				"wish"
 			]
 		},
 		{
@@ -13064,6 +13157,25 @@
 				"true polymorph"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Delerium Crystal Focus",
+			"source": "DoDk",
+			"page": 230,
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+2",
+			"bonusSpellSaveDc": "+2",
+			"entries": [
+				"This focus is made from a refined delerium crystal encased in a glass orb. While holding it, you gain a +2 bonus to spell attack rolls and the saving throw DCs of your spells. In addition, you can use the crystal as a spellcasting focus.",
+				"Once per day when you cast a spell of 5th level or lower, you may draw on the energy stored within the crystal to do so without expending a spell slot. If you do, you trigger a random arcane anomaly (see Dungeons of Drakkenheim)."
+			]
 		},
 		{
 			"name": "Delver's Claws",
@@ -16988,6 +17100,35 @@
 			]
 		},
 		{
+			"name": "Flame Lance",
+			"source": "DoDk",
+			"page": 231,
+			"baseItem": "lance|PHB",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 6,
+			"weaponCategory": "martial",
+			"property": [
+				"R",
+				"S"
+			],
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"bonusWeapon": "+1",
+			"recharge": "special",
+			"charges": 5,
+			"entries": [
+				"This weapon is a long metal lance with a small flame that burns at its end. It has a hose coming from the hilt that connects to a metal tank that you wear on your back.",
+				"You gain a +1 bonus to attack and damage rolls made with this weapon.",
+				"The tank has 5 charges. You can use an action and expend one or more charges from the tank to cast {@spell burning hands} (Save DC 15). For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
+				"Once per day, you can pour a vial of alchemist's fire into the tank. When you do, it regains all expended charges. It otherwise does not regain charges on its own.",
+				"You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+			],
+			"attachedSpells": [
+				"burning hands"
+			]
+		},
+		{
 			"name": "Flame Tongue Shortsword of Greed",
 			"source": "TftYP",
 			"page": 179,
@@ -19400,6 +19541,37 @@
 			]
 		},
 		{
+			"name": "Hazewalker Plate",
+			"source": "DoDk",
+			"page": 230,
+			"baseItem": "plate armor|PHB",
+			"type": "HA",
+			"resist": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"disease"
+			],
+			"rarity": "very rare",
+			"weight": 65,
+			"ac": 18,
+			"strength": "15",
+			"stealth": true,
+			"entries": [
+				"This plate armour includes a helmet and is hermetically sealed when worn. You gain the following benefits when its worn and the helmet visor is closed:",
+				{
+					"type": "list",
+					"items": [
+						"You are immune to diseases and the poisoned condition, and gain advantage on saving throws against any effect that causes {@adventure contamination|DoDk|12}.",
+						"You have resistance to necrotic and poison damage.",
+						"You don't need to breathe."
+					]
+				},
+				"Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+			]
+		},
+		{
 			"name": "Hazirawn",
 			"source": "HotDQ",
 			"page": 94,
@@ -19692,6 +19864,34 @@
 				}
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Helm of Patron Saints",
+			"source": "DoDk",
+			"page": 234,
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"bonusSpellAttack": "+2",
+			"entries": [
+				"While wearing this helm, you can see invisible creatures and objects within 60 feet of you. In addition, you gain a +2 bonus to spell attack rolls, and increase your spell saving throw DC by 2.",
+				{
+					"type": "entries",
+					"name": "Relics of Saint Vitruvio",
+					"entries": [
+						"These holy relics of the Sacred Flame were wielded by Saint Vitruvio and are kept in several religious sites throughout Drakkenheim. The Knights of the Silver Order and the Followers of the Falling Fire now seek these relics. Not only do both factions revere Saint Vitruvio, both wish to use these relics to help advance their goals in Drakkenheim.",
+						"A character attuned to three Relics of Saint Vitruvio may cast the {@spell heal} spell three times per day, after which they must finish a long rest before they may do so again. In addition, that character gains the ability to attune to two additional magic items so long as those magic items are both Relics of Saint Vitruvio."
+					]
+				}
+			],
+			"attachedSpells": [
+				"heal"
+			]
 		},
 		{
 			"name": "Helm of Perfect Potential",
@@ -21537,6 +21737,56 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Ignacious, the Sword of Burning Truth",
+			"source": "DoDk",
+			"page": 234,
+			"baseItem": "longsword|PHB",
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"sentient": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+3",
+			"entries": [
+				"This sacred weapon was forged to burn away deception and darkness. Blazing embers gently fall from the silver blade, first ignited by the brazier in the Temple of Lumen.",
+				"You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties:",
+				"You can use a bonus action to speak the sword's name, causing radiant flames to erupt from the blade. These flames shed {@quickref Vision and Light||2||bright light} in a 40-foot radius and {@quickref Vision and Light||2||dim light} for an additional 40 feet. While the sword is ablaze, it deals an extra {@damage 4d6} radiant damage to any target it hits. The flames last until you use a bonus action to douse the blade, or until you drop or sheathe the sword.",
+				{
+					"type": "entries",
+					"name": "Sentience",
+					"entries": [
+						"Ignacious is a sentient lawful good weapon with an Intelligence of 11, a Wisdom of 19, and a Charisma of 23. It has hearing and {@sense darkvision} out to a range of 120 feet. The weapon can speak, read, and understand Common, Celestial, and Draconic, and can communicate with its wielder telepathically. It always knows its wielder's thoughts. Its voice is commanding, righteous, and booming. When drawn, Ignacious casts the {@spell zone of truth} spell (save DC 20), and maintains {@status concentration} on it so that you don't have to. The {@spell zone of truth} moves with the blade and remains centred on it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Personality",
+					"entries": [
+						"Ignacious is zealously devoted to the Sacred Flame, and has memorized every word of its holy texts. The blade wishes to be wielded by a faithful devotee of any sort; Ignacious does not care about the religious divide between the Falling Fire and the Sacred Flame so long as its wielder keeps the core tenets shared by both sects.",
+						"The sword's purpose is to expose all deception and reveal the truth. It does not tolerate any falsehood, duplicitousness, or lies. The sword always knows when it hears a lie, and responds with wrathful fury. If a wielder speaks a lie, it immediately triggers a conflict."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Relics of Saint Vitruvio",
+					"entries": [
+						"These holy relics of the Sacred Flame were wielded by Saint Vitruvio and are kept in several religious sites throughout Drakkenheim. The Knights of the Silver Order and the Followers of the Falling Fire now seek these relics. Not only do both factions revere Saint Vitruvio, both wish to use these relics to help advance their goals in Drakkenheim.",
+						"A character attuned to three Relics of Saint Vitruvio may cast the {@spell heal} spell three times per day, after which they must finish a long rest before they may do so again. In addition, that character gains the ability to attune to two additional magic items so long as those magic items are both Relics of Saint Vitruvio."
+					]
+				}
+			],
+			"attachedSpells": [
+				"heal"
+			]
+		},
+		{
 			"name": "Illuminator's Tattoo",
 			"source": "TCE",
 			"page": 129,
@@ -21909,6 +22159,71 @@
 			"type": "G",
 			"rarity": "none",
 			"value": 2
+		},
+		{
+			"name": "Inscrutable Staff",
+			"source": "DoDk",
+			"page": 233,
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": "by a sorcerer, warlock, or wizard",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				},
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 2d10}",
+			"charges": 20,
+			"staff": true,
+			"entries": [
+				"This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to spell attack rolls and your spell save DC.",
+				"The staff has 20 charges, and regains {@dice 2d10} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff triggers a random arcane anomaly (see Dungeons of Drakkenheim). On a 20, the staff regains {@dice 1d10} charges.",
+				"While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: {@spell haste} (3 charges), {@spell slow} (3 charges), {@spell arcane eye} (4 charges), {@spell dimension door} (4 charges), {@spell Bigby's hand} (5 charges), {@spell wall of force} (5 charges), {@spell disintegrate} (6 charges), {@spell reverse gravity} (7 charges), or {@spell maze} (8 charges).",
+				"You can also use an action to cast one of the following spells from the staff without using any charges: {@spell detect magic}, {@spell Tenser's Floating Disk}, {@spell mage armor}, {@spell mending}, {@spell message}, or {@spell misty step}.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				}
+			],
+			"attachedSpells": [
+				"haste",
+				"slow",
+				"arcane eye",
+				"dimension door",
+				"bigby's hand",
+				"wall of force",
+				"disintegrate",
+				"reverse gravity",
+				"maze",
+				"detect magic",
+				"tenser's floating disk",
+				"mage armor",
+				"mending",
+				"message",
+				"misty step"
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Insect Repellent (block of incense)",
@@ -24981,6 +25296,25 @@
 			"capCargo": 10,
 			"seeAlsoVehicle": [
 				"Longship"
+			]
+		},
+		{
+			"name": "Lord Commander's Badge",
+			"source": "DoDk",
+			"page": 233,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"As an action while wearing this seal, you can invoke its power to issue a bellowing command clearly audible to all creatures within 300 feet of you. When you do, you may choose up to 12 allies you can see who can hear the command. Those allies each gain 20 temporary hit points. While these temporary hit points remain, those allies gain advantage on attack rolls and saving throws. Once you use this power, it can't be used again until the next dawn.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				}
 			]
 		},
 		{
@@ -31926,6 +32260,19 @@
 			]
 		},
 		{
+			"name": "Purging Rod",
+			"source": "DoDk",
+			"page": 230,
+			"type": "RD",
+			"rarity": "uncommon",
+			"entries": [
+				"Once per day while holding this rod, you can use an action to cast {@spell purge contamination|DoDk}. After casting the spell, roll {@dice 1d20}. On a 1, the rod melts into sludge."
+			],
+			"attachedSpells": [
+				"purge contamination|dodk"
+			]
+		},
+		{
 			"name": "Purple Worm Poison",
 			"source": "DMG",
 			"page": 258,
@@ -32732,6 +33079,18 @@
 			],
 			"attachedSpells": [
 				"true resurrection"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Refined Delerium Dust",
+			"source": "DoDk",
+			"page": 231,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"This pouch contains an ounce of purified and magically charged delerium dust. It may be ingested as an action. When you consume a full pouch, you gain advantage on spell attack rolls and saving throws against spells for one minute.",
+				"You gain one {@adventure level of contamination|DoDk|12} when you consume refined delerium dust."
 			],
 			"hasFluffImages": true
 		},
@@ -35284,6 +35643,55 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Saint Vitruvio's Phylactery",
+			"source": "DoDk",
+			"page": 233,
+			"rarity": "rare",
+			"reqAttune": "by a bard, cleric, druid, or paladin",
+			"reqAttuneTags": [
+				{
+					"class": "bard"
+				},
+				{
+					"class": "cleric"
+				},
+				{
+					"class": "druid"
+				},
+				{
+					"class": "paladin"
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"You can use an action to cast one of the following spells from the phylactery: {@spell bless}, {@spell death ward}, {@spell greater restoration}, {@spell prayer of healing}, or {@spell revivify}. The spells use your spellcasting ability and spell save DC. Once the phylactery has been used to cast a spell, it can't be used to cast that spell again until the next dawn.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Relics of Saint Vitruvio",
+					"entries": [
+						"These holy relics of the Sacred Flame were wielded by Saint Vitruvio and are kept in several religious sites throughout Drakkenheim. The Knights of the Silver Order and the Followers of the Falling Fire now seek these relics. Not only do both factions revere Saint Vitruvio, both wish to use these relics to help advance their goals in Drakkenheim.",
+						"A character attuned to three Relics of Saint Vitruvio may cast the {@spell heal} spell three times per day, after which they must finish a long rest before they may do so again. In addition, that character gains the ability to attune to two additional magic items so long as those magic items are both Relics of Saint Vitruvio."
+					]
+				}
+			],
+			"attachedSpells": [
+				"heal",
+				"bless",
+				"death ward",
+				"greater restoration",
+				"prayer of healing",
+				"revivify"
+			]
+		},
+		{
 			"name": "Salt",
 			"source": "PHB",
 			"page": 157,
@@ -35372,6 +35780,50 @@
 			],
 			"lootTables": [
 				"Magic Item Table I"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Sceptre of Saint Vitruvio",
+			"source": "DoDk",
+			"page": 234,
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: {@spell guiding bolt} (1 charge), {@spell flaming sphere} (2 charges), or {@spell flame strike} (5 charges). The staff regains {@dice 1d6 + 4} expended charges daily at dawn.",
+				{
+					"type": "entries",
+					"name": "Relics of Saint Vitruvio",
+					"entries": [
+						"These holy relics of the Sacred Flame were wielded by Saint Vitruvio and are kept in several religious sites throughout Drakkenheim. The Knights of the Silver Order and the Followers of the Falling Fire now seek these relics. Not only do both factions revere Saint Vitruvio, both wish to use these relics to help advance their goals in Drakkenheim.",
+						"A character attuned to three Relics of Saint Vitruvio may cast the {@spell heal} spell three times per day, after which they must finish a long rest before they may do so again. In addition, that character gains the ability to attune to two additional magic items so long as those magic items are both Relics of Saint Vitruvio."
+					]
+				}
+			],
+			"attachedSpells": [
+				"heal",
+				"guiding bolt",
+				"flaming sphere",
+				"flame strike"
 			],
 			"hasFluffImages": true
 		},
@@ -37227,6 +37679,43 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Skymetal Shield",
+			"source": "DoDk",
+			"page": 232,
+			"baseItem": "shield|PHB",
+			"type": "S",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 6,
+			"ac": 2,
+			"entries": [
+				"This shield is constructed from hammered meteoric iron and embossed with a delerium crystal. When you are hit with a melee or ranged attack while wielding this shield, you can use your reaction to absorb residual energy from the attack. You suffer damage and effects from the attack as normal, and the shield gains 1 charge. The shield can have a maximum of 5 charges. Unexpended charges are lost each day at dawn.",
+				"As an action while wielding the shield, you can expend all its charges to release a forceful blast. Creatures within 10 feet of you must succeed on a DC 15 Constitution saving throw. On a failed saving throw, creatures in the area take {@damage 1d6} force damage for each expended charge, and are flung back 10 feet and knocked prone."
+			]
+		},
+		{
+			"name": "Skymetal Staff",
+			"source": "DoDk",
+			"page": 232,
+			"baseItem": "quarterstaff|PHB",
+			"type": "M",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
+			"entries": [
+				"This quarterstaff was built from refined meteoric iron and has a liquid delerium core.",
+				"Once on your turn, when you hit a creature with a melee attack using this weapon, you can force the target to make a DC 13 Intelligence saving throw. On a failed save, it takes an extra {@damage 3d6} psychic damage and can't take reactions until the start of your next turn. In addition, on its next turn, the creature must choose to take an action, bonus action, or move: it may only do one of the three."
+			]
+		},
+		{
 			"name": "Skysail",
 			"source": "TDCSR",
 			"page": 199,
@@ -38427,6 +38916,22 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Spellpiercing Wand",
+			"source": "DoDk",
+			"page": 232,
+			"type": "WD",
+			"rarity": "uncommon",
+			"reqAttune": "by a spellcaster",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"You can use this wand as a spellcasting focus. Creatures making a saving throw against a spell cast using this wand can't gain benefit from advantage on their saving throws."
+			]
+		},
+		{
 			"name": "Spellshard",
 			"source": "ERLW",
 			"page": 279,
@@ -38882,6 +39387,28 @@
 			]
 		},
 		{
+			"name": "Spymaster's Signet",
+			"source": "DoDk",
+			"page": 233,
+			"type": "RG",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"entries": [
+				"While wearing this ring, you can cast {@spell disguise self} at-will. In addition, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible for one minute, or until you use a bonus action to become visible again. Once you use this power, it can't be used again until the next dawn.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				}
+			],
+			"attachedSpells": [
+				"disguise self"
+			]
+		},
+		{
 			"name": "Squid Ship",
 			"source": "AAG",
 			"page": 48,
@@ -39010,6 +39537,56 @@
 				"Magic Item Table G"
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Staff of Contaminated Power",
+			"source": "DoDk",
+			"page": 232,
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": "by a sorcerer, warlock, or wizard",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				},
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+2",
+			"recharge": "special",
+			"charges": 20,
+			"staff": true,
+			"entries": [
+				"This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it.",
+				"The staff has 20 charges for the following properties. The staff regains 1 charge each hour it rests in the Deep Haze. You can also touch a delerium crystal to the staff, which causes it to regain {@dice 2d8 + 4} charges, then the crystal crumbles to dust. If you expend the last charge, you immediately gain {@dice 1d6} {@adventure levels of contamination|DoDk|12}.",
+				{
+					"type": "entries",
+					"name": "Spells",
+					"entries": [
+						"While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: {@spell delerium orb|DoDk} (1 charge), {@spell warp bolt|DoDk} (2 charges), {@spell ride the rifts|DoDk} (3 charges), {@spell delerium blast|DoDk} (4 charges), {@spell conjure the deep haze|DoDk} (5 charges), and {@spell ray of contamination|DoDk} (6 charges). You don't gain any {@adventure contamination levels|DoDk|12} when you cast these spells using charges from this staff."
+					]
+				}
+			],
+			"attachedSpells": [
+				"delerium orb|dodk",
+				"warp bolt|dodk",
+				"ride the rifts|dodk",
+				"delerium blast|dodk",
+				"conjure the deep haze|dodk",
+				"ray of contamination|dodk"
+			]
 		},
 		{
 			"name": "Staff of Defense",
@@ -40284,6 +40861,36 @@
 			"rarity": "none",
 			"weight": 0.5,
 			"value": 500
+		},
+		{
+			"name": "Steward's Seal",
+			"source": "DoDk",
+			"page": 233,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"While wearing this badge, you can cast {@spell mage hand}, {@spell prestidigitation}, {@spell purify food and drink}, and {@spell unseen servant} at-will.",
+				"You can use an action to cast one of the following spells: {@spell animate objects}, {@spell create food and water}, {@spell dispel magic}, or {@spell telekinesis}. Once the badge has been used to cast one of these spells, it can't be used to cast that spell again until the next dawn. You can choose your Intelligence, Wisdom, or Charisma score as the spellcasting ability for casting these spells, and use your proficiency bonus to determine their attack bonus and saving throw DC.",
+				{
+					"type": "entries",
+					"name": "Crown Authority",
+					"entries": [
+						"A character cannot attune to more than one Seal of Drakkenheim. Guardian constructs in Drakkenheim such as {@creature wall gargoyle|DoDk|wall gargoyles} and {@creature tower dragon|DoDk|tower dragons} do not attack you while you are attuned to one of the Seals of Drakkenheim. An individual guardian ignores this effect for 24 hours if you attack it or cast a spell upon it.",
+						"As an action, you may present a Seal of Drakkenheim to rebuke the guardians. You make an opposed Charisma ability check against each {@creature wall gargoyle|DoDk} or {@creature tower dragon|DoDk} that can see or hear you within 30 feet of you. If you win the contest, the creature is rebuked for 1 minute or until it takes any damage. A rebuked creature doesn't move, and can't take actions or reactions. A creature who wins the contest is immune to your rebuke for 24 hours."
+					]
+				}
+			],
+			"attachedSpells": [
+				"mage hand",
+				"animate objects",
+				"create food and water",
+				"dispel magic",
+				"telekinesis",
+				"prestidigitation",
+				"purify food and drink",
+				"unseen servant"
+			]
 		},
 		{
 			"name": "Stink Bomb",
@@ -43105,6 +43712,35 @@
 				"unseen servant",
 				"comprehend languages",
 				"zone of truth"
+			]
+		},
+		{
+			"name": "The Shield of Sacred Flame",
+			"source": "DoDk",
+			"page": 234,
+			"baseItem": "shield|PHB",
+			"type": "S",
+			"rarity": "rare",
+			"reqAttune": true,
+			"weight": 6,
+			"ac": 2,
+			"recharge": "dawn",
+			"rechargeAmount": 3,
+			"charges": 3,
+			"entries": [
+				"This shield has 3 charges, which you regain each day at dawn. When a spellcaster within 60 feet of you targets you with a spell or includes you in the area of a spell, you may expend a charge from the shield to cast {@spell counterspell} as a reaction.",
+				{
+					"type": "entries",
+					"name": "Relics of Saint Vitruvio",
+					"entries": [
+						"These holy relics of the Sacred Flame were wielded by Saint Vitruvio and are kept in several religious sites throughout Drakkenheim. The Knights of the Silver Order and the Followers of the Falling Fire now seek these relics. Not only do both factions revere Saint Vitruvio, both wish to use these relics to help advance their goals in Drakkenheim.",
+						"A character attuned to three Relics of Saint Vitruvio may cast the {@spell heal} spell three times per day, after which they must finish a long rest before they may do so again. In addition, that character gains the ability to attune to two additional magic items so long as those magic items are both Relics of Saint Vitruvio."
+					]
+				}
+			],
+			"attachedSpells": [
+				"counterspell",
+				"heal"
 			]
 		},
 		{

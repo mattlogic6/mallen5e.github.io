@@ -850,6 +850,11 @@ Parser.ITEM_RECHARGE_TO_FULL = {
 	dawn: "Dawn",
 	dusk: "Dusk",
 	midnight: "Midnight",
+	week: "Week",
+	month: "Month",
+	year: "Year",
+	decade: "Decade",
+	century: "Century",
 	special: "Special",
 };
 Parser.itemRechargeToFull = function (recharge) {
@@ -957,7 +962,8 @@ Parser.spSchoolAbvToShort = function (school) {
 	if (Parser.SP_SCHOOL_ABV_TO_SHORT[school]) return out;
 	if (PrereleaseUtil.getMetaLookup("spellSchools")?.[school]) return PrereleaseUtil.getMetaLookup("spellSchools")?.[school].short;
 	if (BrewUtil2.getMetaLookup("spellSchools")?.[school]) return BrewUtil2.getMetaLookup("spellSchools")?.[school].short;
-	return out;
+	if (out.length <= 4) return out;
+	return `${out.slice(0, 3)}.`;
 };
 
 Parser.spSchoolAbvToStyle = function (school) { // For prerelease/homebrew
@@ -1576,7 +1582,9 @@ Parser.getFullImmRes = function (toParse) {
 
 			const prop = it.immune ? "immune" : it.resist ? "resist" : it.vulnerable ? "vulnerable" : null;
 			if (prop) {
-				const toJoin = it[prop].map(nxt => toString(nxt, depth + 1));
+				const toJoin = it[prop].length === Parser.DMG_TYPES.length && CollectionUtil.deepEquals(Parser.DMG_TYPES, it[prop])
+					? ["all damage"]
+					: it[prop].map(nxt => toString(nxt, depth + 1));
 				stack.push(depth ? toJoin.join(maxDepth ? "; " : ", ") : toJoin.joinConjunct(", ", " and "));
 			}
 
@@ -2629,6 +2637,7 @@ Parser.SRC_ToFW = "ToFW";
 Parser.SRC_MPP = "MPP";
 Parser.SRC_BMT = "BMT";
 Parser.SRC_GHLoE = "GHLoE";
+Parser.SRC_DoDk = "DoDk";
 Parser.SRC_SCREEN = "Screen";
 Parser.SRC_SCREEN_WILDERNESS_KIT = "ScreenWildernessKit";
 Parser.SRC_SCREEN_DUNGEON_KIT = "ScreenDungeonKit";
@@ -2800,6 +2809,7 @@ Parser.SOURCE_JSON_TO_FULL[Parser.SRC_ToFW] = "Turn of Fortune's Wheel";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_MPP] = "Morte's Planar Parade";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_BMT] = "The Book of Many Things";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_GHLoE] = "Grim Hollow: Lairs of Etharis";
+Parser.SOURCE_JSON_TO_FULL[Parser.SRC_DoDk] = "Dungeons of Drakkenheim";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN] = "Dungeon Master's Screen";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_WILDERNESS_KIT] = "Dungeon Master's Screen: Wilderness Kit";
 Parser.SOURCE_JSON_TO_FULL[Parser.SRC_SCREEN_DUNGEON_KIT] = "Dungeon Master's Screen: Dungeon Kit";
@@ -2946,6 +2956,7 @@ Parser.SOURCE_JSON_TO_ABV[Parser.SRC_ToFW] = "ToFW";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_MPP] = "MPP";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_BMT] = "BMT";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_GHLoE] = "GHLoE";
+Parser.SOURCE_JSON_TO_ABV[Parser.SRC_DoDk] = "DoDk";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN] = "Screen";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_WILDERNESS_KIT] = "ScWild";
 Parser.SOURCE_JSON_TO_ABV[Parser.SRC_SCREEN_DUNGEON_KIT] = "ScDun";
@@ -3091,6 +3102,7 @@ Parser.SOURCE_JSON_TO_DATE[Parser.SRC_ToFW] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_MPP] = "2023-10-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_BMT] = "2023-11-14";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_GHLoE] = "2023-11-30";
+Parser.SOURCE_JSON_TO_DATE[Parser.SRC_DoDk] = "2023-12-21";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN] = "2015-01-20";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_WILDERNESS_KIT] = "2020-11-17";
 Parser.SOURCE_JSON_TO_DATE[Parser.SRC_SCREEN_DUNGEON_KIT] = "2020-09-21";
@@ -3213,6 +3225,8 @@ Parser.SOURCES_ADVENTURES = new Set([
 	Parser.SRC_CoA,
 	Parser.SRC_PiP,
 	Parser.SRC_HFStCM,
+	Parser.SRC_GHLoE,
+	Parser.SRC_DoDk,
 
 	Parser.SRC_AWM,
 ]);
@@ -3273,6 +3287,7 @@ Parser.SOURCES_PARTNERED_WOTC = new Set([
 	Parser.SRC_TDCSR,
 	Parser.SRC_HftT,
 	Parser.SRC_GHLoE,
+	Parser.SRC_DoDk,
 ]);
 // region Source categories
 
@@ -3353,6 +3368,8 @@ Parser.SOURCES_NON_FR = new Set([
 	Parser.SRC_MPP,
 	Parser.SRC_MCV4EC,
 	Parser.SRC_LK,
+	Parser.SRC_GHLoE,
+	Parser.SRC_DoDk,
 ]);
 
 // endregion
@@ -3485,6 +3502,7 @@ Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE = {};
 	Parser.SRC_PiP,
 	Parser.SRC_HFStCM,
 	Parser.SRC_GHLoE,
+	Parser.SRC_DoDk,
 ].forEach(src => {
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src] = src;
 	Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[src.toLowerCase()] = src;
@@ -3543,7 +3561,7 @@ Parser.getPropDisplayName = function (prop, {suffix = ""} = {}) {
 	const mFoundry = /^foundry(?<prop>[A-Z].*)$/.exec(prop);
 	if (mFoundry) return Parser.getPropDisplayName(mFoundry.groups.prop.lowercaseFirst(), {suffix: " Foundry Data"});
 
-	return `${prop.split(/([A-Z][a-z]+)/g).join(" ").uppercaseFirst()}${suffix}`;
+	return `${prop.split(/([A-Z][a-z]+)/g).filter(Boolean).join(" ").uppercaseFirst()}${suffix}`;
 };
 
 Parser.ITEM_TYPE_JSON_TO_ABV = {
@@ -3622,7 +3640,8 @@ Parser.metric = {
 	POUNDS_TO_KILOGRAMS: 0.5, // 2 lb = 1 kg
 
 	getMetricNumber ({originalValue, originalUnit, toFixed = null}) {
-		if (isNaN(originalValue)) return originalValue;
+		if (originalValue == null || isNaN(originalValue)) return originalValue;
+
 		originalValue = Number(originalValue);
 		if (!originalValue) return originalValue;
 
@@ -3634,7 +3653,7 @@ Parser.metric = {
 			case "lb.": case "lb": case "lbs": out = originalValue * Parser.metric.POUNDS_TO_KILOGRAMS; break;
 			default: return originalValue;
 		}
-		if (toFixed != null) return Number(out.toFixed(toFixed));
+		if (toFixed != null) return NumberUtil.toFixedNumber(out, toFixed);
 		return out;
 	},
 

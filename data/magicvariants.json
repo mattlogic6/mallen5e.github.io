@@ -927,10 +927,10 @@
 			"type": "GV",
 			"requires": [
 				{
-					"type": "A"
+					"arrow": true
 				},
 				{
-					"type": "AF"
+					"bolt": true
 				}
 			],
 			"excludes": {
@@ -1089,7 +1089,7 @@
 			],
 			"ammo": true,
 			"inherits": {
-				"namePrefix": "Bloodseeker Ammunition ",
+				"namePrefix": "Bloodseeker ",
 				"source": "BMT",
 				"page": 66,
 				"rarity": "very rare",
@@ -1134,9 +1134,6 @@
 			"requires": [
 				{
 					"bow": true
-				},
-				{
-					"crossbow": true
 				}
 			],
 			"inherits": {
@@ -1156,9 +1153,6 @@
 			"requires": [
 				{
 					"bow": true
-				},
-				{
-					"crossbow": true
 				}
 			],
 			"inherits": {
@@ -1227,6 +1221,27 @@
 				"entries": [
 					"The outside surface and internal joints of this armor whir with interlocking gears, drawing on the orderly magic of the plane of Mechanus.",
 					"The armor has 4 charges. If you make a {@dice d20} roll while wearing this armor, you can expend 1 charge to change the number rolled to a 10. The armor regains {@dice 1d4} expended charges daily at dawn."
+				]
+			}
+		},
+		{
+			"name": "Comet Smasher",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "M",
+					"dmgType": "B"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Comet Smasher ",
+				"source": "DoDk",
+				"page": 230,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"entries": [
+					"The head of this bludgeoning weapon is made from a massive delerium crystal that crackles with arcane energies. When you hit with an attack using this weapon, the target takes an extra ({@dice 3d6}) necrotic damage.",
+					"When you roll a 20 on an attack roll made with this weapon, it unleashes an arcane anomaly (see Dungeons of Drakkenheim). You can roll twice on the table and choose either result."
 				]
 			}
 		},
@@ -1331,6 +1346,29 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Delerium-Forged Blade",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Delerium-Forged Blade ",
+				"source": "DoDk",
+				"page": 230,
+				"rarity": "rare",
+				"bonusWeapon": "+2",
+				"entries": [
+					"This sword has a small delerium sliver encased in glass and set in the hilt like a gemstone. The blade is made of meteoric iron infused with delerium dust, which causes it to softly glow with octarine light.",
+					"You gain a {=bonusWeapon} bonus to attack and damage rolls made with this weapon.",
+					"When you make an attack with this weapon, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls. In addition, you can use this weapon as a spellcasting focus.",
+					"When you roll a 20 on an attack roll made with this weapon against a humanoid, the humanoid must succeed on a DC 15 Constitution saving throw or take an extra ({@dice 3d6}) necrotic damage and gain one {@adventure level of contamination|DoDk|12}."
+				]
+			},
+			"hasFluffImages": true
+		},
+		{
 			"name": "Demonbone Polearm",
 			"type": "GV",
 			"requires": [
@@ -1399,9 +1437,6 @@
 			"requires": [
 				{
 					"bow": true
-				},
-				{
-					"crossbow": true
 				}
 			],
 			"inherits": {
@@ -1459,6 +1494,9 @@
 					"type": "AF"
 				}
 			],
+			"excludes": {
+				"name": "Energy Cell"
+			},
 			"ammo": true,
 			"inherits": {
 				"namePrefix": "Dried Leech ",
@@ -1660,7 +1698,7 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Fool's Blade ",
+				"namePrefix": "Fool's ",
 				"source": "BMT",
 				"page": 36,
 				"rarity": "very rare",
@@ -1804,13 +1842,10 @@
 			"requires": [
 				{
 					"bow": true
-				},
-				{
-					"crossbow": true
 				}
 			],
 			"inherits": {
-				"namePrefix": "Glimmering Moonbow ",
+				"namePrefix": "Glimmering Moon ",
 				"source": "BMT",
 				"page": 36,
 				"resist": [
@@ -1860,6 +1895,28 @@
 					"calm emotions"
 				]
 			}
+		},
+		{
+			"name": "Hardened Delerium-tipped Arrows",
+			"type": "GV",
+			"requires": [
+				{
+					"arrow": true
+				},
+				{
+					"bolt": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Hardened Delerium-tipped ",
+				"source": "DoDk",
+				"page": 230,
+				"rarity": "rare",
+				"entries": [
+					"This piece of ammunition has a refined delerium arrowtip. A creature hit by a ranged attack using one of these arrows takes an extra ({@dice 3d6}) necrotic damage and must succeed on a DC 15 Constitution saving throw or gain one {@adventure level of contamination|DoDk|12}. Once it hits a target, the delerium tip crumbles to dust and the arrow becomes nonmagical."
+				]
+			},
+			"hasFluffImages": true
 		},
 		{
 			"name": "Hellfire Weapon",
@@ -3100,6 +3157,33 @@
 			}
 		},
 		{
+			"name": "Starcrossed Bow",
+			"type": "GV",
+			"requires": [
+				{
+					"bow": true
+				},
+				{
+					"crossbow": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Starcrossed ",
+				"source": "DoDk",
+				"page": 232,
+				"rarity": "rare",
+				"reqAttune": true,
+				"bonusWeapon": "+2",
+				"recharge": "dawn",
+				"rechargeAmount": 3,
+				"charges": 3,
+				"entries": [
+					"This magical bow or crossbow has an intricate arrangement of delerium shards and focusing lenses along the stock where a bolt would normally be loaded, and instead magically conjures its own projectiles. You gain a {=bonusWeapon} bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of piercing damage and ignores the ammunition and loading properties.",
+					"The weapon has 3 charges, which are regained each day at dawn. When you hit with a ranged attack using it, you can cause the bolt to explode in a brilliant flash of light. The target you hit and any creatures within 10 feet of it must succeed on a DC 15 Constitution saving throw or become blinded until the end of your next turn."
+				]
+			}
+		},
+		{
 			"name": "Starshot Crossbow",
 			"type": "GV",
 			"requires": [
@@ -3108,7 +3192,7 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Starshot Crossbow ",
+				"namePrefix": "Starshot ",
 				"source": "BMT",
 				"page": 38,
 				"rarity": "rare",
@@ -3637,9 +3721,12 @@
 					"type": "AF"
 				}
 			],
+			"excludes": {
+				"name": "Energy Cell"
+			},
 			"ammo": true,
 			"inherits": {
-				"namePrefix": "Winged Ammunition ",
+				"namePrefix": "Winged ",
 				"source": "BMT",
 				"page": 69,
 				"rarity": "uncommon",

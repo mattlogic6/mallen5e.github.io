@@ -368,7 +368,7 @@ class CreatureParser extends BaseParser {
 				}
 
 				// Avoid eating spellcasting `At Will: ...`
-				const splColonNext = lineNxt.split(":");
+				const splColonNext = lineNxt.split(/(?::| -) /g).filter(Boolean);
 				if (line.trim().endsWith(":") && splColonNext.length > 1 && /^[A-Z\d][\\/a-z]/.test(splColonNext[0].trim())) continue;
 
 				meta.toConvert[j] = `${line.trim()} ${lineNxt.trim()}`;
@@ -588,40 +588,52 @@ class CreatureParser extends BaseParser {
 			.forEach(({re, original}) => clean = clean.replace(re, `\n${original}\n`));
 		// endregion
 
+		// region Handle bad OCR'ing of dice
 		clean = clean
-			// region Handle bad OCR'ing of dice
 			.replace(/\nl\/(?<unit>day)[.:]\s*/g, (...m) => `\n1/${m.last().unit}: `)
 			.replace(/\b(?<num>[liI!]|\d+)?d[1liI!]\s*[oO0]\b/g, (...m) => `${m.last().num ? isNaN(m.last().num) ? "1" : m.last().num : ""}d10`)
 			.replace(/\b(?<num>[liI!]|\d+)?d[1liI!]\s*2\b/g, (...m) => `${m.last().num ? isNaN(m.last().num) ? "1" : m.last().num : ""}d12`)
 			.replace(/\b[liI!1]\s*d\s*(?<faces>\d+)\b/g, (...m) => `1d${m.last().faces}`)
 			.replace(/\b(?<num>\d+)\s*d\s*(?<faces>\d+)\b/g, (...m) => `${m.last().num}d${m.last().faces}`)
-			// endregion
+		;
+		// endregion
 
-			// region Handle misc OCR issues
+		// region Handle misc OCR issues
+		clean = clean
 			.replace(/\bI nt\b/g, "Int")
 			.replace(/\(-[lI!]\)/g, "(-1)")
-			// endregion
+		;
+		// endregion
 
-			// Handle modifiers split across lines
+		// Handle modifiers split across lines
+		clean = clean
 			.replace(/([-+] +)\n +(\d+|PB)/g, (...m) => `${m[1]}${m[2]}`)
+		;
 
-			// Handle CR XP on separate line
+		// Handle CR XP on separate line
+		clean = clean
 			.replace(/\n(\([\d,]+ XP\)\n)/g, (...m) => m[1])
+		;
 
-			// region Split sentences which should *generally* in the same paragraph
+		// region Split sentences which should *generally* in the same paragraph
+		clean = clean
 			// Handle split "DC-sentence then effect-sentence"
 			.replace(/(\.\s*?)\n(On a (?:failed save|failure|success|successful save)\b)/g, (...m) => `${m[1].trimEnd()} ${m[2]}`)
 			// Handle split "The target..." sentences
 			.replace(/(\.\s*?)\n(The target (?:then|must|regains)\b)/g, (...m) => `${m[1].trimEnd()} ${m[2]}`)
 			// Handle split "A creature..." sentences
 			.replace(/(\.\s*?)\n(A creature (?:takes)\b)/g, (...m) => `${m[1].trimEnd()} ${m[2]}`)
-			// endregion
+		;
+		// endregion
 
+		clean = clean
 			// Handle split `Melee Attack: ...`
 			.replace(/((?:Melee|Ranged) (?:(?:Weapon|Spell|Area|Power) )?Attack:)\s*?\n\s*([-+])/g, (...m) => `${m[1]} ${m[2]}`)
 			// Handle split `Hit: ... damage. If ...`
 			.replace(/(Hit: [^.!?]+ damage(?: [^.!?]+)?[.!?])\s*?\n\s*(If)\b/g, (...m) => `${m[1].trimEnd()} ${m[2].trimStart()}`)
+		;
 
+		clean = clean
 			// Homebrew spell action superscript
 			// handle `commune\n+, ...`
 			.replace(/([a-z]) *\n([ABR+], )/mg, (...m) => `${m[1]} ${m[2]}`)
