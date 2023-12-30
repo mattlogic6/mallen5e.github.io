@@ -484,7 +484,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "501"
+											"id": "51e"
 										},
 										{
 											"type": "image",
@@ -499,7 +499,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "502"
+											"id": "51f"
 										},
 										{
 											"type": "image",
@@ -514,7 +514,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "503"
+											"id": "520"
 										},
 										{
 											"type": "image",
@@ -529,7 +529,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "504"
+											"id": "521"
 										},
 										{
 											"type": "image",
@@ -544,7 +544,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "505"
+											"id": "522"
 										},
 										{
 											"type": "image",
@@ -559,7 +559,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "506"
+											"id": "523"
 										},
 										{
 											"type": "image",
@@ -574,7 +574,7 @@
 											"grid": {
 												"type": "none"
 											},
-											"id": "507"
+											"id": "524"
 										}
 									]
 								}
@@ -602,7 +602,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "501"
+												"id": "51e"
 											}
 										},
 										{
@@ -619,7 +619,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "502"
+												"id": "51f"
 											}
 										},
 										{
@@ -636,7 +636,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "503"
+												"id": "520"
 											}
 										},
 										{
@@ -653,7 +653,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "504"
+												"id": "521"
 											}
 										},
 										{
@@ -670,7 +670,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "505"
+												"id": "522"
 											}
 										},
 										{
@@ -687,7 +687,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "506"
+												"id": "523"
 											}
 										},
 										{
@@ -704,7 +704,7 @@
 												"type": "none"
 											},
 											"mapParent": {
-												"id": "507"
+												"id": "524"
 											}
 										}
 									]
@@ -2286,7 +2286,7 @@
 										"type": "internal",
 										"path": "adventure/WDH/thumbnail/Zhent-Warehouse-DM.webp"
 									},
-									"id": "4e8"
+									"id": "525"
 								},
 								{
 									"type": "image",
@@ -2558,7 +2558,7 @@
 									"title": "Xanathar Guild Hideout",
 									"width": 1158,
 									"height": 800,
-									"id": "4f9",
+									"id": "526",
 									"mapRegions": [
 										{
 											"area": "078",
@@ -2973,7 +2973,7 @@
 									"width": 1650,
 									"height": 1150,
 									"mapParent": {
-										"id": "4f9",
+										"id": "526",
 										"offsetX": -16,
 										"offsetY": -27,
 										"scaleX": 0.7334,
@@ -3565,7 +3565,7 @@
 										"type": "internal",
 										"path": "adventure/WDH/thumbnail/Trollskull-Alley-DM.webp"
 									},
-									"id": "4e9"
+									"id": "527"
 								},
 								{
 									"type": "image",
@@ -3586,7 +3586,7 @@
 									"width": 1000,
 									"height": 691,
 									"mapParent": {
-										"id": "4e9"
+										"id": "527"
 									}
 								}
 							]
@@ -3617,7 +3617,7 @@
 											"title": "Trollskull Manor",
 											"width": 589,
 											"height": 800,
-											"id": "508"
+											"id": "528"
 										},
 										{
 											"type": "image",
@@ -3637,7 +3637,7 @@
 											"width": 737,
 											"height": 1000,
 											"mapParent": {
-												"id": "508",
+												"id": "528",
 												"autoScale": true
 											}
 										}
@@ -5933,7 +5933,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Gralhund-Villa-DM.webp"
 											},
-											"id": "4ea"
+											"id": "529"
 										},
 										{
 											"type": "image",
@@ -7149,7 +7149,7 @@
 									"title": "Alley",
 									"width": 1000,
 									"height": 691,
-									"id": "509"
+									"id": "52a"
 								},
 								{
 									"type": "image",
@@ -7166,7 +7166,7 @@
 									"width": 1800,
 									"height": 1250,
 									"mapParent": {
-										"id": "509",
+										"id": "52a",
 										"autoScale": true
 									}
 								}
@@ -7715,7 +7715,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Mistshore-DM.webp"
 											},
-											"id": "4eb"
+											"id": "52b"
 										},
 										{
 											"type": "image",
@@ -7734,7 +7734,7 @@
 											"width": 1350,
 											"height": 950,
 											"mapParent": {
-												"id": "4eb",
+												"id": "52b",
 												"autoScale": true
 											}
 										}
@@ -8503,7 +8503,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Mausoleum-DM.webp"
 											},
-											"id": "4ec"
+											"id": "52c"
 										},
 										{
 											"type": "image",
@@ -9203,7 +9203,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Theater-DM.webp"
 											},
-											"id": "4ed"
+											"id": "52d"
 										},
 										{
 											"type": "image",
@@ -9223,7 +9223,7 @@
 											"width": 1650,
 											"height": 1200,
 											"mapParent": {
-												"id": "4ed",
+												"id": "52d",
 												"autoScale": true
 											}
 										}
@@ -10458,7 +10458,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Courthouse-DM.webp"
 											},
-											"id": "4ee"
+											"id": "52e"
 										},
 										{
 											"type": "image",
@@ -11712,7 +11712,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Cellar-Complex-DM.webp"
 											},
-											"id": "4ef"
+											"id": "52f"
 										},
 										{
 											"type": "image",
@@ -11729,7 +11729,7 @@
 											"width": 1700,
 											"height": 1250,
 											"mapParent": {
-												"id": "4ef",
+												"id": "52f",
 												"autoScale": true
 											}
 										}
@@ -13188,7 +13188,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Windmill-DM.webp"
 											},
-											"id": "4f0"
+											"id": "530"
 										},
 										{
 											"type": "image",
@@ -14626,7 +14626,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Vault-of-Dragons-DM.webp"
 											},
-											"id": "4f1"
+											"id": "531"
 										},
 										{
 											"type": "image",
@@ -17198,7 +17198,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Xanathar-Lair-DM.webp"
 											},
-											"id": "4f2"
+											"id": "532"
 										},
 										{
 											"type": "image",
@@ -20065,7 +20065,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Cassalanter-Villa-DM.webp"
 											},
-											"id": "4f3"
+											"id": "533"
 										},
 										{
 											"type": "image",
@@ -22830,7 +22830,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Temple-of-Asmodeus-DM.webp"
 											},
-											"id": "4f4"
+											"id": "534"
 										},
 										{
 											"type": "image",
@@ -25011,7 +25011,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Ships-DM.webp"
 											},
-											"id": "4f5"
+											"id": "535"
 										},
 										{
 											"type": "image",
@@ -26628,7 +26628,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Scarlet-Marpenoth-DM.webp"
 											},
-											"id": "4f6"
+											"id": "536"
 										},
 										{
 											"type": "image",
@@ -28479,7 +28479,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Kolat-Towers-DM.webp"
 											},
-											"id": "4f7"
+											"id": "537"
 										},
 										{
 											"type": "image",
@@ -30331,7 +30331,7 @@
 												"type": "internal",
 												"path": "adventure/WDH/thumbnail/Sanctum-DM.webp"
 											},
-											"id": "4f8"
+											"id": "538"
 										},
 										{
 											"type": "image",
@@ -30349,7 +30349,7 @@
 											"width": 1800,
 											"height": 1200,
 											"mapParent": {
-												"id": "4f8",
+												"id": "538",
 												"autoScale": true
 											}
 										}
@@ -33368,7 +33368,7 @@
 							"title": "Poster Map",
 							"width": 6429,
 							"height": 9000,
-							"id": "50a"
+							"id": "539"
 						},
 						{
 							"type": "image",
@@ -33384,7 +33384,7 @@
 							"width": 6429,
 							"height": 9000,
 							"mapParent": {
-								"id": "50a"
+								"id": "539"
 							}
 						}
 					]

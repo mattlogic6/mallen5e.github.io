@@ -17,19 +17,28 @@ function addFile (allFiles, path) {
 	allFiles.push({json, path});
 }
 
-function getProbeTarget (imgEntry, {isAllowExternal = false}) {
+function getFileProbeTarget (path) {
+	const target = fs.createReadStream(path);
+	return {
+		target,
+		location: path,
+		fnCleanup: () => target.destroy(), // stream cleanup
+	};
+}
+
+function getProbeTarget (imgEntry, {localBrewDir = null, isAllowExternal = false}) {
 	if (imgEntry.href.type === "internal") {
-		const path = `img/${imgEntry.href.path}`;
-		const target = fs.createReadStream(path);
-		return {
-			target,
-			location: path,
-			fnCleanup: () => target.destroy(), // stream cleanup
-		};
+		return getFileProbeTarget(`img/${imgEntry.href.path}`);
 	}
 
 	if (imgEntry.href.type === "external") {
-		if (!isAllowExternal) {
+		if (localBrewDir && imgEntry.href.url.startsWith(`${VeCt.URL_ROOT_BREW}`)) {
+			return getFileProbeTarget(
+				decodeURI(imgEntry.href.url.replace(`${VeCt.URL_ROOT_BREW}_img`, `${localBrewDir}/_img`)),
+			);
+		}
+
+		if (!isAllowExternal) { // Local files are not truly "external"
 			console.warn(`Skipping "external" image (URL was "${imgEntry.href.url}"); run with the "--allow-external" option if you wish to probe external URLs.`);
 			return null;
 		}
@@ -50,8 +59,8 @@ function getImageEntries (imageEntries, obj) {
 	return obj;
 }
 
-async function pMutImageDimensions (imgEntry, {isAllowExternal = false}) {
-	const probeMeta = getProbeTarget(imgEntry, {isAllowExternal});
+async function pMutImageDimensions (imgEntry, {localBrewDir = null, isAllowExternal = false}) {
+	const probeMeta = getProbeTarget(imgEntry, {localBrewDir, isAllowExternal});
 	if (probeMeta == null) return;
 
 	const {target, location, fnCleanup} = probeMeta;
@@ -70,6 +79,7 @@ async function main (
 	{
 		dirs,
 		files,
+		localBrewDir = null,
 		isAllowExternal = false,
 	},
 ) {
@@ -78,7 +88,7 @@ async function main (
 	const allFiles = [];
 	dirs.forEach(dir => addDir(allFiles, dir));
 	files.forEach(file => addFile(allFiles, file));
-	console.log(`Running on ${allFiles.length} file${allFiles.length === 1 ? "" : "s"}...`);
+	console.log(`Running on ${allFiles.length} JSON file${allFiles.length === 1 ? "" : "s"}...`);
 
 	const imageEntries = [];
 	allFiles.forEach(meta => {
@@ -96,7 +106,7 @@ async function main (
 			.map(async () => {
 				while (imageEntries.length) {
 					const imageEntry = imageEntries.pop();
-					await pMutImageDimensions(imageEntry, {isAllowExternal});
+					await pMutImageDimensions(imageEntry, {localBrewDir, isAllowExternal});
 				}
 			}),
 	);
@@ -111,6 +121,7 @@ const program = new Command()
 	.option("--file <file...>", `Input files`)
 	.option("--dir <dir...>", `Input directories`)
 	.option("--allow-external", "Allow external URLs to be probed.")
+	.option("--local-brew-dir <localBrewDir>", "Use local homebrew directory for relevant URLs.")
 ;
 
 program.parse(process.argv);
@@ -130,6 +141,7 @@ if (!dirs.length && !files.length) {
 main({
 	dirs,
 	files,
+	localBrewDir: params.localBrewDir,
 	isAllowExternal: params.allowExternal,
 })
 	.catch(e => console.error(e));

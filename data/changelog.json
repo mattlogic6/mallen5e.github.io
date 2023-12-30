@@ -2608,5 +2608,10 @@
 		"date": "2023-12-22",
 		"title": "Not Fired",
 		"txt": "- Added Dungeons of Drakkenheim content _[As \"D&D Beyond Partnered,\" this has been added to the main site. Note that this, and other partnered content, may be migrated out the the Homebrew repository in the future.]_\n- Added Grim Hollow: Lairs of Etharis tokens (thanks @ Lyra for ~half of these)\n- Added Chains of Asmodeus NPCs/other creatures\n- Added changelog link to \"<site> has been updated\" notification\n- Added \"to top\" button to adventures/books on mobile\n- Reworked and expanded Classes page subclass quick-filter dropdown to better match available content categories\n- Fixed adventure/book page displaying a permanent blank \"loading\" screen when not provided an adventure/book ID to load\n- (Brew) Reworked image size tagging script to be usable on other files/directories, and to allow from-URL images to be sized (usage e.g. `node node/tag-image-dimensions --allow-external --dir <my-directory>`) (thanks @ Lyra for the prototype)\n- (Brew) Improved Creature Text Converter handling of non-standard spellcasting labels\n- (Brew) Improved Item Text Converter handling of: various magic variant requirements; recharge types; condition immunities; `namePrefix`/`nameSuffix` auto-shortening\n- (Brew) Improved Spell Text Converter handling of non-standard range values\n- (Brew) Improved Background Text Converter handling of skill, language, and tool proficiency choices\n- (Brew) Improved Spells page and filter display of spell `\"subschools\"`\n- (Fixed typos/added tags)"
+	},
+	{
+		"ver": "1.197.1",
+		"date": "2023-12-30",
+		"txt": "- Added Dynamic Map Viewer support to Grim Hollow: Lairs of Etharis maps\n- Fixed filters failing to include loaded homebrew by default\n- Fixed the Objects page failing to render an object's senses (if it has any)\n- (Brew) Fixed `@chance` tag success/failure text failing to render `@tag`s \n- (Brew) The image size tagging script may now use a local copy of the homebrew repo as a proxy for URLs against that repo (thanks @ Lyra)\n- (Fixed typos/added tags)"
 	}
 ]

@@ -5,7 +5,10 @@ FilterUtil.SUB_HASH_PREFIX_LENGTH = 4;
 
 class PageFilter {
 	static defaultSourceSelFn (val) {
-		return SourceUtil.getFilterGroup(val) === SourceUtil.FILTER_GROUP_STANDARD;
+		// Assume the user wants to select their loaded homebrew by default
+		// Overridden by the "Deselect Homebrew Sources by Default" option
+		return SourceUtil.getFilterGroup(val) === SourceUtil.FILTER_GROUP_STANDARD
+			|| SourceUtil.getFilterGroup(val) === SourceUtil.FILTER_GROUP_HOMEBREW;
 	}
 
 	constructor (opts) {

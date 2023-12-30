@@ -1253,7 +1253,7 @@
 								"type": "internal",
 								"path": "adventure/LLK/thumbnail/006-318365_extra_life_monastery.webp"
 							},
-							"id": "0d7"
+							"id": "0d9"
 						},
 						{
 							"type": "image",
@@ -1271,7 +1271,7 @@
 								"distance": 50
 							},
 							"mapParent": {
-								"id": "0d7",
+								"id": "0d9",
 								"autoScale": true
 							}
 						},
@@ -2788,7 +2788,7 @@
 								"type": "internal",
 								"path": "adventure/LLK/thumbnail/011-318365_extra_life_ooze.webp"
 							},
-							"id": "0d8"
+							"id": "0da"
 						},
 						{
 							"type": "image",
@@ -2806,7 +2806,7 @@
 								"distance": 50
 							},
 							"mapParent": {
-								"id": "0d8",
+								"id": "0db",
 								"autoScale": true
 							}
 						},
@@ -4426,7 +4426,7 @@
 								"path": "adventure/LLK/daoine-colors-final.webp"
 							},
 							"imageType": "map",
-							"id": "0d8",
+							"id": "0db",
 							"title": "Daoine Gloine",
 							"credit": "Jason Bradley Thompson",
 							"width": 5000,
@@ -5411,7 +5411,7 @@
 							},
 							"imageType": "mapPlayer",
 							"mapParent": {
-								"id": "0d8",
+								"id": "0db",
 								"autoScale": true
 							},
 							"title": "Player Version",

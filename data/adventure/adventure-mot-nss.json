@@ -440,7 +440,7 @@
 												"offsetX": 6,
 												"offsetY": 5
 											},
-											"id": "000",
+											"id": "002",
 											"mapRegions": [
 												{
 													"area": "33b",
@@ -2138,7 +2138,7 @@
 												"offsetY": 5
 											},
 											"mapParent": {
-												"id": "000"
+												"id": "002"
 											},
 											"credit": "Dyson Logos"
 										}
